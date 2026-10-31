@@ -1,0 +1,15 @@
+# Python pipeline runs on your computer or GitHub Actions, not on Vercel
+pipeline/
+
+# Database migrations are applied to Neon, not deployed
+drizzle/
+
+# Reference CSV data (do not ignore TypeScript modules in src/lib/data)
+/data/
+!/src/lib/data/**
+!src/lib/data/**
+!**/src/lib/data/**
+
+# Documentation and secrets stay out of the deployment
+*.md
+.env*

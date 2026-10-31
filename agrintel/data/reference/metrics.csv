@@ -1,0 +1,25 @@
+code,name_en,unit,geographic_level,description
+production_kg,Production,kg,district,Harvested production for the period
+area_planted_ha,Planted area,ha,district,Area planted for the crop
+yield_kg_per_ha,Yield,kg/ha,district,Production divided by harvested area
+price_rwf_per_kg,Market price,RWF/kg,market,Average retail or wholesale price per kg
+rainfall_mm,Rainfall,mm,district,Total rainfall for the period
+temp_max_c,Maximum temperature,°C,district,Mean daily maximum temperature for the period
+soil_moisture_pct,Soil moisture,%,district,Volumetric soil moisture where measured
+milk_litres_per_day,Milk production,litres/day,district,Average daily milk yield per reporting unit
+water_stress_index,Water stress index,index 0-1,district,Derived index from rainfall and evapotranspiration; documented method required
+farmgate_price_rwf_per_kg,Farm-gate price,RWF/kg,district,Average price received by producers at farm gate. Monthly average of daily market reports from E-Soko (via TangaBid)
+rainfall_anomaly_ratio,Precipitation anomaly ratio,ratio,district,Subnational rainfall relative to historical 30-year normal (CHIRPS/Meteo Rwanda)
+improved_seed_pct,Improved seed adoption,%,district,Percentage of smallholder farmers adopting certified seeds (NISR SAS)
+inorganic_fert_pct,Inorganic fertilizer rate,%,district,Percentage of smallholders applying inorganic fertilizers (NISR SAS)
+irrigation_pct,Irrigation coverage,%,district,Percentage of cultivated agricultural area under irrigation (NISR SAS)
+anti_erosion_pct,Anti-erosion structures,%,district,Percentage of agricultural land protected with erosion structures (NISR SAS)
+yield_residual_z_score,Standardized yield residual,z-score,district,Climate-controlled econometric residual z-score for subsidy leakage audit (MINAGRI/NISR)
+arbitrage_margin_regulated_rwf_per_kg,Regulated arbitrage margin,RWF/kg,market,Net spatial arbitrage margin per kg under regulated diesel (Rwf 2927/L)
+arbitrage_margin_unsubsidized_rwf_per_kg,Unsubsidized arbitrage margin,RWF/kg,market,Net spatial arbitrage margin per kg under unsubsidized diesel (Rwf 3600/L)
+dairy_stress_index,Dairy cattle stress index,index 0-100,district,Composite pasture forage and water deficit stress index for pastoral districts
+cpi_national,National Consumer Price Index,index,national,Official NISR headline Consumer Price Index (Base 2014=100)
+cpi_urban,Urban Consumer Price Index,index,national,Official NISR Urban Consumer Price Index for urban consumption basket
+cpi_rural,Rural Consumer Price Index,index,national,Official NISR Rural Consumer Price Index showing smallholder rural cost of living
+food_inflation_yoy,Food inflation YoY,%,national,Year-over-year percentage change in food and non-alcoholic beverages index
+rural_urban_cpi_divergence,Rural-Urban CPI divergence,points,national,Spread between rural and urban price indices (Rural CPI minus Urban CPI)

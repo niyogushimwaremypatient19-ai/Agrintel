@@ -1,0 +1,15 @@
+code,name_en,name_rw,category,notes
+TOMATO,Tomatoes,Inyanya,crop,MVP demonstration crop
+IRISH_POTATO,Irish potatoes,Ibirayi,crop,MVP demonstration crop
+DAIRY_CATTLE,Dairy cattle,Inka z'amata,livestock,Limited to weather/water/feed stress and milk indicators where data exists
+MAIZE,Maize,Ibigori,crop,Grain maize. Flours and bran excluded
+BEAN,Dry beans,Ibishyimbo,crop,Dry beans of all varieties. Green beans and fresh beans excluded
+RICE,Rice,Umuceri,crop,All rice varieties (local and imported)
+CASSAVA,Cassava,Imyumbati,crop,Fresh cassava roots. Cassava flour and leaves excluded
+SWEET_POTATO,Sweet potatoes,Ibijumba,crop,Sweet potatoes (not Irish potato)
+SORGHUM,Sorghum,Amasaka,crop,Grain sorghum. Sorghum flour excluded
+WHEAT,Wheat,Ingano,crop,Wheat grain. Wheat flour excluded
+SOYA,Soya bean,Soya,crop,Soya bean
+GROUNDNUT,Groundnut,Ibinyomoro,crop,Groundnut
+ONION,Onion,Ibitunguru,crop,Red and white onion
+BANANA,Banana,Igitoki,crop,Banana (cooking and fruit)

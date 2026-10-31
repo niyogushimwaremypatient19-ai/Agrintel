@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd agrintel && npm run build",
+  "outputDirectory": "agrintel/.next",
+  "installCommand": "cd agrintel && npm install",
+  "framework": "nextjs"
+}

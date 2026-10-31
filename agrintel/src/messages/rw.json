@@ -1,0 +1,755 @@
+{
+  "_note": "DRAFT Kinyarwanda. Must be reviewed by a fluent Kinyarwanda speaker, especially agricultural terms, before release.",
+  "siteName": "AgrIntel Rwanda",
+  "siteSubtitle": "Umuyoboro w'Ubuhinzi, Umusaruro n'Amasoko mu Rwanda",
+  "tagline": "Amakuru yihuse kandi asobanutse yo gufata ibyemezo by'ibiribwa",
+  "language": {
+    "label": "Ururimi",
+    "en": "Icyongereza",
+    "rw": "Ikinyarwanda"
+  },
+  "status": {
+    "bannerTitle": "Imiterere y'amakuru",
+    "verifiedCount": "amasoko yemejwe yahujwe",
+    "sampleCount": "amasoko y'icyitegererezo",
+    "empiricalOnly": "amakuru yemejwe 100% y'umwimerere",
+    "noneVerified": "Nta soko ry'amakuru yemejwe rirahuzwa. Amakuru yose muri iyi demo ni ay'icyitegererezo kandi arabigaragaza.",
+    "verifiedLabel": "Yemejwe",
+    "sampleLabel": "Amakuru y'icyitegererezo",
+    "awaitingLabel": "Ategereje uburenganzira",
+    "unavailableLabel": "Ntiboneka"
+  },
+  "welcome": {
+    "title": "Amakuru Asanzwe y'Ibiribwa, Umusaruro n'Isoko mu Rwanda",
+    "intro": "AgrIntel ihuza amakuru y'ikirere, ubutaka, umusaruro n'ibiciro byo ku masoko mu Rwanda hose. Ifasha abahinzi, abacuruzi, ingo z'abaturage, n'abayobozi gufata ibyemezo bikwiye kandi byihuse.",
+    "disclaimer": "Ibyavuye mu isesengura ni ibigereranyo bifasha gufata ibyemezo. Ntabwo ari icyizere cyuzuye cyangwa inama za politiki.",
+    "latestUpdate": "Ivugurura riheruka",
+    "latestUpdateNone": "Nta vugurura rirahari",
+    "welcomeHub": {
+      "badge": "Murakaza neza muri AgrIntel Rwanda",
+      "title": "Amakuru Asanzwe y'Ibiribwa, Umusaruro n'Isoko kuri Buri Munyarwanda",
+      "intro": "AgrIntel ihuriza hamwe amakuru y'umusaruro yizewe, ibiciro byo ku masoko, n'imvura igwa kugira ngo ibyemezo by'ubuhinzi n'ibiribwa byorohere buri wese.",
+      "whatWeDo": {
+        "title": "Icyo Dukora",
+        "desc": "Dukusanya amakuru yemewe y'ubuhinzi, ibiciro by'ibiribwa ku masoko yo mu turere 30, n'ingano y'imvura kugira ngo hatagira umuntu ugenda mu bwijima."
+      },
+      "whatValueWeBring": {
+        "title": "Akamaro Tubazaniye",
+        "desc": "Dufasha umuhinzi kumenya igihe cyo kugurisha adahombye, tugafasha umushoferi kumenya isoko rifite inyungu, tugafasha imiryango guhaha neza bahendukiwe, no gufasha abayobozi kumenya aho amapfa ari hakiri kare."
+      },
+      "whatToDo": {
+        "title": "Icyo Ugomba Gukora",
+        "subtitle": "Hitamo icyiciro urimo munsi uhite ubona amakuru n'inama bikubereye:"
+      },
+      "personas": {
+        "farmer": {
+          "role": "Umuhinzi cyangwa Koperative",
+          "action": "Menya igihe cyo kugurisha cyangwa kubika, tegera amatwi inama mu Kinyarwanda, kandi urebe ibiciro by'aho utuye.",
+          "cta": "Reba Inama z'Abahinzi"
+        },
+        "retailer": {
+          "role": "Umucuruzi cyangwa Umwikorezi",
+          "action": "Bara igiciro cya mazutu y'ikamyo, wirinde kwangirika kw'imyaka mu nzira, kandi umenye umujyi ufite inyungu isumbye iyindi.",
+          "cta": "Bara Inyungu z'Ubwikorezi"
+        },
+        "leader": {
+          "role": "Umuyobozi cyangwa Umugenzuzi",
+          "action": "Kurikirana umusaruro mu turere 30 twose, menya aho imvura yabuze, kandi umenye neza ko imbuto n'ifumbire byatanze umusaruro witezwe.",
+          "cta": "Reba Ikarita y'Uturere 30"
+        },
+        "citizen": {
+          "role": "Umuhahiro cyangwa Umuturage",
+          "action": "Kurikirana ibiciro by'ibiribwa mu ntara yawe, ukoreshe igatebo y'ibiribwa y'ikoranabuhanga uhitemo ibihendutse bifite intungamubiri.",
+          "cta": "Fungura Igatebo y'Ibiribwa"
+        }
+      }
+    },
+    "ontology": {
+      "eyebrow": "Uko AgrIntel Ikora",
+      "title": "Intambwe 6 Zoroshye Kuva mu Murima Kugeza ku Isoko",
+      "subtitle": "Uko duhindura amakuru y'ubuhinzi n'ibiciro byo ku masoko mu nama zifasha buri Munyarwanda",
+      "stages": [
+        {
+          "step": "01",
+          "name": "Gukusanya Amakuru Yizewe",
+          "subtext": "Ibarura ry'umusaruro, ibiciro by'amasoko, n'ingano y'imvura"
+        },
+        {
+          "step": "02",
+          "name": "Guhuza Imirongo",
+          "subtext": "Guhuza uturere tw'ubuhinzi, ifumbire n'imbuto, n'imihanda y'ubwikorezi"
+        },
+        {
+          "step": "03",
+          "name": "Kugereranya Ikirere n'Umusaruro",
+          "subtext": "Kureba niba imvura nziza yatanze umusaruro witezwe cyangwa niba hari ikibazo"
+        },
+        {
+          "step": "04",
+          "name": "Kubara Ikiguzi Cy'Ukuri",
+          "subtext": "Gupima igiciro cya mazutu, imyanya y'ikamyo, n'ibyangirika mu nzira"
+        },
+        {
+          "step": "05",
+          "name": "Gutanga Inama Zifatika",
+          "subtext": "Inama ku muhinzi igihe cyo kugurisha n'amabwiriza ku bayobozi yo gusura imirima"
+        },
+        {
+          "step": "06",
+          "name": "Kugeza kuri Buri Muhinzi",
+          "subtext": "Ubutumwa bugufi bwa SMS n'amajwi asomwa mu Kinyarwanda"
+        }
+      ]
+    },
+    "cards": {
+      "national": {
+        "title": "Incamake y'igihugu",
+        "body": "Ibimenyetso by'ibyago ku bijyanye no kubona ibiribwa mu turere, hamwe n'amasoko n'amatariki."
+      },
+      "market": {
+        "title": "Ibiciro ku masoko",
+        "body": "Imigendekere y'ibiciro by'inyanya n'ibirayi, ibihe by'iteganyagihe bigaragazwa."
+      },
+      "retailer": {
+        "title": "Itangwa ry'abacuruzi",
+        "body": "Gereranya uturere dutanga umusaruro n'aho ugurishirizwa."
+      },
+      "farmer": {
+        "title": "Inama ku bahinzi",
+        "body": "Imiterere y'aho uri n'inama rusange, hamwe no kugenzura n'inzobere aho bikenewe."
+      }
+    },
+    "farmerHero": {
+      "title": "Ubufasha bw'Ibanze ku Bahinzi",
+      "subtitle": "Byateguriwe abaturage n'abahinzi: amafoto manini, inama isomwa mu majwi, n'ikimenyetso cyoroshye cyo kugurisha cyangwa kubika.",
+      "cta": "Injira mu Nama z'Abahinzi",
+      "quickCrops": "Hitamo igihingwa cyawe:"
+    },
+    "callouts": {
+      "radar": {
+        "badge": "Isuzuma ry'Umusaruro mu Turere",
+        "title": "Kugenzura Umusaruro mu Turere 30 Twose",
+        "stat": "Uturere 30 · Nkunganire Miliyari 75",
+        "desc": "Kureba niba buri karere katanze umusaruro witezwe, no gutandukanya amapfa n'ikibazo cy'imbuto cyangwa ifumbire mbi.",
+        "cta": "Reba Uturere 30 Twose"
+      },
+      "arbitrage": {
+        "badge": "Kubara Ubwikorezi n'Inyungu",
+        "title": "Imibare y'Ubwikorezi n'Igiciro cya Mazutu",
+        "stat": "Ibiciro bya Mazutu n'Ibirometero",
+        "desc": "Kubara igiciro cya mazutu y'ikamyo n'ibyangirika mu nzira, hagamijwe kumenya niba kujyana umusaruro mu mujyi bifite inyungu.",
+        "cta": "Bara Inyungu z'Ubwikorezi"
+      },
+      "inflation": {
+        "badge": "Kuzigama ku Bahaha",
+        "title": "Igatebo y'Ibiribwa ku Miryango yo mu Rwanda",
+        "stat": "Zikama ku Mafaranga y'Ibiribwa",
+        "desc": "Gufasha ingo kumenya ikiguzi cy'ibiribwa bya buri kwezi no kubaha ibiribwa bihendutse bifite intungamubiri zihwanye.",
+        "cta": "Fungura Igatebo y'Ibiribwa"
+      }
+    }
+  },
+  "skipToContent": "Jump to content [DRAFT: review]",
+  "market": {
+    "title": "Ibiciro ku masoko",
+    "intro": "Ibiciro by'impuzandengo ya buri kwezi ku masoko akurikiranwa. Ibyabonetse n'iteganyagihe ryemejwe bigaragazwa ukwabyo.",
+    "selectCommodity": "Hitamo igihingwa",
+    "latestPrice": "Impuzandengo y'ukwezi riheruka",
+    "trendTitle": "Imigendekere iheruka",
+    "trend": {
+      "rising": "Biriyongera",
+      "stable": "Bihagaze",
+      "easing": "Biragabanuka",
+      "insufficient": "Amakuru ntahagije"
+    },
+    "trendHelp": "Igereranya amezi 3 aheruka n'amezi 3 abanza. Bisaba nibura amezi 6 y'ibiciro byabonetse.",
+    "changeLabel": "Impinduka",
+    "dataStatus": "Imiterere y'amakuru",
+    "source": "Isoko ry'amakuru",
+    "lastUpdated": "Ivugurura riheruka ryemejwe",
+    "unitLabel": "RWF kuri kg",
+    "chartTitle": "Amateka y'ibiciro n'iteganyagihe",
+    "chartCaption": "Umurongo ukomeye: ibyabonetse buri kwezi. Umurongo uciye: iteganyagihe ryemejwe, niryaboneka. Igicucu: urwego rw'iteganyagihe.",
+    "chartAria": "Igishushanyo cy'ibiciro by'impuzandengo ya buri kwezi, ibyabonetse n'iteganyagihe",
+    "legend": {
+      "observed": "Ibyabonetse",
+      "forecast": "Iteganyagihe",
+      "range": "Urwego rw'iteganyagihe",
+      "forecastStart": "Iteganyagihe rutangira"
+    },
+    "tableCaption": "Ibipimo buri kwezi mu buryo bw'imbonerahamwe",
+    "columns": {
+      "month": "Ukwezi",
+      "observed": "Ibyabonetse (RWF/kg)",
+      "forecast": "Iteganyagihe (RWF/kg)",
+      "range": "Urwego (RWF/kg)",
+      "status": "Imiterere"
+    },
+    "noForecast": "Nta teganyagihe ryemejwe rirahari kuri iki gihingwa. Igishushanyo cyerekana ibiciro byabonetse gusa.",
+    "forecastTitle": "Icyerekezo",
+    "horizon": "Igihe kirebwa",
+    "uncertainty": "Ibiciro bihinduka bitewe n'ikirere, umusaruro n'ubwikorezi. Fata icyerekezo nk'igereranyo gifite urwego, si igiciro cyizewe.",
+    "influenceTitle": "Ibishobora kugira ingaruka kuri iki cyerekezo",
+    "influenceNone": "Ibimenyetso by'itangwa n'ikirere by'iki gihingwa ntibirahuzwa, nta ngaruka zigaragazwa.",
+    "noData": "Nta makuru y'ibiciro yemejwe kuri iki gihingwa kurahari.",
+    "insufficient": "Nta mezi ahagije y'ibiciro byabonetse yo gusobanura imigendekere.",
+    "sampleNotice": "Bimwe mu bigaragara kuri iyi paji ni amakuru y'icyitegererezo yo kwerekana. Ntabwo ari ibiciro by'ukuri.",
+    "statusLabels": {
+      "observed": "Ibyabonetse",
+      "estimated": "Ibigereranyo",
+      "sample": "Icyitegererezo",
+      "forecast": "Iteganyagihe",
+      "scenario": "Icyerekezo"
+    },
+    "monthlyAverage": "impuzandengo y'ukwezi",
+    "macroCpi": {
+      "title": "Ibiciro by'Ibiribwa mu Mijyi no mu Byaro",
+      "badge": "Imibare Yemewe ya Leta",
+      "foodInflation": "Izamuka ry'Ibiciro by'Ibiribwa Uyu Mwaka",
+      "ruralCpi": "Ibiciro by'Ibiribwa mu Byaro",
+      "urbanCpi": "Ibiciro by'Ibiribwa mu Mijyi",
+      "divergence": "Itandukaniro ry'Icyaro n'Umujyi",
+      "divergenceExplanation": "Ibiciro by'ibiribwa birahanitse mu cyaro ugereranyije no mu Mujyi wa Kigali. Ikiguzi cy'ingendo n'ubwikorezi, amasoko make, no kubura aho guhunika bituma ibiciro mu cyaro bizamuka cyane, bikagaragaza akamaro k'ubwikorezi buhendutse n'ubuhunikiro bw'uturere.",
+      "sourcePrefix": "Imibare Fatizo ya Leta"
+    },
+    "smartBasket": {
+      "title": "Igatebo y'Ibiribwa n'Uburyo bwo Kuzigama",
+      "intro": "Ibiciro by'ibiribwa byazamutse mu Rwanda. Andika umubare w'abantu bagize umuryango wawe urebe ikiguzi cy'ibiribwa by'ukwezi, kandi uhitemo ibindi biribwa bihendutse bifite intungamubiri zihagije zo kugufasha kuzigama.",
+      "householdSize": "Umubare w'abantu mu rugo",
+      "persons": "abantu",
+      "monthlyTotal": "Ikiguzi cy'Ibiribwa By'ukwezi",
+      "potentialSavings": "Amafaranga Ushobora Kuzigama ku Kwezi",
+      "withSubstitutions": "ugendeye ku guhitamo ibiribwa bihendutse bifite intungamubiri",
+      "itemsTitle": "Ibiribwa By'umuryango By'ukwezi",
+      "substitutionsTitle": "Ibiribwa Bihendutse Bisimbura Ibihenze",
+      "substitutionsSubtitle": "Bona intungamubiri zihwanye neza uzigama amafaranga:",
+      "primaryCommodity": "Igihingwa Gihenze",
+      "recommendedAlternative": "Igihingwa Gihendutse",
+      "savingsPerKg": "Ayo uzigama kuri buri kilo",
+      "monthlySavings": "Ayo uzigama ku Kwezi",
+      "nutritionalNote": "Kugereranya Intungamubiri",
+      "substituteAction": "Hitamo Iki Gihingwa",
+      "applied": "Byahiswemo mu gatebo",
+      "notApplied": "Gisimbuza gihari"
+    }
+  },
+  "national": {
+    "title": "Icyerekezo cy'igihugu ku kubona ibiribwa",
+    "intro": "Ibimenyetso by'ibiciro ku masoko ku turere ku gihingwa cyose, hamwe n'isoko, itariki n'ibimenyetso by'ikimenyetso cyose. Uturere tutagira amakuru yemejwe twerekanwa nk'ibitaboneka aho kugereranywa.",
+    "scopeNote": "Iki ni ikimenyetso cy'ibiciro ku masoko gusa. Ibimenyetso by'ikirere, ubutaka n'umusaruro ntibirahuzwa, ntibigaragara hano.",
+    "selectCommodity": "Hitamo igihingwa",
+    "summary": {
+      "monitored": "Uturere dufite ikimenyetso",
+      "high": "Ikimenyetso gikomeye",
+      "moderate": "Ikimenyetso kiciriritse",
+      "low": "Ikimenyetso gito",
+      "unavailable": "Ntibiboneka",
+      "latestData": "Igihe amakuru aheruka"
+    },
+    "categories": {
+      "low": "Gito",
+      "moderate": "Kiciriritse",
+      "high": "Gikomeye",
+      "unavailable": "Ntibiboneka"
+    },
+    "tableCaption": "Uturere n'ikimenyetso cy'isoko cyayo kiriho",
+    "columns": {
+      "district": "Akarere",
+      "province": "Intara",
+      "signal": "Ikimenyetso cy'isoko",
+      "status": "Imiterere y'amakuru",
+      "detail": "Ibimenyetso"
+    },
+    "viewEvidence": "Reba ibimenyetso",
+    "ruleTitle": "Uko ikimenyetso cy'isoko kibarwa",
+    "ruleText": "Impuzandengo y'ibiciro by'amezi 3 yabonetse aheruka igereranywa n'amezi 3 yabonetse abanza. Izamuka rya 10% cyangwa arenga ni kiciriritse; izamuka rya 20% cyangwa arenga ni gikomeye. Indi mpinduka yose ni gito. Itegeko ryitegereza amezi 9 aheruka. Akarere gakeneye nibura amezi 6 y'ibiciro byabonetse muri iyo myaka, kandi igiciro cyaheruka ntikirenze amezi 4. Amakuru ashaje ntiyigera atanga ikimenyetso.",
+    "evidence": {
+      "title": "Ibimenyetso by'akarere",
+      "select": "Hitamo akarere mu mbonerahamwe kugira ngo urebe ibimenyetso by'ikimenyetso cyako.",
+      "noSignal": "Nta kimenyetso cy'isoko kuri aka karere n'iki gihingwa kirahari. Nta mateka ahagije y'ibiciro yemejwe.",
+      "driver": "Ibitera iki kimenyetso",
+      "riseText": "Impuzandengo y'ibiciro by'amezi 3 aheruka iri hejuru ya {percent} ugereranyije n'amezi 3 abanza.",
+      "fallText": "Impuzandengo y'ibiciro by'amezi 3 aheruka iri munsi ya {percent} ugereranyije n'amezi 3 abanza.",
+      "flatText": "Impuzandengo y'ibiciro by'amezi 3 aheruka ingana na mbere y'amezi 3 abanza.",
+      "months": "Amezi y'ibiciro byemejwe",
+      "latestAverage": "Impuzandengo y'ukwezi riheruka (RWF/kg)",
+      "source": "Isoko ry'amakuru",
+      "lastApproved": "Ivugurura riheruka ryemejwe",
+      "status": "Imiterere y'amakuru",
+      "uncertainty": "Iki kimenyetso gisobanura ibiciro ku masoko gusa. Ntabwo ari iteganyagihe ry'umusaruro cyangwa icyizere cy'ibiciro bizaza.",
+      "responseTitle": "Ibishoboka gukorwa",
+      "responseNote": "Nta gisubizo gitangwa mu buryo bwikora. Igisubizo cyose gisaba kugenzurwa n'inzobere mbere yo gusangizwa."
+    },
+    "audit": {
+      "tabPrice": "Ibimenyetso by'Ibiciro ku Masoko",
+      "tabAudit": "Isuzuma ry'Umusaruro n'Ifumbire mu Turere",
+      "title": "Isuzuma ry'Umusaruro n'Ifumbire mu Turere",
+      "intro": "Ubugenzuzi bugereranya umusaruro w'uturere n'uwari witezwe, hagamijwe gutandukanya niba umusaruro muke watewe n'izuba cyangwa niba byatewe n'imbuto n'ifumbire bitanoze.",
+      "monitoredTotal": "Uturere Dukurikiranwa",
+      "leakageCount": "Uturere Tufite Umusaruro uri Hasi y'Uwari Witezwe",
+      "climateStressCount": "Uturere Twahuye n'Izuba / Amapfa",
+      "highPerfCount": "Uturere Twatanze Umusaruro Mwinshi",
+      "nominalCount": "Uturere Turi ku Ntego",
+      "totalFiscalExposure": "Agaciro k'Inkunga Y'ubuhinzi Ikurikiranwa",
+      "columns": {
+        "district": "Akarere",
+        "crop": "Igihingwa",
+        "season": "Igihembwe",
+        "observedYield": "Umusaruro Wabonetse (kg/ha)",
+        "expectedYield": "Umusaruro Wari Witezwe (kg/ha)",
+        "zScore": "Amanota y'Umusaruro",
+        "inputs": "Imbuto n'Ifumbire Byakoreshejwe",
+        "diagnostic": "Icyavuye mu Isuzuma",
+        "fiscalExposure": "Agaciro k'Inkunga"
+      },
+      "classifications": {
+        "LEAKAGE_OR_SEED_QUALITY_RISK": "Bikeneye Isuzuma (Imbuto / Ifumbire)",
+        "CLIMATIC_OR_WATER_STRESS": "Izuba / Kubura kw'Imvura",
+        "HIGH_PERFORMING_INTENSIFICATION": "Umusaruro Mwinshi Cyane",
+        "NOMINAL_EXPECTED_RANGE": "Biri ku Ntego / Bisanzwe"
+      },
+      "evidence": {
+        "title": "Uko Umusaruro Wari Witezwe Wabarirwaga",
+        "climateCushion": "Uruhare rw'Imvura n'Amazi",
+        "inputResponse": "Uruhare rw'Imbuto n'Ifumbire",
+        "rainfallAnomaly": "Imvura Ugereranyije n'Ibisanzwe",
+        "irrigationCoverage": "Ubutaka Buhirwa",
+        "certifiedSeed": "Imbuto Z'indobanure Zakoreshejwe",
+        "fertilizerUsage": "Ifumbire Yakoreshejwe",
+        "plantedArea": "Ubuso Bwahinzwe",
+        "totalProduction": "Umusaruro Wose Hamwe",
+        "rationaleTitle": "Impamvu y'Iri Suzuma"
+      }
+    },
+    "districtMatrix": {
+      "title": "Imiterere y'Umusaruro mu Turere 30 Twose",
+      "subtitle": "Reba uko umusaruro wifashe muri buri karere ko mu Rwanda. Hitamo kureba ahakeneye ubufasha, ahabuze imvura, cyangwa ahatanzwe umusaruro uhebuje.",
+      "allDistricts": "Uturere Twose",
+      "leakageFilter": "Akeneye Isuzuma",
+      "climateFilter": "Ahabuze Imvura",
+      "intensificationFilter": "Umusaruro Mwinshi",
+      "nominalFilter": "Kuri Gahunda",
+      "viewEvidence": "Reba Birambuye",
+      "residualScore": "Amanota y'Umusaruro",
+      "yieldLabel": "Umusaruro Wabonetse",
+      "inputsLabel": "Imbuto n'Ifumbire",
+      "leakageBadge": "Igenzure",
+      "climateBadge": "Izuba",
+      "highBadge": "Mwinshi",
+      "nominalBadge": "Kuri Gahunda",
+      "dispatchAuditBtn": "Reba Imiterere y'Akarere n'Ibikorwa →"
+    },
+    "decisions": {
+      "title": "Ibikorwa By'ibanze Bikenewe Uyu Munsi",
+      "subtitle": "Ibyemezo n'ingamba zikenewe mu turere:",
+      "urgentAuditBadge": "Genzura Imbuto n'Ifumbire",
+      "urgentAuditContext": "Abahinzi bakoresheje imbuto n'ifumbire byinshi, ariko umusaruro waguye hasi cyane. Bikeneye kugenzura ubuziranenge bw'imbuto no kureba uko ifumbire yagejejwe ku baturage.",
+      "auditCta": "Ohereza Ubutumwa bwo Gusura Imirima →",
+      "benchmarkBadge": "Akarere k'Intangarugero mu Musaruro",
+      "benchmarkContext": "Umusaruro mwiza cyane waturutse ku guhuza imbuto z'indobanure, ifumbire nziza, n'amaterasi arwanya isuri. Urugero rwiza ku turere duturanye.",
+      "benchmarkCta": "Reba Umuhingire w'Intangarugero →",
+      "climateBadge": "Ikirere cy'Izuba n'Imvura Nke",
+      "climateContext": "Umusaruro wagabanutse bitewe n'imvura nkeya. Icyambere ni ugushyira imbaraga mu kuhira no gutwikira ubutaka.",
+      "climateCta": "Reba Inama zo Kuhira →"
+    }
+  },
+  "advisory": {
+    "title": "Inama ku bahinzi n'abakozi b'ubuhinzi",
+    "intro": "Imiterere y'isoko ry'aho uri, icyerekezo cy'ibiciro mu gihugu n'inama rusange ku karere n'igihingwa kimwe. Amakuru y'ikirere, ubutaka n'amatungo ntiyarahuzwa, aya ntabwo agereranywa.",
+    "form": {
+      "district": "Akarere",
+      "commodity": "Igihingwa cyangwa itungo",
+      "submit": "Reba inama"
+    },
+    "conditions": {
+      "title": "Imiterere y'ubu",
+      "market": "Ikimenyetso cy'ibiciro ku isoko",
+      "priceAverage": "Impuzandengo y'amezi 3 aheruka (RWF/kg)",
+      "weather": {
+        "title": "Ikirere",
+        "body": "Amakuru y'imvura n'ubushyuhe ntiarahuzwa kuri aka karere."
+      },
+      "soil": {
+        "title": "Ubutaka",
+        "body": "Nta bipimo by'ubutaka byemejwe biraboneka kuri aka karere."
+      },
+      "livestock": {
+        "title": "Ibiryo, amazi n'amata",
+        "body": "Nta makuru y'amatungo yemejwe araboneka kuri aka karere."
+      }
+    },
+    "agronomic": {
+      "title": "Incamake y'Umusaruro n'Umuhingire mu Karere",
+      "seasonLabel": "Igihembwe cy'Ihinga",
+      "cultivatedArea": "Ubuso Bwahinzwe",
+      "production": "Umusaruro Wose Hamwe",
+      "yieldObserved": "Umusaruro Wabonetse",
+      "yieldExpected": "Umusaruro Wari Witezwe",
+      "yieldGap": "Itandukaniro ry'Umusaruro",
+      "seedAdoption": "Abahinzi Bakoresheje Imbuto Z'indobanure",
+      "fertAdoption": "Abahinzi Bakoresheje Ifumbire",
+      "irrigation": "Ibishanga n'Ubutaka Buhirwa",
+      "antiErosion": "Amaterasi Arwanya Isuri",
+      "leakageTitle": "Iburira ku Buziranenge bw'Imbuto n'Ifumbire",
+      "leakageAdvice": "Umusaruro wabaye mucye cyane mu gihe ifumbire n'imbuto byaguzwe ari byinshi. Buri gihe jya ureba ikimenyetso cyemewe cya RAB ku mifuka y'imbuto kandi wirinde kugura ifumbire n'imbuto bifunguye mu buryo butizewe.",
+      "climateTitle": "Inama mu Gihe cy'Izuba n'Imvura Nke",
+      "climateAdvice": "Ibihingwa muri aka gace byagizweho ingaruka n'imvura nke. Aho bishoboka, vomerera imyaka ukoresheje imigezi yo mu bishanga, shyira ibyatsi byumye ku butaka kugira ngo amazi adakama, kandi uhinge ibihingwa bidasarurirwa icyarimwe.",
+      "intensificationTitle": "Umusaruro Mwiza muri Aka Karere",
+      "intensificationAdvice": "Abahinzi bageze ku musaruro mwinshi kubera gukoresha neza imbuto z'indobanure, ifumbire ikwiye, n'amaterasi. Wibuke kwanika neza umusaruro mbere yo kuwuhunika kugira ngo utabora.",
+      "nominalTitle": "Imiterere y'Ubuhinzi Iringaniye",
+      "nominalAdvice": "Umusaruro n'ikoreshwa ry'ifumbire biri ku kigero cyiza cyari cyitezwe. Komeza amabwiriza meza y'umuhingire kandi ugurishe binyuze muri koperative kugira ngo ubone igiciro cyiza.",
+      "noData": "Nta makuru y'ibarura ry'ubuhinzi yanditswe kuri iki gihingwa muri aka karere.",
+      "viewStatisticalProof": "Reba Amakuru y'Ibarura",
+      "dispatchAuditAction": "Saba Isuzuma mu Mirima →",
+      "reviewIrrigationAction": "Reba Inama zo Kuhira →",
+      "benchmarkAction": "Reba Urugero Rwiza rw'Umuhingire →",
+      "samplingWeightsNote": "Bishingiye ku ibarura ry'ubuhinzi rya NISR rikorwa mu gihugu hose"
+    },
+    "outlook": {
+      "title": "Icyerekezo cy'ibiciro mu gihugu",
+      "note": "Iki cyerekezo kireba impuzandengo y'igihugu ku masoko akurikiranwa, si akarere kawe.",
+      "none": "Nta cyerekezo cyemejwe kiraboneka kuri iki gihingwa.",
+      "range": "Urwego rutegerejwe"
+    },
+    "guidance": {
+      "title": "Inama rusange",
+      "note": "Ni amakuru rusange gusa. Ugomba kugisha inama inzobere mbere yo gukurikiza inama iyo ari yo yose.",
+      "high": "Ibiciro by'iki gihingwa byazamutse cyane vuba aha mu karere kawe. Gereranya ibiciro by'abaguzi barenze umwe mbere yo kugurisha cyangwa kugura byinshi.",
+      "moderate": "Ibiciro by'iki gihingwa byazamutse vuba aha mu karere kawe. Reba ibiciro by'aho uri buri gihe kandi utegure kugurisha ukoresheje amakuru agezweho.",
+      "low": "Ibiciro by'iki gihingwa bihagaze cyangwa biragabanuka mu karere kawe. Nta nteguza y'ibiciro ihari ubu.",
+      "unavailable": "Nta mateka ahagije y'ibiciro yemejwe kuri aka karere kugeza ubu. Baza ibiro by'abakozi b'ubuhinzi by'aho uri amakuru agezweho.",
+      "livestock": "Amakuru y'ikirere, ibiryo n'amata y'inka z'amata ntiarahuzwa. Ku biryo, amazi n'ubuzima bw'amatungo, baza umuganga w'amatungo cyangwa umukozi w'ubuhinzi wo hafi."
+    },
+    "sms": {
+      "title": "Icyerekezo cya SMS mu Cyongereza no mu Kinyarwanda",
+      "englishLabel": "Icyongereza",
+      "kinyarwandaLabel": "Ikinyarwanda",
+      "withSignal": "[Early Warning] {district} | {crop} | Market signal: {signal} | {status}, {period}, updated {updated}. Preview only, not sent.",
+      "withSignalRw": "[Kuburira] {district} | {crop} | Ikimenyetso cy'isoko: {signal} | {status}, {period}, byavuguruwe {updated}. Icyerekezo gusa, ntiboherejwe.",
+      "noSignal": "[Early Warning] {district} | {crop} | No market signal yet. Preview only, not sent.",
+      "noSignalRw": "[Kuburira] {district} | {crop} | Nta kimenyetso cy'isoko kirahari. Icyerekezo gusa, ntiboherejwe.",
+      "nothingSent": "Iki ni icyerekezo gusa. Nta butumwa bujya kuri telefoni iyo ari yo yose.",
+      "characters": "Inyuguti",
+      "longWarning": "Birenze SMS imwe, bishobora kohererezwa ebyiri."
+    },
+    "smsStatus": {
+      "sample": "amakuru y'icyitegererezo",
+      "observed": "amakuru yemejwe"
+    },
+    "disclaimer": "Nta dosiye z'ifumbire cyangwa imiti y'amatungo zitangwa hano. Ku byo, baza umuhinzi cyangwa umuganga w'amatungo wemewe.",
+    "audio": {
+      "listen": "Umva inama mu majwi",
+      "playing": "Irimo gusoma inama mu majwi...",
+      "paused": "Amajwi yahagaze gato",
+      "pause": "Hagarika gato",
+      "resume": "Komeza",
+      "stop": "Hagarika burundu",
+      "replay": "Ongera wumve",
+      "tapToPlay": "Kanda hano wumve inama isomwa mu Kinyarwanda",
+      "notSupported": "Gusoma mu majwi ntibikora kuri iyi telefone cyangwa mudasobwa. Soma inyandiko iri hepfo."
+    },
+    "action": {
+      "title": "Icyemezo cyo Gufata ku Isoko",
+      "subtitle": "Inama yoroshye yo kumenya niba wagurisha, wabika cyangwa wagura",
+      "sell": "GURISHA UBU",
+      "sellSub": "Ibiciro biri hejuru, ni igihe cyiza cyo kugurisha",
+      "sellAdvice": "Ibiciro by'iki gihingwa mu karere kawe byazamutse cyane (+{percent}). Ni umwanya mwiza wo gusarura no kugurisha kugira ngo winjize inyungu nziza.",
+      "store": "BIKA UMUSARURO",
+      "storeSub": "Ibiciro byaragabanutse, irinde guhomba",
+      "storeAdvice": "Ibiciro byaragabanutse ku masoko ({percent}). Niba ufite ubwanikiro bwiza kandi bwumye, bika umusaruro witegereze ko ibiciro byongera kuzamuka.",
+      "monitor": "TEGEREZA CYANGWA GURISHA GAKONDO",
+      "monitorSub": "Ibiciro biratuje ku masoko",
+      "monitorAdvice": "Ibiciro biratuje ku masoko ubu (impinduka ntoya ya {percent}). Komeza kugurisha no kugura bisanzwe bitagutwaye umwanya munini.",
+      "consult": "GISHA INAMA AGRONOME",
+      "consultSub": "Amakuru y'isoko aracyegeranywa",
+      "consultAdvice": "Nta makuru ahagije y'isoko yemejwe kuri iki gihingwa muri aka karere kugeza ubu. Gisha inama agronome w'umurenge cyangwa koperative yanyu.",
+      "currentPrice": "Igiciro cy'Isoko Ubu",
+      "previousPrice": "Impuzandengo y'amezi 3 abanza",
+      "priceChange": "Impinduka ku giciro",
+      "rwfUnit": "RWF kuri kg"
+    },
+    "cropCards": {
+      "title": "Hitamo Igihingwa mu Mafoto",
+      "subtitle": "Kanda ku ifoto y'igihingwa wifuza kureba ibiciro n'inama mu majwi",
+      "selected": "Bihiswemo",
+      "categoryAll": "Ibyose",
+      "categoryCrops": "Ibihingwa",
+      "categoryLivestock": "Amatungo"
+    },
+    "dairy": {
+      "title": "Ubworozi bw'Inka z'Amata n'Ubwatsi",
+      "dsiTitle": "Imiterere y'Ubwatsi n'Amazi",
+      "dsiDescription": "Gusuzuma niba hari ubwatsi n'amazi bihagije ku nka z'amata mu turere tw'aborozi mu Rwanda.",
+      "rainfallAnomaly": "Imvura ku Rwuri Ugereranyije n'Ibisanzwe",
+      "drySpellDays": "Iminsi y'Izuba Yikurikiranya",
+      "severities": {
+        "low": "Umutekano Uhagije - Ubwatsi n'amazi birahagije",
+        "moderate": "Ibibazo Byoroheje - Amazi n'ubwatsi bitangiye kugabanuka",
+        "high": "Ibibazo Bikomeye - Ubwatsi buke cyane, tegura ubwatsi bwumye",
+        "critical": "Ubutabazi bw'Ubushishi - Ubwatsi bwashize, sangira amazi"
+      },
+      "actionGuidance": "Inama ku borozi: Bika ubwatsi bwa Napier hakiri kare, koresha ibisigazwa by'imyaka byongerewemo ifumbire ya yureya, kandi utwikire ibibumbiro by'amazi."
+    }
+  },
+  "retailer": {
+    "title": "Umuyoboro w'Ubucuruzi n'Ubwikorezi bw'Ibiribwa",
+    "intro": "Gereranya ibiciro ku murima n'ibiciro ku masoko yo mu mijyi, ubare amavuta y'ikamyo n'ibyangirika mu nzira.",
+    "readOnly": "Ni icyerekezo cyo gusoma gusa. Nta makuru y'abahinzi, abacuruzi cyangwa abavugana yo kugaragaza.",
+    "selectCommodity": "Hitamo icyo ushaka kureba",
+    "decisions": {
+      "title": "Ibyemezo Bikenewe Uyu Munsi",
+      "subtitle": "Kugena uburyo bwoherezwa umusaruro w'amakoperatiba n'ububiko bwo mu byaro:",
+      "topSpreadBadge": "Inzira Ifite Inyungu Nini",
+      "topSpreadContext": "Inyungu isigaye irenze 40 Rwf/kg nyuma yo gukuramo lisansi n'ibyangirika. Kohereza umusaruro w'umurengera ako kanya ku masoko y'umujyi.",
+      "shipCta": "Bwira Koperative Kohereza →",
+      "vulnerableFuelBadge": "Inzira Yugarijwe na Mazutu",
+      "vulnerableFuelContext": "Inzira ndende ifite inyungu yoroshye. Yahita igwa mu gihombo niba nkunganire ya lisansi ivuyeho cyangwa imodoka idapakiye yuzuye.",
+      "stressCta": "Suzuma Ibirombe by'Icyangombwa →",
+      "localAbsorptionBadge": "Isoko Ryo Hafi Ryuzuye",
+      "localAbsorptionContext": "Kohereza mu mujyi bitanga igihombo kubera ikiguzi cy'ubwikorezi. Guhunika umusaruro mu bigega by'amakoperatiba mu karere.",
+      "storageCta": "Tanga Gahunda yo Guhunika →"
+    },
+    "outlook": {
+      "title": "Icyerekezo cy'ibiciro mu gihugu",
+      "note": "Impuzandengo y'igihugu ku masoko akurikiranwa, ni ukugira ngo bifashe gusobanukirwa gusa.",
+      "none": "Nta cyerekezo cyemejwe kiraboneka kuri iki gihingwa kugeza ubu."
+    },
+    "tableTitle": "Ugereranya ry'uturere",
+    "comparable": "Amakuru y'ibiciro araboneka ku turere {count} muri {total}.",
+    "columns": {
+      "district": "Akarere",
+      "price": "Impuzandengo y'ibiciro vuba aha",
+      "priceSignal": "Ikimenyetso cy'ibiciro",
+      "supply": "Uko itangwa rihagaze",
+      "sourcing": "Aho ibicuruzwa byakurwa"
+    },
+    "supplyUnavailable": "Ntiboneka: nta makuru y'umusaruro yemejwe aratangwa",
+    "sourcingUnavailable": "Ntiboneka: bisaba amakuru y'umusaruro n'ubwikorezi",
+    "howToRead": {
+      "title": "Uko iyi mbonerahamwe isomwa",
+      "body": "Inkingi z'ibiciro ziva ku biciro byemejwe by'uturere. Inkingi z'itangwa n'aho ibicuruzwa bikurwa zikomeza kugaragara nk'ibitaboneka kugeza igihe amakuru y'umusaruro yemejwe ahujwe. Ntabwo hagaragazwa ibirenze cyangwa ibibura, kuko amakuru atarabishyigikira. Inzira ntizitegurwa, kuko amakuru y'ubwikorezi ntayo."
+    },
+    "arbitrage": {
+      "tabSimple": "Incamake y'Abacuruzi",
+      "tabCorridors": "Inzira z'Ubucuruzi n'Ubwikorezi",
+      "title": "Ibarura ry'Inyungu n'Igiciro cya Mazutu ku Masoko",
+      "intro": "Ribarura inyungu isigara hagati y'igiciro cyo ku murima n'icyo ku isoko rya Kigali n'andi masoko, rikuramo amavuta ya mazutu n'ibyangirika mu nzira.",
+      "sliderTitle": "Kugenzura Impinduka z'Igiciro cya Mazutu",
+      "sliderHelp": "Hindura igiciro cya litiro ya mazutu urebe uko inyungu y'ubucuruzi ihinduka:",
+      "regulatedBtn": "Igiciro Gifashijwe na Leta (Rwf 2,927 / L)",
+      "unsubsidizedBtn": "Igiciro Kitafashijwe (Rwf 3,600 / L)",
+      "currentFuelPrice": "Igiciro cya Mazutu Kigeragezwa",
+      "perLitre": "RWF / Litiro",
+      "subsidyImpact": "Ingaruka ya Nkunganire ya Mazutu",
+      "truckSize": "Ubushobozi bw'Imodoka yo Gupakira",
+      "truckSizes": {
+        "pickup": "Toni 1.5 (Pickup)",
+        "canter": "Toni 3.5 (Canter)",
+        "fuso": "Toni 5.0 (Fuso)",
+        "heavy": "Toni 10.0 (Iremereye)"
+      },
+      "alertShipBtn": "Bwira Koperative Kohereza →",
+      "holdBtn": "Tanga Gahunda yo Guhunika →",
+      "reviewBtn": "Kugenzura no Kohereza →",
+      "columns": {
+        "corridor": "Inzira (Aho Byerekejwe)",
+        "distance": "Intera n'Ibyangirika",
+        "farmgatePrice": "Igiciro ku Murima",
+        "retailPrice": "Igiciro mu Mujyi",
+        "freightCost": "Ikiguzi cy'Ubwikorezi / kg",
+        "netMargin": "Inyungu Isigaye / kg",
+        "compression": "Igabanuka ry'Inyungu",
+        "breakeven": "Mazutu yo Kudahomba",
+        "action": "Icyemezo Cyiza"
+      },
+      "recommendations": {
+        "DISPATCH_SURPLUS": "OHEREZA KU MASOKO",
+        "MODERATE_MARGIN": "INYUNGU ICIRIRITSE",
+        "HOLD_LOCAL": "GURISHA HAFI / BIKA"
+      },
+      "howToRead": {
+        "title": "Uko Ubwikorezi n'Inyungu Bibarwa",
+        "body": "Kuri buri nzira, ubwikorezi bwa kamyo y'amatoni 5 bubarirwa (2 * intera * 0.32 L/km * Igiciro cya Mazutu) / 5,000 kg + amafaranga yo gupakira. Inyungu ikuramo ibyangirika mu nzira (urugero: 8% kuri buri km 100 ku nyanya, 1.5% ku birayi, 0.5% ku binyampeke). Inzira itanga hejuru ya 40 Rwf/kg ikwiye koherezwaho umusaruro; iri munsi ya 10 Rwf/kg ikwiye kugurishwa hafi."
+      }
+    }
+  },
+  "alerts": {
+    "title": "Ibiburira n'icyigana",
+    "intro": "Ibiburira bibwira abahinzi, abakozi b'ubuhinzi n'abasesenguzi igihe hari ikintu gikeneye kwitabwaho. Ubu buri nteguza iri hano ni icyigana cyo kwerekana. Nta butumwa bujya kuri telefoni iyo ari yo yose.",
+    "directive": {
+      "titleAudit": "Iteka ryo Gusura Imirima",
+      "titleShip": "Iteka ryo Gutwara Umusaruro",
+      "titleHold": "Iteka ryo Guhunika mu Karere",
+      "targetDistrict": "Akarere Karebwa",
+      "targetCorridor": "Inzira y'Ubucuruzi",
+      "commodity": "Igihingwa",
+      "zScore": "Amanota y'Umusaruro",
+      "fiscalExposure": "Agaciro k'Inkunga",
+      "netMargin": "Inyungu y'Ubwikorezi",
+      "draftSmsEn": "Ubutumwa bw'Icyongereza (SMS)",
+      "draftSmsRw": "Ubutumwa bw'Ikinyarwanda (SMS)",
+      "dispatchBtn": "Ohereza Ubutumwa ku Bakozi b'Umurima",
+      "dispatchedBadge": "UBUTUMWA BWOHEREJWE KU BAKOZI B'UMURIMA",
+      "copyBtn": "Koporora Ubutumwa (SMS)",
+      "copied": "Byakoporowe!",
+      "clearBtn": "Funga Iri Teka"
+    },
+    "severity": {
+      "info": "Amakuru",
+      "watch": "Kwitegereza",
+      "warning": "Umuburo",
+      "critical": "Ikomeye cyane"
+    },
+    "status": {
+      "draft": "Umushinga",
+      "reviewed": "Yasuzumwe",
+      "simulated": "Icyigana",
+      "published": "Yasohowe"
+    },
+    "stepStatus": {
+      "done": "Byarangiye",
+      "skipped": "Byasimbutswe",
+      "failed": "Byanze"
+    },
+    "simulatedBadge": "Icyigana",
+    "listTitle": "Ibiburira",
+    "empty": "Nta biburira birahari. Kora icyigana kiri hepfo urebe uko biburira bikorwa.",
+    "validity": "Bifite agaciro",
+    "sourceLabel": "Isoko ry'amakuru",
+    "created": "Byakozwe",
+    "simulation": {
+      "title": "Gerageza ivugurura ry'amakuru",
+      "description": "Yongeraho ikosora ry'icyitegererezo ry'igiciro ku karere kamwe no ku gihingwa kimwe, hanyuma akerekana buri ntambwe: kwakira ivugurura, kugenzura, icyerekezo cy'isoko n'igishushanyo cy'iburira.",
+      "guarantee": "Impapuro rusange ntizihinduka. Ivugurura rigumana gutegereza kugeza risuzumwe rigemewe, kandi nta butumwa bwoherezwa.",
+      "button": "Gerageza ivugurura ry'amakuru",
+      "latestTitle": "Icyigana giheruka",
+      "none": "Nta cyigana kirakorwa kugeza ubu.",
+      "notSent": "Iburira ry'icyigana. Ntiribwoherejwe.",
+      "steps": {
+        "received": "Ivugurura ryakiriwe",
+        "validated": "Ryemejwe mu kugenzurwa",
+        "previewed": "Icyerekezo cy'isoko cyasubiwemo",
+        "drafted": "Igishushanyo cy'iburira cyakozwe"
+      },
+      "details": {
+        "validatedPending": "Ryatsinze ibipimo. Ritegereje gusuzumwa, ntirikoreshwa mu makuru rusange.",
+        "validationFailed": "Ryanze ibipimo. Ivugurura ryanzwe kandi nta kindi cyakozwe.",
+        "previewed": "Ikimenyetso cy'isoko cyahinduka kiva kuri {before} kijya kuri {after} (impinduka {beforePct} ikajya {afterPct}). Ni icyerekezo gusa.",
+        "drafted": "Iburira {id} ryakozwe nk'icyigana. Ntirishobora gusohorwa."
+      },
+      "alertTemplate": "[ICYIGANA] {district} · {crop}: ikimenyetso cy'isoko cyahinduka kiva kuri {before} kijya kuri {after} niba ivugurura rimaze kwemezwa. Ntiriboherejwe.",
+      "explanationTemplate": "Icyigana {id}: ikosora ry'igiciro ryigana ku kwezi kwa vuba. Ibimenyetso rusange bigumaho kugeza ivugurura risuzumwe rigemewe.",
+      "sourceNote": "Amakuru y'icyigana. Ntabwo ari imibare ya leta. Ntiriboherejwe."
+    }
+  },
+  "methodology": {
+    "title": "Amakuru y'ibanze n'uburyo bwakoreshejwe",
+    "intro": "Aho buri mubare kuri uru rubuga uturuka, uko ukorwa, ukuri kwawo mu mateka, n'ibyo utakubwira kugeza ubu.",
+    "sourcesTitle": "Urutonde rw'amasoko y'amakuru",
+    "sourcesNote": "Buri soko ryanditswe hamwe n'imiterere yaryo yo kwemezwa. Isoko rikoreshwa mu makuru rusange gusa iyo ryemejwe.",
+    "lineageTitle": "Amateka y'amakuru yinjiye",
+    "lineageNote": "Buri kuvana amakuru ni dosiye cyangwa urubuga rwanditswe, rugenzurwa kandi rusuzumwa mbere y'uko agaciro kayo kagaragara. Checksum igaragaza dosiye nyayo yakoreshejwe.",
+    "noImports": "Nta makuru yinjiye yanditswe kugeza ubu. Shyiramo amakuru y'icyitegererezo urebe amateka.",
+    "passed": "byatsinze",
+    "failed": "byanze",
+    "importStatus": {
+      "received": "Yakiriwe",
+      "validated": "Yagenzuwe, ategereje gusuzumwa",
+      "rejected": "Yanzwe",
+      "approved": "Yemejwe"
+    },
+    "methodsTitle": "Uko AgrIntel Igera ku Bisubizo",
+    "mathSection": {
+      "title": "Imibare n'Ibyagendeweho Bifasha Abaturage",
+      "subtitle": "Buri mubarire yose ikurikiza imibare ifatika kandi yoroheje ishingiye ku musaruro w'abahinzi, ibiciro by'amasoko ya buri munsi, na mazutu ya kamyo:"
+    },
+    "forecast": {
+      "title": "Icyerekezo cy'ibiciro",
+      "method": "Uburyo",
+      "output": "Ibisohoka",
+      "outputValue": "Impuzandengo y'igihugu y'ukwezi n'urwego rwayo",
+      "horizon": "Igihe kirebwa",
+      "horizonValue": "Kugeza ku mezi 6 imbere, uhereye ku kwezi kheruka kwemejwe",
+      "interval": "Urwego",
+      "intervalValue": "Hafi 80%, ruvuye ku makosa y'uburyo ku mateka",
+      "note": "Ni icyerekezo fatizo, si icyizere cy'ubuhanga bwo guhanura. Ukuri gutangazwa gusa biva ku bigeragezo bifatika byakozwe hepfo."
+    },
+    "risk": {
+      "title": "Ikimenyetso cy'isoko ry'akarere",
+      "rule": "Itegeko",
+      "minimum": "Amateka ntarengwa",
+      "months": "amezi y'ibiciro byemejwe",
+      "moderate": "Kiciriritse iyo izamuka ari",
+      "high": "Gikomeye iyo izamuka ari",
+      "note": "Gikubiyemo ibiciro ku masoko gusa. Ibimenyetso by'ikirere, ubutaka n'umusaruro ntibirahuzwa."
+    },
+    "auditMethod": {
+      "title": "Igenzura ry'Umusaruro w'Ibihingwa n'Ifumbire mu Turere",
+      "model": "Uburyo bwo Kubara Umusaruro Witezwe: Imvura, Imbuto nziza n'Ifumbire",
+      "formula": "Umusaruro Witezwe = Impuzandengo y'akarere x Imvura n'Ubushyuhe x Imbuto n'Ifumbire byakoreshejwe",
+      "residual": "Itandukaniro ry'Umusaruro = Umusaruro wabonetse gukuramo Umusaruro wari witezwe",
+      "diagnosticTitle": "Icyo Iri Tandukaniro Risobanura",
+      "leakage": "Ikibazo cy'Imbuto cyangwa Ifumbire: Umusaruro wari munsi cyane y'uwitezwe kandi imvura yaraguye n'ifumbire yarabonetse (kugenzura imbuto z'amiganano cyangwa gutinda gutanga inyongeramusaruro)",
+      "climate": "Ikibazo cy'Izuba n'Imvura nke: Umusaruro wabaye mucye bitewe n'amapfa cyangwa imvura nke cyane",
+      "intensification": "Umusaruro Ushimishije: Akarere kabonye umusaruro munini cyane binyuze mu gukoresha imbuto nziza, amaterasi no kubungabunga amazi",
+      "sampling": "Byakusanyijwe mu mabarura yemewe y'ubuhinzi akorwa mu turere twose tw'u Rwanda."
+    },
+    "arbitrageMethod": {
+      "title": "Imbata yo Kubara Inyungu y'Amakamyo Atwara Ibiribwa mu Mijyi",
+      "formula": "Inyungu Isigaye kuri Kilo = Igiciro cy'isoko mu mujyi (gukuramo ibyononekaye mu nzira) gukuramo Igiciro ku muhinzi gukuramo (Lisansi ya kamyo + Umusoro w'isoko + Ibyo gupakurura)",
+      "burnRate": "Imodoka itwara toni 5 z'ibiribwa ikoresha litiro 32 za mazutu kuri buri kilometero 100",
+      "shrinkage": "Ibyangirika mu nzira: Inyanya zangirikaho 8.0%, Ibirayi 1.5%, Ibigori byumye 0.5%",
+      "fuelPolicy": "Igiciro cya mazutu mu Rwanda: 2,927 Rwf/litiro. Hatariho ubufasha bwa Leta kuri mazutu yari kuba 3,600 Rwf/litiro (kuzigama 673 Rwf kuri litiro).",
+      "breakeven": "Igiciro ntarengwa cya mazutu: Igiciro kinini umushoferi yakwishyura atarahomba ku rugendo."
+    },
+    "accuracyTitle": "Ukuri ku mateka",
+    "accuracyNote": "Amakosa aturuka ku gusubiramo uburyo ku mezi yashize, hakoreshejwe gusa amakuru yari ahari icyo gihe. Umubare muto ni mwiza. Nta gipimo cy'ukuri cyerekanwa keretse hari igeragezo ryagitanze.",
+    "noEvaluations": "Nta bisubizo by'igeragezo biraboneka. Kora umuyoboro w'iteganyagihe kugira ngo ubitange.",
+    "unitsTitle": "Ibipimo, ibice n'urwego",
+    "limitsTitle": "Ibyo Kuzirikana n'Iby'Ingenzi",
+    "limits": [
+      "Amakuru y'ukuri akomoka mu mabarura yemewe y'ubuhinzi mu Rwanda, amakuru y'amasoko yo mu turere, inyemezabwishyu z'abahinzi, n'ibipimo by'ikirere bya Meteo Rwanda.",
+      "Icyerekezo ni impuzandengo y'igihugu ku masoko akurikiranwa. Ibiciro byo mu gitururwa cyawe bishobora gutandukana gato.",
+      "Igenzura ry'umusaruro n'ingendo z'amakamyo bitanga inama z'ingirakamaro; buri gihe banza ugishe inama agoronome cyangwa koperative mbere yo gushora amafaranga menshi.",
+      "Iteganyagihe ry'ibiciro ryerekana uko byagenze mu myaka yashize; ntabwo ryemeza 100% ibizaba mu minsi iri imbere.",
+      "Inama z'ubuhinzi zitangwa nk'ubufasha rusange; gana agoronome cyangwa muganga w'amatungo wemewe ku bijyanye n'ingano nyayo y'imiti n'ifumbire.",
+      "Buri kintu cyose kiboneka mu buryo bworoshye mu Kinyarwanda cyumvikana neza no mu Cyongereza gisobanutse."
+    ],
+    "columns": {
+      "source": "Isoko",
+      "owner": "Nyir'amakuru",
+      "status": "Imiterere",
+      "coverage": "Aho bireba",
+      "frequency": "Igihe bivugururwa",
+      "licence": "Uburenganzira n'ikoreshwa",
+      "import": "Kuvana amakuru",
+      "rows": "Imirongo",
+      "checks": "Ibipimo",
+      "retrieved": "Byakiriwe",
+      "approved": "Byemejwe",
+      "checksum": "Checksum (SHA-256)",
+      "crop": "Igihingwa",
+      "method": "Uburyo",
+      "holdout": "Igihe cy'igeragezo",
+      "metric": "Ipimo",
+      "unit": "Igice",
+      "level": "Urwego",
+      "description": "Ibisobanuro"
+    },
+    "access": {
+      "verified": "Yemejwe",
+      "awaiting_access": "Ategereje uburenganzira",
+      "sample": "Icyitegererezo (ntabwo ari icya leta)",
+      "unavailable": "Ntiboneka"
+    }
+  },
+  "nav": {
+    "overview": "Ahabanza",
+    "market": "Ibiciro ku masoko",
+    "national": "Icyerekezo cy'igihugu",
+    "farmer": "Inama ku bahinzi",
+    "retailer": "Itangwa ry'abacuruzi",
+    "alerts": "Ibiburira",
+    "methodology": "Amasoko n'uburyo"
+  }
+}

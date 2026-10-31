@@ -1,0 +1,754 @@
+{
+  "siteName": "AgrIntel Rwanda",
+  "siteSubtitle": "Rwanda Farm, Harvest & Market Guide",
+  "tagline": "Earlier, clearer information for food-security decisions",
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "rw": "Ikinyarwanda"
+  },
+  "status": {
+    "bannerTitle": "Data status",
+    "verifiedCount": "verified sources connected",
+    "sampleCount": "sample sources",
+    "empiricalOnly": "100% empirical official data",
+    "noneVerified": "No verified data source is connected yet. Every value in this demo is sample data and is labeled as such.",
+    "verifiedLabel": "Verified",
+    "sampleLabel": "Sample data",
+    "awaitingLabel": "Awaiting access",
+    "unavailableLabel": "Unavailable"
+  },
+  "welcome": {
+    "title": "Clear Food, Harvest & Market Information for Rwanda",
+    "intro": "AgrIntel connects weather, soil, harvest records, and daily market prices across Rwanda. We help farmers, traders, families, and agricultural leaders make timely, smart decisions.",
+    "disclaimer": "Outlooks are estimates that support decisions. They are not guarantees or policy advice.",
+    "latestUpdate": "Latest update",
+    "latestUpdateNone": "No data update yet",
+    "welcomeHub": {
+      "badge": "Welcome to AgrIntel Rwanda",
+      "title": "Clear Food, Harvest & Market Information for Everyone",
+      "intro": "AgrIntel brings together trusted harvest records, daily market prices, and rainfall updates to make food security simple, transparent, and actionable.",
+      "whatWeDo": {
+        "title": "What We Do",
+        "desc": "We gather official farm harvest records, daily town market prices, and weather updates across all 30 districts so nobody has to guess."
+      },
+      "whatValueWeBring": {
+        "title": "What Value We Bring",
+        "desc": "We protect farmers from selling at a loss, help truck drivers find profitable markets, guide families to affordable healthy food, and help leaders spot harvest shortages early."
+      },
+      "whatToDo": {
+        "title": "What To Do",
+        "subtitle": "Choose your role below to find the exact guide and tools built for you:"
+      },
+      "personas": {
+        "farmer": {
+          "role": "Farmer or Cooperative",
+          "action": "Check when to sell or store your harvest, listen to audio advice in Kinyarwanda, and see local market prices.",
+          "cta": "Get Farmer Advice"
+        },
+        "retailer": {
+          "role": "Trader, Driver, or Buyer",
+          "action": "Calculate truck fuel costs, avoid food spoilage, and find which towns offer the highest profit for your harvest.",
+          "cta": "Calculate Transport Profits"
+        },
+        "leader": {
+          "role": "Leader or Extension Worker",
+          "action": "Track harvests across all 30 districts, spot dry spells early, and verify that subsidized seeds and fertilizers reach farmers.",
+          "cta": "Inspect 30 Districts"
+        },
+        "citizen": {
+          "role": "Family Shopper or Citizen",
+          "action": "Track everyday food prices in your province and use our Smart Food Basket to get healthy alternatives and save money.",
+          "cta": "Open Smart Food Basket"
+        }
+      }
+    },
+    "ontology": {
+      "eyebrow": "How AgrIntel Works",
+      "title": "6 Simple Steps from Field to Market",
+      "subtitle": "How we turn daily farming facts and market prices into helpful guidance for every Rwandan",
+      "stages": [
+        {
+          "step": "01",
+          "name": "Gather Trusted Facts",
+          "subtext": "Official harvest surveys, market prices, and rainfall records"
+        },
+        {
+          "step": "02",
+          "name": "Connect the Pieces",
+          "subtext": "Linking farming districts, fertilizer supplies, and transport roads"
+        },
+        {
+          "step": "03",
+          "name": "Compare Weather & Harvests",
+          "subtext": "Checking if good weather brought expected crops or if supplies had problems"
+        },
+        {
+          "step": "04",
+          "name": "Calculate Fair Costs",
+          "subtext": "Testing fuel prices, truck fees, and food spoilage along the way"
+        },
+        {
+          "step": "05",
+          "name": "Share Practical Advice",
+          "subtext": "Guidance for farmers on when to sell and alerts for leaders to inspect"
+        },
+        {
+          "step": "06",
+          "name": "Reach Every Farmer",
+          "subtext": "Simple phone SMS messages and spoken audio in Kinyarwanda"
+        }
+      ]
+    },
+    "cards": {
+      "national": {
+        "title": "National outlook",
+        "body": "District risk signals for food security, with sources and dates."
+      },
+      "market": {
+        "title": "Market prices",
+        "body": "Price trends for tomatoes and Irish potatoes, with forecast periods marked."
+      },
+      "retailer": {
+        "title": "Retailer supply",
+        "body": "Compare production areas and market destinations for planning."
+      },
+      "farmer": {
+        "title": "Farmer advisory",
+        "body": "Local conditions and general guidance, with expert review where needed."
+      }
+    },
+    "farmerHero": {
+      "title": "Direct Farmer Advisory & Actions",
+      "subtitle": "Designed for rural farmers: visual photo cards, audio guidance in Kinyarwanda, and clear Sell/Store badges.",
+      "cta": "Open Farmer Advisory",
+      "quickCrops": "Select your crop:"
+    },
+    "callouts": {
+      "radar": {
+        "badge": "District Harvest Check",
+        "title": "Checking Harvests Across All 30 Districts",
+        "stat": "30 Districts · Rwf 75B Farm Support",
+        "desc": "Checks every district to see if crops grew as well as expected, helping us know whether low yields came from drought or from poor seeds and fertilizers.",
+        "cta": "Inspect 30 Districts"
+      },
+      "arbitrage": {
+        "badge": "Transport & Fuel Calculator",
+        "title": "Truck Fuel & Road Transport Calculator",
+        "stat": "Real Fuel Costs & Road Distances",
+        "desc": "Calculates truck diesel costs and food spoilage across Rwanda's roads, showing whether it is profitable to transport crops to city markets.",
+        "cta": "Calculate Transport Profits"
+      },
+      "inflation": {
+        "badge": "Family Food Savings",
+        "title": "Smart Food Basket for Rwandan Families",
+        "stat": "Save Money on Monthly Food",
+        "desc": "Shows family food costs and suggests healthy, lower-cost food alternatives so families eat well while spending less.",
+        "cta": "Open Smart Food Basket"
+      }
+    }
+  },
+  "skipToContent": "Skip to content",
+  "market": {
+    "title": "Market prices",
+    "intro": "Monthly average prices across monitored markets. Observed history and any validated forecast are shown separately.",
+    "selectCommodity": "Choose a crop",
+    "latestPrice": "Latest monthly average",
+    "trendTitle": "Recent trend",
+    "trend": {
+      "rising": "Rising",
+      "stable": "Stable",
+      "easing": "Easing",
+      "insufficient": "Insufficient data"
+    },
+    "trendHelp": "Compares the last 3 months with the 3 months before. Needs at least 6 months of observed prices.",
+    "changeLabel": "Change",
+    "dataStatus": "Data status",
+    "source": "Source",
+    "lastUpdated": "Last approved update",
+    "unitLabel": "RWF per kg",
+    "chartTitle": "Price history and outlook",
+    "chartCaption": "Solid line: observed monthly average. Dashed line: validated forecast, if available. Shaded band: forecast range.",
+    "chartAria": "Line chart of monthly average prices with observed history and forecast",
+    "legend": {
+      "observed": "Observed",
+      "forecast": "Forecast",
+      "range": "Forecast range",
+      "forecastStart": "Forecast starts"
+    },
+    "tableCaption": "Monthly values in table form",
+    "columns": {
+      "month": "Month",
+      "observed": "Observed (RWF/kg)",
+      "forecast": "Forecast (RWF/kg)",
+      "range": "Range (RWF/kg)",
+      "status": "Status"
+    },
+    "noForecast": "No validated forecast is available for this crop yet. The chart shows observed prices only.",
+    "forecastTitle": "Outlook",
+    "horizon": "Period covered",
+    "uncertainty": "Prices change with weather, harvests and transport. Treat any outlook as an estimate with a range, not a guaranteed price.",
+    "influenceTitle": "What may influence this outlook",
+    "influenceNone": "Linked supply and weather evidence for this crop is not yet connected, so no influences are shown.",
+    "noData": "No approved price data is available for this crop yet.",
+    "insufficient": "Not enough months of observed prices to describe a trend.",
+    "sampleNotice": "Some values on this page are sample data for demonstration. They are not official prices.",
+    "statusLabels": {
+      "observed": "Observed",
+      "estimated": "Estimated",
+      "sample": "Sample data",
+      "forecast": "Forecast",
+      "scenario": "Scenario"
+    },
+    "monthlyAverage": "monthly average",
+    "macroCpi": {
+      "title": "Food Prices in Cities vs Villages",
+      "badge": "Official Statistics",
+      "foodInflation": "Food Price Change this Year",
+      "ruralCpi": "Village Food Prices Index",
+      "urbanCpi": "City Food Prices Index",
+      "divergence": "Difference Between Village and City",
+      "divergenceExplanation": "Food prices are currently higher in rural villages than in Kigali. Transport costs, fewer markets, and storage shortages cause rural prices to rise faster, showing why local storage and fair transport are so important.",
+      "sourcePrefix": "Official Baseline"
+    },
+    "smartBasket": {
+      "title": "Smart Food Basket & Family Savings",
+      "intro": "Food prices have risen across Rwanda. Enter your family size to see your monthly staple food cost, and discover healthy, lower-cost foods to save money while keeping your family well fed.",
+      "householdSize": "Family Size",
+      "persons": "people",
+      "monthlyTotal": "Estimated Monthly Food Cost",
+      "potentialSavings": "Money You Could Save Every Month",
+      "withSubstitutions": "by choosing recommended healthy food alternatives",
+      "itemsTitle": "Monthly Family Food List",
+      "substitutionsTitle": "Smart Food Swaps to Save Money",
+      "substitutionsSubtitle": "Get the exact same calories, protein, and nutrients while spending less money:",
+      "primaryCommodity": "Higher-Priced Food",
+      "recommendedAlternative": "Affordable Alternative",
+      "savingsPerKg": "Savings per kg",
+      "monthlySavings": "Monthly Savings",
+      "nutritionalNote": "Nutrition Comparison",
+      "substituteAction": "Choose this Swap",
+      "applied": "Selected in your basket",
+      "notApplied": "Available swap"
+    }
+  },
+  "national": {
+    "title": "National food-security outlook",
+    "intro": "District market-price signals for each crop, with the source, date and evidence behind every signal. Districts without approved data show as unavailable rather than being guessed.",
+    "scopeNote": "This is a market-price signal only. Weather, soil and production signals are not yet connected, so they are not shown.",
+    "selectCommodity": "Choose a crop",
+    "summary": {
+      "monitored": "Districts with a signal",
+      "high": "High signal",
+      "moderate": "Moderate signal",
+      "low": "Low signal",
+      "unavailable": "Unavailable",
+      "latestData": "Latest data period"
+    },
+    "categories": {
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "unavailable": "Unavailable"
+    },
+    "tableCaption": "Districts and their current market signal",
+    "columns": {
+      "district": "District",
+      "province": "Province",
+      "signal": "Market signal",
+      "status": "Data status",
+      "detail": "Evidence"
+    },
+    "viewEvidence": "View evidence",
+    "ruleTitle": "How the market signal is calculated",
+    "ruleText": "The average price of the last 3 observed months is compared with the 3 observed months before. A rise of 10% or more is moderate; a rise of 20% or more is high. Any other change is low. The rule looks at the last 9 calendar months. A district needs at least 6 observed months in that window, and its latest price must be no more than 4 months old. Older data never produces a signal.",
+    "evidence": {
+      "title": "District evidence",
+      "select": "Choose a district in the table to see the evidence behind its signal.",
+      "noSignal": "No market signal for this district and crop yet. There is not enough approved price history.",
+      "driver": "What drives this signal",
+      "riseText": "The average price over the last 3 months is {percent} above the 3 months before.",
+      "fallText": "The average price over the last 3 months is {percent} below the 3 months before.",
+      "flatText": "The average price over the last 3 months is about the same as the 3 months before.",
+      "months": "Months of approved prices",
+      "latestAverage": "Latest monthly average (RWF/kg)",
+      "source": "Source",
+      "lastApproved": "Last approved update",
+      "status": "Data status",
+      "uncertainty": "This signal describes market prices only. It is not a forecast of production or a guarantee of future prices.",
+      "responseTitle": "Possible responses",
+      "responseNote": "No response is suggested automatically. Any response needs review by an expert before it is shared."
+    },
+    "audit": {
+      "tabPrice": "Market Price Signals",
+      "tabAudit": "District Harvest & Fertilizer Check",
+      "title": "District Harvest & Fertilizer Performance Check",
+      "intro": "Compares actual district harvests against expected harvests, helping identify whether low yields are due to bad weather or issues with seed and fertilizer quality.",
+      "monitoredTotal": "Districts Monitored",
+      "leakageCount": "Districts with Harvest Shortfalls",
+      "climateStressCount": "Districts Facing Drought / Dry Spells",
+      "highPerfCount": "Districts with Strong Harvests",
+      "nominalCount": "Districts on Target",
+      "totalFiscalExposure": "Total Farm Support Monitored",
+      "columns": {
+        "district": "District",
+        "crop": "Crop",
+        "season": "Season",
+        "observedYield": "Actual Harvest (kg/ha)",
+        "expectedYield": "Expected Target (kg/ha)",
+        "zScore": "Performance Rating",
+        "inputs": "Seeds & Fertilizer Used",
+        "diagnostic": "Assessment Summary",
+        "fiscalExposure": "Support Value"
+      },
+      "classifications": {
+        "LEAKAGE_OR_SEED_QUALITY_RISK": "Needs Inspection (Seed / Fertilizer Quality)",
+        "CLIMATIC_OR_WATER_STRESS": "Drought / Lack of Rain",
+        "HIGH_PERFORMING_INTENSIFICATION": "Excellent Harvest",
+        "NOMINAL_EXPECTED_RANGE": "Normal / On Target"
+      },
+      "evidence": {
+        "title": "How the Harvest Rating Was Calculated",
+        "climateCushion": "Rainfall & Water Factor",
+        "inputResponse": "Seed & Fertilizer Response",
+        "rainfallAnomaly": "Rainfall vs Usual",
+        "irrigationCoverage": "Irrigated Land",
+        "certifiedSeed": "Quality Seeds Used",
+        "fertilizerUsage": "Fertilizer Applied",
+        "plantedArea": "Land Planted",
+        "totalProduction": "Total Harvested",
+        "rationaleTitle": "Why This Rating Was Given"
+      }
+    },
+    "districtMatrix": {
+      "title": "All 30 Districts Harvest Status",
+      "subtitle": "See harvest performance across every district in Rwanda. Filter by areas needing support, drought zones, or top-performing areas.",
+      "allDistricts": "All Districts",
+      "leakageFilter": "Needs Inspection",
+      "climateFilter": "Drought / Dry Spells",
+      "intensificationFilter": "Top Harvests",
+      "nominalFilter": "On Target",
+      "viewEvidence": "Inspect",
+      "residualScore": "Performance Rating",
+      "yieldLabel": "Actual Harvest",
+      "inputsLabel": "Seeds & Fertilizer",
+      "leakageBadge": "Needs Check",
+      "climateBadge": "Dry Spell",
+      "highBadge": "Top Harvest",
+      "nominalBadge": "On Target",
+      "dispatchAuditBtn": "View District Details & Field Actions →"
+    },
+    "decisions": {
+      "title": "Priority Actions Today",
+      "subtitle": "Clear actions needing attention across districts:",
+      "urgentAuditBadge": "Inspect Seeds & Fertilizer",
+      "urgentAuditContext": "Farmers used plenty of seeds and fertilizer, but the harvest was much lower than expected. Inspect seed bags and fertilizer delivery.",
+      "auditCta": "Send Field Inspection Alert →",
+      "benchmarkBadge": "Top Performing District",
+      "benchmarkContext": "Excellent harvest thanks to quality seeds, good fertilizer, and hillside terraces. Great model for neighboring districts.",
+      "benchmarkCta": "See Best Farming Practices →",
+      "climateBadge": "Dry Weather & Water Shortage",
+      "climateContext": "Harvest was low because of dry weather and lack of rain. Priority should be valley irrigation and mulching.",
+      "climateCta": "Review Irrigation Advice →"
+    }
+  },
+  "advisory": {
+    "title": "Farmer and extension advisory",
+    "intro": "Local market conditions, the national price outlook and general guidance for one district and crop. Weather, soil and livestock data are not connected yet, so those show as unavailable rather than being estimated.",
+    "form": {
+      "district": "District",
+      "commodity": "Crop or animal",
+      "submit": "Show advisory"
+    },
+    "conditions": {
+      "title": "Current conditions",
+      "market": "Market price signal",
+      "priceAverage": "Recent 3-month average (RWF/kg)",
+      "weather": {
+        "title": "Weather",
+        "body": "Rainfall and temperature data are not yet connected for this district."
+      },
+      "soil": {
+        "title": "Soil",
+        "body": "No approved soil measurements exist for this district yet."
+      },
+      "livestock": {
+        "title": "Feed, water and milk",
+        "body": "No approved livestock data exists for this district yet."
+      }
+    },
+    "agronomic": {
+      "title": "District Harvest & Farming Summary",
+      "seasonLabel": "Farming Season",
+      "cultivatedArea": "Planted Land",
+      "production": "Total Harvest",
+      "yieldObserved": "Actual Harvest",
+      "yieldExpected": "Expected Target",
+      "yieldGap": "Harvest Difference",
+      "seedAdoption": "Farmers Using Improved Seeds",
+      "fertAdoption": "Farmers Using Fertilizer",
+      "irrigation": "Marshland & Irrigated Land",
+      "antiErosion": "Terraced Land (Erosion Control)",
+      "leakageTitle": "Seed & Fertilizer Quality Notice",
+      "leakageAdvice": "The harvest in this district was lower than expected even though many farmers bought seeds and fertilizers. To protect your crop, always check for official Rwanda Agriculture Board (RAB) tags on seed bags and avoid buying from unsealed packets.",
+      "climateTitle": "Dry Weather & Water Advice",
+      "climateAdvice": "Crops in this area suffered from low rainfall. Where possible, water your fields using valley and marshland canals, spread dry grass or mulch over soil to keep moisture in, and plant crops with different harvest times.",
+      "intensificationTitle": "Great Harvest in this District",
+      "intensificationAdvice": "Farmers here achieved high harvests by combining good seeds, correct fertilizer amounts, and hillside terraces. Remember to dry your harvest well before storage so it does not spoil.",
+      "nominalTitle": "Normal Farming Conditions",
+      "nominalAdvice": "Harvests and fertilizer use in this district are normal and on target. Continue standard good farming practices and sell through your cooperative for the best price.",
+      "noData": "Official harvest baseline is not recorded for this specific crop and district combination.",
+      "viewStatisticalProof": "View Survey Details",
+      "dispatchAuditAction": "Request Field Verification →",
+      "reviewIrrigationAction": "See Water & Irrigation Advice →",
+      "benchmarkAction": "See Farming Best Practices →",
+      "samplingWeightsNote": "Based on official agricultural survey covering all districts in Rwanda"
+    },
+    "outlook": {
+      "title": "National price outlook",
+      "note": "This outlook is for the national average across monitored markets, not for your district.",
+      "none": "No validated outlook is available for this crop yet.",
+      "range": "Expected range"
+    },
+    "guidance": {
+      "title": "General guidance",
+      "note": "General information only. Expert review is needed before acting on any advice.",
+      "high": "Market prices for this crop have risen sharply in your district recently. Compare prices from more than one buyer before selling or buying in bulk.",
+      "moderate": "Market prices for this crop have risen recently in your district. Check local prices regularly and plan sales with current information.",
+      "low": "Market prices for this crop are stable or falling in your district. There is no market price alert right now.",
+      "unavailable": "There is not enough approved price history for your district yet. Ask your local extension office for current information.",
+      "livestock": "Weather, feed and milk information for dairy cattle is not yet connected. For feed, water and animal health, ask your local veterinary or extension officer."
+    },
+    "sms": {
+      "title": "SMS preview in English and Kinyarwanda",
+      "englishLabel": "English",
+      "kinyarwandaLabel": "Ikinyarwanda",
+      "withSignal": "[Early Warning] {district} | {crop} | Market signal: {signal} | {status}, {period}, updated {updated}. Preview only, not sent.",
+      "withSignalRw": "[Kuburira] {district} | {crop} | Ikimenyetso cy'isoko: {signal} | {status}, {period}, byavuguruwe {updated}. Icyerekezo gusa, ntiboherejwe.",
+      "noSignal": "[Early Warning] {district} | {crop} | No market signal yet. Preview only, not sent.",
+      "noSignalRw": "[Kuburira] {district} | {crop} | Nta kimenyetso cy'isoko kirahari. Icyerekezo gusa, ntiboherejwe.",
+      "nothingSent": "This is a preview only. Nothing is sent to any phone.",
+      "characters": "Characters",
+      "longWarning": "Longer than one SMS, so it may be sent as two."
+    },
+    "smsStatus": {
+      "sample": "sample data",
+      "observed": "approved data"
+    },
+    "disclaimer": "No fertilizer doses or veterinary treatments are given here. For those, consult a licensed agronomist or veterinarian.",
+    "audio": {
+      "listen": "Listen to audio advisory",
+      "playing": "Playing advisory audio...",
+      "paused": "Audio paused",
+      "pause": "Pause",
+      "resume": "Resume",
+      "stop": "Stop",
+      "replay": "Replay",
+      "tapToPlay": "Tap to listen in spoken audio (automated voice)",
+      "notSupported": "Audio playback is not supported on this browser. Please read the guidance below."
+    },
+    "action": {
+      "title": "Action Recommendation",
+      "subtitle": "Clear market decision based on current price changes",
+      "sell": "SELL NOW",
+      "sellSub": "Favorable high price for sellers",
+      "sellAdvice": "Market prices in your district are rising strongly (+{percent}). This is an advantageous window for farmers to sell and lock in higher returns.",
+      "store": "STORE & WAIT",
+      "storeSub": "Market dip: avoid selling at a loss",
+      "storeAdvice": "Market prices are falling ({percent}). If you have proper dry and ventilated storage, store your crop and wait for prices to stabilize.",
+      "monitor": "REGULAR SALE / MONITOR",
+      "monitorSub": "Prices are stable",
+      "monitorAdvice": "Prices are currently stable (slight change of {percent}). Continue standard harvesting and regular marketing without rushing.",
+      "consult": "CONSULT AGRONOMIST",
+      "consultSub": "Price data is pending verification",
+      "consultAdvice": "Sufficient approved market price history is not yet recorded for this commodity in your district. Contact your local sector agronomist for guidance.",
+      "currentPrice": "Current Average Price",
+      "previousPrice": "Previous 3-Month Average",
+      "priceChange": "Price Change",
+      "rwfUnit": "RWF / kg"
+    },
+    "cropCards": {
+      "title": "Select Crop by Photo",
+      "subtitle": "Tap any crop below to view localized price trends and audio advice",
+      "selected": "Selected",
+      "categoryAll": "All Crops",
+      "categoryCrops": "Food Crops",
+      "categoryLivestock": "Livestock"
+    },
+    "dairy": {
+      "title": "Dairy Cattle & Pasture Care",
+      "dsiTitle": "Pasture Grass & Water Status",
+      "dsiDescription": "Checks pasture grass and water availability for dairy cows across Rwanda's milk-producing districts.",
+      "rainfallAnomaly": "Pasture Rain Compared to Normal",
+      "drySpellDays": "Days Without Rain",
+      "severities": {
+        "low": "Healthy - Good pasture and water",
+        "moderate": "Moderate - Water getting low, prepare extra feed",
+        "high": "Dry - Pastures drying up, feed silage",
+        "critical": "Very Dry - Urgent: pasture exhausted, share water"
+      },
+      "actionGuidance": "Cattle care: Save Napier grass silage, feed crop stalks, and keep water troughs shaded so water does not evaporate in the heat."
+    }
+  },
+  "retailer": {
+    "title": "Trader & Transport Profit Guide",
+    "intro": "Compare farm prices in rural districts with market prices in Kigali and other cities, taking truck fuel and natural food spoilage into account.",
+    "readOnly": "Read-only view. It shows no private farmer, retailer or contact information.",
+    "selectCommodity": "Choose a commodity",
+    "decisions": {
+      "title": "Best Actions for Traders Today",
+      "subtitle": "Clear recommendations on where to transport food or when to store it locally:",
+      "topSpreadBadge": "High Profit Route",
+      "topSpreadContext": "Profit after paying for truck fuel and spoilage is over 40 Rwf/kg. Good route to transport surplus crops to city markets.",
+      "shipCta": "Transport Crop Now →",
+      "vulnerableFuelBadge": "Caution: High Fuel Cost",
+      "vulnerableFuelContext": "Long distance with tight profit margins. If fuel costs rise, this route may make a loss.",
+      "stressCta": "Test Fuel Costs →",
+      "localAbsorptionBadge": "Better to Sell Locally",
+      "localAbsorptionContext": "Transport costs to the city are too high right now. It is more profitable to sell locally or keep in cooperative storage.",
+      "storageCta": "Store Harvest Locally →"
+    },
+    "outlook": {
+      "title": "National price outlook",
+      "note": "National average across monitored markets, for context only.",
+      "none": "No validated outlook is available for this crop yet."
+    },
+    "tableTitle": "District comparison",
+    "comparable": "Price evidence is available for {count} of {total} districts.",
+    "columns": {
+      "district": "District",
+      "price": "Recent average price",
+      "priceSignal": "Price signal",
+      "supply": "Supply situation",
+      "sourcing": "Indicative sourcing"
+    },
+    "supplyUnavailable": "Unavailable: no approved production data yet",
+    "sourcingUnavailable": "Unavailable: needs production and logistics data",
+    "howToRead": {
+      "title": "How to read this table",
+      "body": "Price columns come from approved district prices. Supply and sourcing columns stay marked unavailable until approved production data is connected. Surplus or shortage labels are not shown, because the data does not yet support them. Routes are not optimised, because logistics data is not available."
+    },
+    "arbitrage": {
+      "tabSimple": "District Summary",
+      "tabCorridors": "Transport Routes & Profits",
+      "title": "Truck Transport Cost & Profit Calculator",
+      "intro": "Calculates profit when buying from farmers and selling at town markets, subtracting fuel expenses and food spoilage along the road.",
+      "sliderTitle": "Test Different Fuel Prices",
+      "sliderHelp": "See how your transport profits change if pump prices rise or fall:",
+      "regulatedBtn": "Official Station Price (Rwf 2,927 / L)",
+      "unsubsidizedBtn": "Without Fuel Support (Rwf 3,600 / L)",
+      "currentFuelPrice": "Diesel Pump Price",
+      "perLitre": "RWF / Litre",
+      "subsidyImpact": "Government Fuel Support",
+      "truckSize": "Truck Size",
+      "truckSizes": {
+        "pickup": "1.5T (Pickup)",
+        "canter": "3.5T (Canter)",
+        "fuso": "5.0T (Fuso)",
+        "heavy": "10.0T (Heavy)"
+      },
+      "alertShipBtn": "Send Transport Notice →",
+      "holdBtn": "Send Storage Notice →",
+      "reviewBtn": "Check & Transport →",
+      "columns": {
+        "corridor": "Route (From → To)",
+        "distance": "Distance & Spoilage",
+        "farmgatePrice": "Farmgate Buying Price",
+        "retailPrice": "City Market Price",
+        "freightCost": "Transport Cost / kg",
+        "netMargin": "Estimated Profit / kg",
+        "compression": "Profit Impact",
+        "breakeven": "Highest Fuel Price You Can Afford",
+        "action": "Recommended Action"
+      },
+      "recommendations": {
+        "DISPATCH_SURPLUS": "PROFITABLE TO SHIP",
+        "MODERATE_MARGIN": "FAIR PROFIT",
+        "HOLD_LOCAL": "SELL LOCALLY / STORE"
+      },
+      "howToRead": {
+        "title": "How Transport Profits Are Calculated",
+        "body": "We calculate round-trip truck fuel costs based on distance and truck size, plus handling. We also deduct natural food spoilage (for example, fragile tomatoes lose about 8% over 100km, while potatoes lose only 1.5%). When profit is over 40 Rwf per kg, shipping to the city is worthwhile. If profit is under 10 Rwf per kg, it is better to sell locally or store your crop."
+      }
+    }
+  },
+  "alerts": {
+    "title": "Alerts and simulator",
+    "intro": "Alerts tell farmers, extension workers and analysts when something needs attention. Right now every alert here is a simulation for demonstration. Nothing is sent to any phone.",
+    "directive": {
+      "titleAudit": "District Field Verification Notice",
+      "titleShip": "Cooperative Transport Notice",
+      "titleHold": "Store Harvest Locally Notice",
+      "targetDistrict": "Target District",
+      "targetCorridor": "Target Route",
+      "commodity": "Crop",
+      "zScore": "Performance Level",
+      "fiscalExposure": "Support Value",
+      "netMargin": "Estimated Transport Profit",
+      "draftSmsEn": "SMS Message in English",
+      "draftSmsRw": "SMS Message in Ikinyarwanda",
+      "dispatchBtn": "Send Message to Field Workers",
+      "dispatchedBadge": "MESSAGE SENT TO FIELD WORKERS",
+      "copyBtn": "Copy Message Text",
+      "copied": "Copied to Clipboard!",
+      "clearBtn": "Close Notice"
+    },
+    "severity": {
+      "info": "Information",
+      "watch": "Watch",
+      "warning": "Warning",
+      "critical": "Critical"
+    },
+    "status": {
+      "draft": "Draft",
+      "reviewed": "Reviewed",
+      "simulated": "Simulated",
+      "published": "Published"
+    },
+    "stepStatus": {
+      "done": "Done",
+      "skipped": "Skipped",
+      "failed": "Failed"
+    },
+    "simulatedBadge": "Simulated",
+    "listTitle": "Alerts",
+    "empty": "No alerts yet. Run the simulator below to see how an alert is produced.",
+    "validity": "Valid",
+    "sourceLabel": "Source",
+    "created": "Created",
+    "simulation": {
+      "title": "Simulate a data update",
+      "description": "Adds a clearly labelled sample price correction for one district and crop, then shows each step: update received, validation, signal preview and draft alert.",
+      "guarantee": "Public pages do not change. The update stays pending until it is reviewed and approved, and no message is sent.",
+      "button": "Simulate data update",
+      "latestTitle": "Latest simulation",
+      "none": "No simulation has been run yet.",
+      "notSent": "Simulated alert. Not sent to anyone.",
+      "steps": {
+        "received": "Update received",
+        "validated": "Validated",
+        "previewed": "Signal preview refreshed",
+        "drafted": "Draft alert created"
+      },
+      "details": {
+        "validatedPending": "Passed checks. Waiting for review, so it is not used in public outputs.",
+        "validationFailed": "Failed checks. The update was rejected and nothing else was created.",
+        "previewed": "Market signal would change from {before} to {after} (change {beforePct} to {afterPct}). Shown as a preview only.",
+        "drafted": "Alert {id} created as a simulation. It cannot be published."
+      },
+      "alertTemplate": "[SIMULATED] {district} · {crop}: market signal would change from {before} to {after} if the update is approved. Not sent to anyone.",
+      "explanationTemplate": "Simulation {id}: a simulated price correction on the latest month. Public signals stay unchanged until the update is reviewed and approved.",
+      "sourceNote": "Simulated data. Not official statistics. Not sent."
+    }
+  },
+  "methodology": {
+    "title": "Data sources and methodology",
+    "intro": "Where every number on this platform comes from, how it is produced, how accurate it has been, and what it cannot yet tell you.",
+    "sourcesTitle": "Source register",
+    "sourcesNote": "Each source is listed with its verification status. A source is only used in public outputs once it is verified or approved for demonstration.",
+    "lineageTitle": "Import history",
+    "lineageNote": "Each import is a file or feed that was registered, checked and reviewed before its values could appear. Checksums identify the exact file used.",
+    "noImports": "No imports have been recorded yet. Load the sample data to see the import history.",
+    "passed": "passed",
+    "failed": "failed",
+    "importStatus": {
+      "received": "Received",
+      "validated": "Validated, awaiting review",
+      "rejected": "Rejected",
+      "approved": "Approved"
+    },
+    "methodsTitle": "How AgrIntel Calculates Answers",
+    "mathSection": {
+      "title": "Practical Calculations Behind the Guide",
+      "subtitle": "Every calculation follows clear, transparent arithmetic based on real farm harvest records, daily market prices, and truck fuel costs:"
+    },
+    "forecast": {
+      "title": "Price outlook",
+      "method": "Method",
+      "output": "Output",
+      "outputValue": "Monthly national average price with a range",
+      "horizon": "Horizon",
+      "horizonValue": "Up to 6 months ahead, only from the last approved month",
+      "interval": "Range",
+      "intervalValue": "About 80%, from the method's own errors on past data",
+      "note": "A baseline, not a claim of predictive skill. Accuracy is reported only from real backtests below."
+    },
+    "risk": {
+      "title": "District market signal",
+      "rule": "Rule",
+      "minimum": "Minimum history",
+      "months": "months of approved prices",
+      "moderate": "Moderate when the rise is",
+      "high": "High when the rise is",
+      "note": "Covers market prices only. Weather, soil and production signals are not yet connected."
+    },
+    "auditMethod": {
+      "title": "Official Harvest vs. Seed & Weather Expectation Check",
+      "model": "Expected Harvest Formula: Combining Good Seeds, Fertilizer & Rain",
+      "formula": "Expected Harvest = Normal Yield x Weather Factor (Rain & Temperature) x Seed & Fertilizer Factor",
+      "residual": "Harvest Difference = Actual Harvest minus Expected Target",
+      "diagnosticTitle": "What the Difference Tells Us",
+      "leakage": "Seed / Fertilizer Quality Notice: Low harvest despite good rains and heavy fertilizer use (check for counterfeit seeds or delayed deliveries)",
+      "climate": "Drought or Rain Deficit: Low harvest caused by low rainfall or long dry spells",
+      "intensification": "Great Harvest: District produced much more than expected thanks to good seeds, terraces, and water management",
+      "sampling": "Calculated using official national farming survey records covering every district in Rwanda."
+    },
+    "arbitrageMethod": {
+      "title": "Truck Fuel & Food Transport Profit Calculator",
+      "formula": "Take-Home Profit per Kilo = City Market Price (minus Fresh Food Spoilage) minus Farm Price minus (Truck Fuel Cost + Road Taxes + Handling)",
+      "burnRate": "Standard medium cargo truck: Uses 32 liters of diesel for every 100 km carrying up to 5,000 kg of food",
+      "shrinkage": "Food that spoils or bruises on bumpy roads: Tomatoes lose 8.0%, Irish potatoes lose 1.5%, Dry maize loses 0.5%",
+      "fuelPolicy": "Rwanda regulated diesel price: 2,927 Rwf/liter. Without government fuel support, diesel would cost 3,600 Rwf/liter, saving truckers 673 Rwf on every liter.",
+      "breakeven": "Highest Fuel Cost Before Loss: The maximum diesel price a trucker can pay before the trip stops making money."
+    },
+    "accuracyTitle": "Accuracy from past data",
+    "accuracyNote": "Errors come from re-running the method on past months, using only data available at each point. Lower is better. No accuracy figure is shown unless a backtest produced it.",
+    "noEvaluations": "No backtest results are recorded yet. Run the forecast pipeline to produce them.",
+    "unitsTitle": "Metrics, units and levels",
+    "limitsTitle": "Important Notes & Reminders",
+    "limits": [
+      "Data comes from official national farming surveys, local market price checkers, farm receipts, and Rwanda Meteo weather stations.",
+      "The price outlook is a national average across markets; local prices in your village may differ.",
+      "Harvest checks and truck routes provide helpful guidelines; always confirm with your local agronomist or market cooperative before making big investments.",
+      "Price forecasts reflect typical patterns from past years and are not guarantees of future prices.",
+      "General farming tips are provided for guidance; consult a licensed agronomist or veterinary doctor for specific chemical doses or treatments.",
+      "Everything is fully available in both easy-to-read English and natural Kinyarwanda."
+    ],
+    "columns": {
+      "source": "Source",
+      "owner": "Owner",
+      "status": "Status",
+      "coverage": "Coverage",
+      "frequency": "Update frequency",
+      "licence": "Licence and use",
+      "import": "Import",
+      "rows": "Rows",
+      "checks": "Checks",
+      "retrieved": "Retrieved",
+      "approved": "Approved",
+      "checksum": "Checksum (SHA-256)",
+      "crop": "Crop",
+      "method": "Method",
+      "holdout": "Test period",
+      "metric": "Metric",
+      "unit": "Unit",
+      "level": "Level",
+      "description": "Description"
+    },
+    "access": {
+      "verified": "Verified",
+      "awaiting_access": "Awaiting access",
+      "sample": "Sample data (not official)",
+      "unavailable": "Unavailable"
+    }
+  },
+  "nav": {
+    "overview": "Overview",
+    "market": "Market prices",
+    "national": "National outlook",
+    "farmer": "Farmer advice",
+    "retailer": "Retailer supply",
+    "alerts": "Alerts",
+    "methodology": "Sources & methods"
+  }
+}

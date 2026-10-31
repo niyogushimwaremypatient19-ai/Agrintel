@@ -1,0 +1,19 @@
+period,period_start,period_end,national_cpi,urban_cpi,rural_cpi,food_inflation_yoy,rural_urban_divergence,source
+2026-09,2026-09-01,2026-09-30,254.8,223.7,273.2,17.2,49.5,NISR Consumer Price Index (CPI) September 2026 Release
+2026-08,2026-08-01,2026-08-31,250.6,221.0,268.4,15.7,47.4,NISR Consumer Price Index (CPI) August 2026 Release
+2026-07,2026-07-01,2026-07-31,246.3,218.4,263.1,14.8,44.7,NISR Consumer Price Index (CPI) July 2026 Release
+2026-06,2026-06-01,2026-06-30,242.1,216.0,257.9,13.9,41.9,NISR Consumer Price Index (CPI) June 2026 Release
+2026-05,2026-05-01,2026-05-31,239.5,214.5,254.5,12.6,40.0,NISR Consumer Price Index (CPI) May 2026 Release
+2026-04,2026-04-01,2026-04-30,237.2,213.2,251.6,11.8,38.4,NISR Consumer Price Index (CPI) April 2026 Release
+2026-03,2026-03-01,2026-03-31,234.8,212.0,248.5,10.9,36.5,NISR Consumer Price Index (CPI) March 2026 Release
+2026-02,2026-02-01,2026-02-28,232.0,210.8,244.7,9.8,33.9,NISR Consumer Price Index (CPI) February 2026 Release
+2026-01,2026-01-01,2026-01-31,229.4,209.5,241.4,8.9,31.9,NISR Consumer Price Index (CPI) January 2026 Release
+2025-12,2025-12-01,2025-12-31,226.5,208.1,237.6,7.9,29.5,NISR Consumer Price Index (CPI) December 2025 Release
+2025-11,2025-11-01,2025-11-30,224.2,206.8,234.6,7.2,27.8,NISR Consumer Price Index (CPI) November 2025 Release
+2025-10,2025-10-01,2025-10-31,221.8,205.4,231.7,6.5,26.3,NISR Consumer Price Index (CPI) October 2025 Release
+2025-09,2025-09-01,2025-09-30,217.4,203.2,226.0,5.8,22.8,NISR Consumer Price Index (CPI) September 2025 Release
+2025-08,2025-08-01,2025-08-31,216.6,202.8,224.9,5.4,22.1,NISR Consumer Price Index (CPI) August 2025 Release
+2025-07,2025-07-01,2025-07-31,214.5,201.5,222.3,4.9,20.8,NISR Consumer Price Index (CPI) July 2025 Release
+2025-06,2025-06-01,2025-06-30,212.6,200.4,219.9,4.5,19.5,NISR Consumer Price Index (CPI) June 2025 Release
+2024-12,2024-12-01,2024-12-31,210.0,199.2,216.5,4.0,17.3,NISR Consumer Price Index (CPI) December 2024 Release
+2024-09,2024-09-01,2024-09-30,205.5,196.5,211.0,3.8,14.5,NISR Consumer Price Index (CPI) September 2024 Release

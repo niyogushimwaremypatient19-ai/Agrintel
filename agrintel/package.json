@@ -1,0 +1,41 @@
+{
+  "name": "agrintel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AgrIntel Rwanda: National Food Security, Harvest & Agricultural Market Intelligence Platform",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:generate": "node --env-file=.env.local ./node_modules/drizzle-kit/bin.cjs generate",
+    "db:migrate": "node --env-file=.env.local ./node_modules/drizzle-kit/bin.cjs migrate",
+    "db:seed": "tsx --env-file=.env.local src/db/seed-reference.ts",
+    "db:load:wfp": "tsx --env-file=.env.local src/db/load-wfp-prices.ts",
+    "db:load:tangabid": "tsx --env-file=.env.local src/db/load-tangabid-prices.ts",
+    "db:load:sas": "tsx --env-file=.env.local src/db/load-sas-production.ts",
+    "db:load:cpi": "tsx --env-file=.env.local src/db/load-cpi.ts",
+    "db:load:climate": "tsx --env-file=.env.local src/db/load-climate-anomalies.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "drizzle-orm": "^0.44.0",
+    "next": "^15.3.0",
+    "papaparse": "^5.4.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "drizzle-kit": "^0.31.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^4.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

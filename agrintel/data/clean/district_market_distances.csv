@@ -1,0 +1,151 @@
+origin_district_code,destination_code,destination_name,distance_km,road_classification,source
+GASABO,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),12.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+GASABO,MUSANZE,Musanze Northern Hub,81.0,RN_PAVED,RTDA Classified National Road Network
+GASABO,HUYE,Huye Southern Hub,104.4,RN_PAVED,RTDA Classified National Road Network
+GASABO,RWAMAGANA,Rwamagana Eastern Hub,45.8,DISTRICT_FEEDER,RTDA Classified National Road Network
+GASABO,RUBAVU,Rubavu Western Hub,123.6,RN_PAVED,RTDA Classified National Road Network
+KICUKIRO,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),10.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+KICUKIRO,MUSANZE,Musanze Northern Hub,79.0,RN_PAVED,RTDA Classified National Road Network
+KICUKIRO,HUYE,Huye Southern Hub,102.4,RN_PAVED,RTDA Classified National Road Network
+KICUKIRO,RWAMAGANA,Rwamagana Eastern Hub,43.8,DISTRICT_FEEDER,RTDA Classified National Road Network
+KICUKIRO,RUBAVU,Rubavu Western Hub,121.6,RN_PAVED,RTDA Classified National Road Network
+NYARUGENGE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),0.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+NYARUGENGE,MUSANZE,Musanze Northern Hub,69.0,RN_PAVED,RTDA Classified National Road Network
+NYARUGENGE,HUYE,Huye Southern Hub,92.4,RN_PAVED,RTDA Classified National Road Network
+NYARUGENGE,RWAMAGANA,Rwamagana Eastern Hub,33.8,DISTRICT_FEEDER,RTDA Classified National Road Network
+NYARUGENGE,RUBAVU,Rubavu Western Hub,111.6,RN_PAVED,RTDA Classified National Road Network
+BURERA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),124.0,RN_PAVED,RTDA Classified National Road Network
+BURERA,MUSANZE,Musanze Northern Hub,47.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+BURERA,HUYE,Huye Southern Hub,216.4,RN_PAVED,RTDA Classified National Road Network
+BURERA,RWAMAGANA,Rwamagana Eastern Hub,157.8,RN_PAVED,RTDA Classified National Road Network
+BURERA,RUBAVU,Rubavu Western Hub,235.6,RN_PAVED,RTDA Classified National Road Network
+GAKENKE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),65.0,RN_PAVED,RTDA Classified National Road Network
+GAKENKE,MUSANZE,Musanze Northern Hub,134.0,RN_PAVED,RTDA Classified National Road Network
+GAKENKE,HUYE,Huye Southern Hub,157.4,RN_PAVED,RTDA Classified National Road Network
+GAKENKE,RWAMAGANA,Rwamagana Eastern Hub,98.8,RN_PAVED,RTDA Classified National Road Network
+GAKENKE,RUBAVU,Rubavu Western Hub,176.6,RN_PAVED,RTDA Classified National Road Network
+GICUMBI,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),55.0,RN_PAVED,RTDA Classified National Road Network
+GICUMBI,MUSANZE,Musanze Northern Hub,124.0,RN_PAVED,RTDA Classified National Road Network
+GICUMBI,HUYE,Huye Southern Hub,147.4,RN_PAVED,RTDA Classified National Road Network
+GICUMBI,RWAMAGANA,Rwamagana Eastern Hub,88.8,RN_PAVED,RTDA Classified National Road Network
+GICUMBI,RUBAVU,Rubavu Western Hub,166.6,RN_PAVED,RTDA Classified National Road Network
+MUSANZE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),92.0,RN_PAVED,RTDA Classified National Road Network
+MUSANZE,MUSANZE,Musanze Northern Hub,0.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+MUSANZE,HUYE,Huye Southern Hub,184.4,RN_PAVED,RTDA Classified National Road Network
+MUSANZE,RWAMAGANA,Rwamagana Eastern Hub,125.8,RN_PAVED,RTDA Classified National Road Network
+MUSANZE,RUBAVU,Rubavu Western Hub,83.0,RN_PAVED,RTDA Classified National Road Network
+RULINDO,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),35.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+RULINDO,MUSANZE,Musanze Northern Hub,104.0,RN_PAVED,RTDA Classified National Road Network
+RULINDO,HUYE,Huye Southern Hub,127.4,RN_PAVED,RTDA Classified National Road Network
+RULINDO,RWAMAGANA,Rwamagana Eastern Hub,68.8,RN_PAVED,RTDA Classified National Road Network
+RULINDO,RUBAVU,Rubavu Western Hub,146.6,RN_PAVED,RTDA Classified National Road Network
+GISAGARA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),154.0,RN_PAVED,RTDA Classified National Road Network
+GISAGARA,MUSANZE,Musanze Northern Hub,223.0,RN_PAVED,RTDA Classified National Road Network
+GISAGARA,HUYE,Huye Southern Hub,40.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+GISAGARA,RWAMAGANA,Rwamagana Eastern Hub,187.8,RN_PAVED,RTDA Classified National Road Network
+GISAGARA,RUBAVU,Rubavu Western Hub,265.6,RN_PAVED,RTDA Classified National Road Network
+HUYE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),132.0,RN_PAVED,RTDA Classified National Road Network
+HUYE,MUSANZE,Musanze Northern Hub,201.0,RN_PAVED,RTDA Classified National Road Network
+HUYE,HUYE,Huye Southern Hub,0.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+HUYE,RWAMAGANA,Rwamagana Eastern Hub,165.8,RN_PAVED,RTDA Classified National Road Network
+HUYE,RUBAVU,Rubavu Western Hub,243.6,RN_PAVED,RTDA Classified National Road Network
+KAMONYI,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),32.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+KAMONYI,MUSANZE,Musanze Northern Hub,101.0,RN_PAVED,RTDA Classified National Road Network
+KAMONYI,HUYE,Huye Southern Hub,124.4,RN_PAVED,RTDA Classified National Road Network
+KAMONYI,RWAMAGANA,Rwamagana Eastern Hub,65.8,RN_PAVED,RTDA Classified National Road Network
+KAMONYI,RUBAVU,Rubavu Western Hub,143.6,RN_PAVED,RTDA Classified National Road Network
+MUHANGA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),48.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+MUHANGA,MUSANZE,Musanze Northern Hub,117.0,RN_PAVED,RTDA Classified National Road Network
+MUHANGA,HUYE,Huye Southern Hub,140.4,RN_PAVED,RTDA Classified National Road Network
+MUHANGA,RWAMAGANA,Rwamagana Eastern Hub,81.8,RN_PAVED,RTDA Classified National Road Network
+MUHANGA,RUBAVU,Rubavu Western Hub,159.6,RN_PAVED,RTDA Classified National Road Network
+NYAMAGABE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),158.0,RN_PAVED,RTDA Classified National Road Network
+NYAMAGABE,MUSANZE,Musanze Northern Hub,227.0,RN_PAVED,RTDA Classified National Road Network
+NYAMAGABE,HUYE,Huye Southern Hub,44.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+NYAMAGABE,RWAMAGANA,Rwamagana Eastern Hub,191.8,RN_PAVED,RTDA Classified National Road Network
+NYAMAGABE,RUBAVU,Rubavu Western Hub,269.6,RN_PAVED,RTDA Classified National Road Network
+NYANZA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),95.0,RN_PAVED,RTDA Classified National Road Network
+NYANZA,MUSANZE,Musanze Northern Hub,164.0,RN_PAVED,RTDA Classified National Road Network
+NYANZA,HUYE,Huye Southern Hub,55.0,RN_PAVED,RTDA Classified National Road Network
+NYANZA,RWAMAGANA,Rwamagana Eastern Hub,128.8,RN_PAVED,RTDA Classified National Road Network
+NYANZA,RUBAVU,Rubavu Western Hub,206.6,RN_PAVED,RTDA Classified National Road Network
+NYARUGURU,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),165.0,RN_PAVED,RTDA Classified National Road Network
+NYARUGURU,MUSANZE,Musanze Northern Hub,234.0,RN_PAVED,RTDA Classified National Road Network
+NYARUGURU,HUYE,Huye Southern Hub,51.0,RN_PAVED,RTDA Classified National Road Network
+NYARUGURU,RWAMAGANA,Rwamagana Eastern Hub,198.8,RN_PAVED,RTDA Classified National Road Network
+NYARUGURU,RUBAVU,Rubavu Western Hub,276.6,RN_PAVED,RTDA Classified National Road Network
+RUHANGO,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),72.0,RN_PAVED,RTDA Classified National Road Network
+RUHANGO,MUSANZE,Musanze Northern Hub,141.0,RN_PAVED,RTDA Classified National Road Network
+RUHANGO,HUYE,Huye Southern Hub,164.4,RN_PAVED,RTDA Classified National Road Network
+RUHANGO,RWAMAGANA,Rwamagana Eastern Hub,105.8,RN_PAVED,RTDA Classified National Road Network
+RUHANGO,RUBAVU,Rubavu Western Hub,183.6,RN_PAVED,RTDA Classified National Road Network
+BUGESERA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),42.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+BUGESERA,MUSANZE,Musanze Northern Hub,111.0,RN_PAVED,RTDA Classified National Road Network
+BUGESERA,HUYE,Huye Southern Hub,134.4,RN_PAVED,RTDA Classified National Road Network
+BUGESERA,RWAMAGANA,Rwamagana Eastern Hub,32.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+BUGESERA,RUBAVU,Rubavu Western Hub,153.6,RN_PAVED,RTDA Classified National Road Network
+GATSIBO,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),115.0,RN_PAVED,RTDA Classified National Road Network
+GATSIBO,MUSANZE,Musanze Northern Hub,184.0,RN_PAVED,RTDA Classified National Road Network
+GATSIBO,HUYE,Huye Southern Hub,207.4,RN_PAVED,RTDA Classified National Road Network
+GATSIBO,RWAMAGANA,Rwamagana Eastern Hub,85.0,RN_PAVED,RTDA Classified National Road Network
+GATSIBO,RUBAVU,Rubavu Western Hub,226.6,RN_PAVED,RTDA Classified National Road Network
+KAYONZA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),75.0,RN_PAVED,RTDA Classified National Road Network
+KAYONZA,MUSANZE,Musanze Northern Hub,144.0,RN_PAVED,RTDA Classified National Road Network
+KAYONZA,HUYE,Huye Southern Hub,167.4,RN_PAVED,RTDA Classified National Road Network
+KAYONZA,RWAMAGANA,Rwamagana Eastern Hub,45.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+KAYONZA,RUBAVU,Rubavu Western Hub,186.6,RN_PAVED,RTDA Classified National Road Network
+KIREHE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),138.0,RN_PAVED,RTDA Classified National Road Network
+KIREHE,MUSANZE,Musanze Northern Hub,207.0,RN_PAVED,RTDA Classified National Road Network
+KIREHE,HUYE,Huye Southern Hub,230.4,RN_PAVED,RTDA Classified National Road Network
+KIREHE,RWAMAGANA,Rwamagana Eastern Hub,171.8,RN_PAVED,RTDA Classified National Road Network
+KIREHE,RUBAVU,Rubavu Western Hub,249.6,RN_PAVED,RTDA Classified National Road Network
+NGOMA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),105.0,RN_PAVED,RTDA Classified National Road Network
+NGOMA,MUSANZE,Musanze Northern Hub,174.0,RN_PAVED,RTDA Classified National Road Network
+NGOMA,HUYE,Huye Southern Hub,197.4,RN_PAVED,RTDA Classified National Road Network
+NGOMA,RWAMAGANA,Rwamagana Eastern Hub,75.0,RN_PAVED,RTDA Classified National Road Network
+NGOMA,RUBAVU,Rubavu Western Hub,216.6,RN_PAVED,RTDA Classified National Road Network
+NYAGATARE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),155.0,RN_PAVED,RTDA Classified National Road Network
+NYAGATARE,MUSANZE,Musanze Northern Hub,224.0,RN_PAVED,RTDA Classified National Road Network
+NYAGATARE,HUYE,Huye Southern Hub,247.4,RN_PAVED,RTDA Classified National Road Network
+NYAGATARE,RWAMAGANA,Rwamagana Eastern Hub,188.8,RN_PAVED,RTDA Classified National Road Network
+NYAGATARE,RUBAVU,Rubavu Western Hub,266.6,RN_PAVED,RTDA Classified National Road Network
+RWAMAGANA,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),52.0,RN_PAVED,RTDA Classified National Road Network
+RWAMAGANA,MUSANZE,Musanze Northern Hub,121.0,RN_PAVED,RTDA Classified National Road Network
+RWAMAGANA,HUYE,Huye Southern Hub,144.4,RN_PAVED,RTDA Classified National Road Network
+RWAMAGANA,RWAMAGANA,Rwamagana Eastern Hub,0.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+RWAMAGANA,RUBAVU,Rubavu Western Hub,163.6,RN_PAVED,RTDA Classified National Road Network
+KARONGI,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),135.0,RN_PAVED,RTDA Classified National Road Network
+KARONGI,MUSANZE,Musanze Northern Hub,204.0,RN_PAVED,RTDA Classified National Road Network
+KARONGI,HUYE,Huye Southern Hub,227.4,RN_PAVED,RTDA Classified National Road Network
+KARONGI,RWAMAGANA,Rwamagana Eastern Hub,168.8,RN_PAVED,RTDA Classified National Road Network
+KARONGI,RUBAVU,Rubavu Western Hub,246.6,RN_PAVED,RTDA Classified National Road Network
+NGORORERO,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),105.0,RN_PAVED,RTDA Classified National Road Network
+NGORORERO,MUSANZE,Musanze Northern Hub,174.0,RN_PAVED,RTDA Classified National Road Network
+NGORORERO,HUYE,Huye Southern Hub,197.4,RN_PAVED,RTDA Classified National Road Network
+NGORORERO,RWAMAGANA,Rwamagana Eastern Hub,138.8,RN_PAVED,RTDA Classified National Road Network
+NGORORERO,RUBAVU,Rubavu Western Hub,216.6,RN_PAVED,RTDA Classified National Road Network
+NYABIHU,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),128.0,RN_PAVED,RTDA Classified National Road Network
+NYABIHU,MUSANZE,Musanze Northern Hub,51.0,RN_PAVED,RTDA Classified National Road Network
+NYABIHU,HUYE,Huye Southern Hub,220.4,RN_PAVED,RTDA Classified National Road Network
+NYABIHU,RWAMAGANA,Rwamagana Eastern Hub,161.8,RN_PAVED,RTDA Classified National Road Network
+NYABIHU,RUBAVU,Rubavu Western Hub,47.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+NYAMASHEKE,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),210.0,RN_PAVED,RTDA Classified National Road Network
+NYAMASHEKE,MUSANZE,Musanze Northern Hub,279.0,RN_PAVED,RTDA Classified National Road Network
+NYAMASHEKE,HUYE,Huye Southern Hub,302.4,RN_PAVED,RTDA Classified National Road Network
+NYAMASHEKE,RWAMAGANA,Rwamagana Eastern Hub,243.8,RN_PAVED,RTDA Classified National Road Network
+NYAMASHEKE,RUBAVU,Rubavu Western Hub,321.6,RN_PAVED,RTDA Classified National Road Network
+RUBAVU,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),155.0,RN_PAVED,RTDA Classified National Road Network
+RUBAVU,MUSANZE,Musanze Northern Hub,78.0,RN_PAVED,RTDA Classified National Road Network
+RUBAVU,HUYE,Huye Southern Hub,247.4,RN_PAVED,RTDA Classified National Road Network
+RUBAVU,RWAMAGANA,Rwamagana Eastern Hub,188.8,RN_PAVED,RTDA Classified National Road Network
+RUBAVU,RUBAVU,Rubavu Western Hub,0.0,DISTRICT_FEEDER,RTDA Classified National Road Network
+RUSIZI,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),245.0,RN_PAVED,RTDA Classified National Road Network
+RUSIZI,MUSANZE,Musanze Northern Hub,314.0,RN_PAVED,RTDA Classified National Road Network
+RUSIZI,HUYE,Huye Southern Hub,337.4,RN_PAVED,RTDA Classified National Road Network
+RUSIZI,RWAMAGANA,Rwamagana Eastern Hub,278.8,RN_PAVED,RTDA Classified National Road Network
+RUSIZI,RUBAVU,Rubavu Western Hub,356.6,RN_PAVED,RTDA Classified National Road Network
+RUTSIRO,KIGALI,Kigali Central (Nyarugenge / Nyabugogo),150.0,RN_PAVED,RTDA Classified National Road Network
+RUTSIRO,MUSANZE,Musanze Northern Hub,219.0,RN_PAVED,RTDA Classified National Road Network
+RUTSIRO,HUYE,Huye Southern Hub,242.4,RN_PAVED,RTDA Classified National Road Network
+RUTSIRO,RWAMAGANA,Rwamagana Eastern Hub,183.8,RN_PAVED,RTDA Classified National Road Network
+RUTSIRO,RUBAVU,Rubavu Western Hub,25.0,DISTRICT_FEEDER,RTDA Classified National Road Network
