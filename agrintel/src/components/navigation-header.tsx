@@ -102,7 +102,7 @@ export function NavigationHeader({
                 {siteName}
               </span>
               <span className="hidden sm:inline-block rounded bg-leaf/40 px-1.5 py-0.5 text-[10px] font-bold text-sprout uppercase tracking-wider">
-                NISR Hackathon 2026
+                {locale === "rw" ? "Imibare y'Igihugu" : "National AgData"}
               </span>
             </div>
             <span className="text-[11px] font-semibold tracking-wider text-sprout uppercase opacity-90">
@@ -279,9 +279,9 @@ export function NavigationHeader({
 
             {/* Drawer Footer Information */}
             <div className="border-t border-line pt-4 text-xs text-muted">
-              <p className="font-medium text-ink">NISR Big Data Hackathon 2026</p>
+              <p className="font-medium text-ink">{siteName}</p>
               <p className="mt-1 text-[11px] text-muted leading-tight">
-                Rwanda Farm, Harvest & Market Guide for Food Security.
+                {siteSubtitle}
               </p>
             </div>
           </div>

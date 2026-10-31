@@ -16,13 +16,6 @@ export const dynamic = "force-dynamic";
 
 const { sources, rawImports } = schema;
 
-const cardKeys = [
-  { key: "farmer", path: "farmer", icon: "🌾", highlight: true },
-  { key: "market", path: "market", icon: "📈", highlight: false },
-  { key: "national", path: "national", icon: "🗺️", highlight: false },
-  { key: "retailer", path: "retailer", icon: "🚛", highlight: false },
-] as const;
-
 const featuredCrops = [
   { code: "TOMATO", nameRw: "Inyanya", nameEn: "Tomatoes" },
   { code: "IRISH_POTATO", nameRw: "Ibirayi", nameEn: "Irish Potatoes" },
@@ -40,7 +33,6 @@ export default async function WelcomePage({
 
   const t = getDictionary(locale);
   const cpiRelease = getLatestCpiRelease();
-  const callouts = t.welcome.callouts;
 
   let verifiedCount = 5;
   let sampleCount = 0;
@@ -97,84 +89,6 @@ export default async function WelcomePage({
 
       {/* 6 Simple Steps from Field to Market */}
       <OntologyPipelineStrip ontology={t.welcome.ontology} />
-
-      {/* Executive Strategic Callout Metric Cards (The 15-Second Judge Hook) */}
-      <section aria-label="National Strategic Callouts" className="grid gap-4 md:grid-cols-3">
-        {/* Callout 1: NISR SAS Radar */}
-        <article className="group relative flex flex-col justify-between rounded-2xl border border-line bg-paper p-6 shadow-xs transition hover:border-canopy hover:shadow-md">
-          <div>
-            <span className="inline-block rounded-full bg-canopy/10 px-3 py-1 text-[11px] font-bold text-canopy uppercase tracking-wider">
-              {callouts.radar.badge}
-            </span>
-            <p className="mt-3 text-2xl font-black text-canopy tracking-tight">
-              {callouts.radar.stat}
-            </p>
-            <h2 className="mt-1 text-base font-bold text-ink">
-              {callouts.radar.title}
-            </h2>
-            <p className="mt-2.5 text-xs text-muted leading-relaxed">
-              {callouts.radar.desc}
-            </p>
-          </div>
-          <Link
-            href={`/${locale}/national`}
-            className="mt-5 inline-flex items-center justify-between rounded-xl bg-canopy px-4 py-2.5 text-xs font-bold text-cream hover:bg-leaf transition-colors cursor-pointer"
-          >
-            <span>{callouts.radar.cta}</span>
-            <span>→</span>
-          </Link>
-        </article>
-
-        {/* Callout 2: Fuel Stress-Tester */}
-        <article className="group relative flex flex-col justify-between rounded-2xl border border-line bg-paper p-6 shadow-xs transition hover:border-leaf hover:shadow-md">
-          <div>
-            <span className="inline-block rounded-full bg-harvest/15 px-3 py-1 text-[11px] font-bold text-soil uppercase tracking-wider">
-              {callouts.arbitrage.badge}
-            </span>
-            <p className="mt-3 text-2xl font-black text-soil tracking-tight">
-              {callouts.arbitrage.stat}
-            </p>
-            <h2 className="mt-1 text-base font-bold text-ink">
-              {callouts.arbitrage.title}
-            </h2>
-            <p className="mt-2.5 text-xs text-muted leading-relaxed">
-              {callouts.arbitrage.desc}
-            </p>
-          </div>
-          <Link
-            href={`/${locale}/retailer`}
-            className="mt-5 inline-flex items-center justify-between rounded-xl bg-soil px-4 py-2.5 text-xs font-bold text-cream hover:bg-harvest hover:text-canopy transition-colors cursor-pointer"
-          >
-            <span>{callouts.arbitrage.cta}</span>
-            <span>→</span>
-          </Link>
-        </article>
-
-        {/* Callout 3: Smart Food Basket */}
-        <article className="group relative flex flex-col justify-between rounded-2xl border border-line bg-paper p-6 shadow-xs transition hover:border-clay hover:shadow-md">
-          <div>
-            <span className="inline-block rounded-full bg-clay/15 px-3 py-1 text-[11px] font-bold text-clay uppercase tracking-wider">
-              {callouts.inflation.badge}
-            </span>
-            <p className="mt-3 text-2xl font-black text-clay tracking-tight">
-              {callouts.inflation.stat}
-            </p>
-            <h2 className="mt-1 text-base font-bold text-ink">
-              {callouts.inflation.title}
-            </h2>
-            <p className="mt-2.5 text-xs text-muted leading-relaxed">
-              {callouts.inflation.desc}
-            </p>
-          </div>
-          <Link
-            href={`/${locale}/market`}
-            className="mt-5 inline-flex items-center justify-between rounded-xl bg-clay px-4 py-2.5 text-xs font-bold text-cream hover:bg-clay/90 transition-colors cursor-pointer"
-          >
-            <span>{callouts.inflation.cta}</span>
-            <span>→</span>
-          </Link>
-        </article>
-      </section>
 
       {/* Quick Access Farmer Visual Hero */}
       <section className="relative overflow-hidden rounded-3xl border-2 border-canopy/40 bg-gradient-to-br from-sprout/40 via-paper to-cream p-6 shadow-sm sm:p-8">
@@ -236,28 +150,6 @@ export default async function WelcomePage({
             })}
           </div>
         </div>
-      </section>
-
-      {/* Primary Dashboard Modules */}
-      <section aria-label={t.welcome.title} className="grid gap-4 sm:grid-cols-2">
-        {cardKeys.map(({ key, path, icon }) => {
-          const card = t.welcome.cards[key];
-          return (
-            <Link
-              key={key}
-              href={`/${locale}/${path}`}
-              className="group rounded-2xl border border-line bg-paper p-6 shadow-xs transition hover:border-leaf hover:shadow-md"
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-2xl select-none">{icon}</span>
-                <h2 className="text-2xl font-bold text-canopy group-hover:text-leaf">
-                  {card.title}
-                </h2>
-              </div>
-              <p className="mt-2.5 text-sm text-ink leading-relaxed">{card.body}</p>
-            </Link>
-          );
-        })}
       </section>
     </div>
   );

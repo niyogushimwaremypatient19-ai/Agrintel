@@ -85,26 +85,30 @@ export default async function LocaleLayout({
                 <p className="text-xs text-muted mt-0.5">{t.tagline}</p>
               </div>
               <div className="flex flex-wrap gap-4 text-xs font-semibold text-soil">
-                <Link href={`/${typedLocale}/national`} className="hover:text-canopy hover:underline">
-                  National Risk Radar
+                <Link href={`/${typedLocale}/farmer`} className="hover:text-canopy hover:underline">
+                  {t.nav.farmer}
                 </Link>
                 <span aria-hidden="true">·</span>
-                <Link href={`/${typedLocale}/farmer`} className="hover:text-canopy hover:underline">
-                  Farmer Field Advisory
+                <Link href={`/${typedLocale}/market`} className="hover:text-canopy hover:underline">
+                  {t.nav.market}
                 </Link>
                 <span aria-hidden="true">·</span>
                 <Link href={`/${typedLocale}/retailer`} className="hover:text-canopy hover:underline">
-                  Spatial Fuel Stress-Tester
+                  {t.nav.retailer}
+                </Link>
+                <span aria-hidden="true">·</span>
+                <Link href={`/${typedLocale}/national`} className="hover:text-canopy hover:underline">
+                  {t.nav.national}
                 </Link>
                 <span aria-hidden="true">·</span>
                 <Link href={`/${typedLocale}/methodology`} className="hover:text-canopy hover:underline">
-                  Cobb-Douglas Methodology
+                  {t.nav.methodology}
                 </Link>
               </div>
             </div>
             <div className="mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-xs text-muted/80">
-              <p>National Institute of Statistics of Rwanda (NISR) Big Data Hackathon 2026</p>
-              <p className="font-mono text-[11px]">WCAG 2.1 AA Compliant · Zero-Hallucination Empirical Data</p>
+              <p>© 2026 {t.siteName} · {typedLocale === "rw" ? "Amakuru y'ubuhinzi n'ibiribwa yemejwe" : "Official agriculture & food security statistics"}</p>
+              <p className="text-[11px] font-medium text-muted">NISR · MINAGRI · Rwanda Meteo · WFP</p>
             </div>
           </div>
         </footer>

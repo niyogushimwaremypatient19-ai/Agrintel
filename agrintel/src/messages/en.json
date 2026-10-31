@@ -1,4 +1,4 @@
-{
+ALSO{
   "siteName": "AgrIntel Rwanda",
   "siteSubtitle": "Rwanda Farm, Harvest & Market Guide",
   "tagline": "Earlier, clearer information for food-security decisions",
@@ -714,46 +714,6 @@
       "General farming tips are provided for guidance; consult a licensed agronomist or veterinary doctor for specific chemical doses or treatments.",
       "Everything is fully available in both easy-to-read English and natural Kinyarwanda."
     ],
-    "aiDisclosureTitle": "Tooling & Coding Acknowledgement",
-    "aiDisclosureBadge": "NISR 2026 Hackathon Compliance",
-    "aiDisclosureText": "Disclosure per NISR 2026 Hackathon Guidelines: AI coding tools were used to speed up programming, website styling, and bilingual translation. All farming calculations, transport profit formulas, and data comparisons were researched, verified, and audited by our human team, who take full responsibility for the submitted work.",
-    "aiDisclosureNote": "Submitted in strict accordance with the official NISR Big Data Hackathon 2026 Requirements for Participation.",
-    "dataLifecycle": {
-      "title": "3-Tier Data Velocity Lifecycle & Production Automation",
-      "subtitle": "How AgrIntel ingests live subnational data across differing velocity cadences without manual code intervention or app redeployment.",
-      "juryQuestion": "Jury Question Addressed",
-      "juryQuestionText": "NISR releases CPI every month, WFP updates rainfall every 10 days, and SAS comes out every season. What happens when new data drops?",
-      "columns": {
-        "tier": "Data Velocity Tier",
-        "frequency": "Update Cadence",
-        "datasets": "Datasets Included",
-        "automation": "How New Data Is Handled Automatically"
-      },
-      "tiers": [
-        {
-          "name": "Tier 1: High-Frequency",
-          "frequency": "Weekly / 10-Day Dekadal",
-          "datasets": "WFP & TangaBid market prices (P_O, P_D), CHIRPS subnational rainfall anomalies (rfq), and RURA regulated diesel pump prices.",
-          "automation": "A lightweight scheduled GitHub Action (.github/workflows/data-sync.yml) triggers every Monday at 05:00 UTC. It pulls updated feeds, recalculates Net Spatial Arbitrage Margins across 1,570 corridors and subnational Climate Stress Factors, and executes idempotent upserts into Neon PostgreSQL without model retraining.",
-          "badgeColor": "forest"
-        },
-        {
-          "name": "Tier 2: Medium-Frequency",
-          "frequency": "Monthly",
-          "datasets": "NISR Consumer Price Index (CPI) and Producer Price Index (PPI) series with Urban vs Rural food inflation decomposition.",
-          "automation": "Ingested on the 10th of each month upon official NISR publication, updating the macro food inflation deflator (17.2% YoY) and recalibrating the rural-urban cost-of-living spread (Rural 273.2 vs Urban 223.7).",
-          "badgeColor": "canopy"
-        },
-        {
-          "name": "Tier 3: Structural Baseline",
-          "frequency": "Seasonal (3x / Year)",
-          "datasets": "NISR Seasonal Agricultural Survey (SAS Seasons A, B, C) district production, harvested areas, and input adoption rates (certified seed, fertilizer, irrigation, anti-erosion).",
-          "automation": "When NISR publishes seasonal surveys (Season A in April/May, Season B in October), the pipeline appends new district observations, re-estimates the econometric production frontier coefficients (Φ_climate, Ψ_inputs), and recalculates standardized residuals (z) to flag subsidy leakage risks below z = -1.75.",
-          "badgeColor": "clay"
-        }
-      ],
-      "liveDemoNote": "The 'Simulate Data Update' server action in the Alerts module demonstrates this live execution: inserting a price/climate revision into Neon, validating checksums, refreshing risk previews, and generating bilingual draft alerts."
-    },
     "columns": {
       "source": "Source",
       "owner": "Owner",
