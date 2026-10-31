@@ -14,7 +14,7 @@
 
 * **Live Production Platform:** [https://agrintel-rwanda.vercel.app](https://agrintel-rwanda.vercel.app)
 * **Kinyarwanda Interface:** [https://agrintel-rwanda.vercel.app/rw](https://agrintel-rwanda.vercel.app/rw)
-* **Video Demonstration:** [Watch 3-Minute Video Walkthrough](https://agrintel-rwanda.vercel.app) *(Link to be updated with uploaded video)*
+* **Video Demonstration:** [Watch 3-Minute Video Walkthrough](https://youtu.be/dkHdiOdEyUY) 
 * **GitHub Repository (Upstream):** [niyogushimwaremypatient19-ai/Agrintel](https://github.com/niyogushimwaremypatient19-ai/Agrintel)
 * **GitHub Repository (Working Fork):** [Merite-M/Agrintel](https://github.com/Merite-M/Agrintel)
 * **Printable One-Page Stakeholder Brief:** [STAKEHOLDER_BRIEF.md](./STAKEHOLDER_BRIEF.md)
