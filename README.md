@@ -243,3 +243,10 @@ Open `http://localhost:3000` to explore AgrIntel Rwanda.
 - **Official Authority Datasets**: All indicators are grounded in published microdata from NISR, MINAGRI, Rwanda Meteo, and WFP. Zero synthetic or mocked values.
 - **Auditable Cryptographic Lineage**: Ingestion runs verify SHA-256 dataset checksums and enforce schema validation before updating PostgreSQL tables.
 - **Privacy by Design**: No individual farmer microdata is exposed; all insights aggregate at cooperative, market, sector, and district levels.
+
+---
+
+## 10. AI Assistance & Development Disclosure
+
+In accordance with academic and research transparency standards, AI coding assistants were utilized as productivity accelerators for TypeScript interface scaffolding, UI component boilerplate, and test harness routines. All domain logic, econometric formulations, data ingestion pipelines, and empirical verification against official NISR SAS microdata were independently designed, implemented, and validated by the human authors, who take full responsibility for the system.
+
