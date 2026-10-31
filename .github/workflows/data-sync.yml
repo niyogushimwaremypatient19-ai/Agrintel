@@ -21,9 +21,6 @@ jobs:
   ingest-and-sync:
     name: Execute Data Lifecycle Ingestion & Forward Inference
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./agrintel
     steps:
       - name: Checkout Codebase
         uses: actions/checkout@v4
@@ -44,7 +41,7 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
-          cache-dependency-path: agrintel/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Install Node Dependencies
         run: npm ci

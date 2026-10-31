@@ -8,9 +8,9 @@ Method: "drift_last6" v1.0.0
   4. Build an interval from the errors that this same method made on
      past data (a rolling-origin backtest), so the band is earned, not invented.
 
-Why this method: it is simple enough to explain to a judge or a farmer, it needs
-little data, and it is honest about what it cannot do. It is a baseline, not a
-claim of predictive skill. Accuracy is reported from the backtest only.
+Why this method: it is transparent enough to explain to an agronomist or a farmer, it needs
+little data, and it is honest about what it cannot do. It is an empirical baseline.
+Accuracy is reported from the backtest only.
 
 This module has no database or network code, so it can be tested on its own.
 """

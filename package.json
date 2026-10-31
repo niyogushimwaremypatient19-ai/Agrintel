@@ -2,7 +2,7 @@
   "name": "agrintel",
   "version": "0.1.0",
   "private": true,
-  "description": "AgrIntel Rwanda: Causal Agro-Climatic Intelligence & Food Security Early-Warning Platform (NISR Big Data Hackathon 2026)",
+  "description": "AgrIntel Rwanda: National Food Security, Harvest & Agricultural Market Intelligence Platform",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

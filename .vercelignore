@@ -6,7 +6,6 @@ drizzle/
 
 # Reference CSV data (do not ignore TypeScript modules in src/lib/data)
 /data/
-/nisr-agro-early-warning/data/
 !/src/lib/data/**
 !src/lib/data/**
 !**/src/lib/data/**

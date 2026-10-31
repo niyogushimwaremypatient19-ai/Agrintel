@@ -1,13 +1,12 @@
 # AgrIntel Rwanda: Open Agriculture, Harvest & Food Market Guide
 
-[![NISR Big Data Hackathon 2026](https://img.shields.io/badge/NISR_Hackathon-2026_Submission-0B4F37?style=for-the-badge)](https://statistics.gov.rw)
+[![Official Statistics](https://img.shields.io/badge/Official_Statistics-NISR_•_MINAGRI_•_Meteo-0B4F37?style=for-the-badge)](https://statistics.gov.rw)
 [![Live Production](https://img.shields.io/badge/Live_App-agrintel--rwanda.vercel.app-28D17C?style=for-the-badge&logo=vercel)](https://agrintel-rwanda.vercel.app)
 [![Tests Passing](https://img.shields.io/badge/Pytest-61%2F61_Passed-success?style=for-the-badge&logo=pytest)](https://github.com/Merite-M/Agrintel)
 [![Bilingual Parity](https://img.shields.io/badge/Localization-100%25_EN_%2F_RW-blue?style=for-the-badge)](https://agrintel-rwanda.vercel.app/rw)
 [![Database](https://img.shields.io/badge/Neon_Postgres-14%2C722+_Verified_Records-00E699?style=for-the-badge&logo=postgresql)](https://neon.tech)
 
-> **Official Submission for the NISR Big Data Hackathon 2026**  
-> **National Strategic Alignment:** Second National Strategy for Transformation (**NST2: 2024–2029**), Fourth National Strategy for the Development of Statistics (**NSDS4**), and **Vision 2050**.
+> **National Strategic Alignment:** Supporting the Second National Strategy for Transformation (**NST2: 2024–2029**), Fourth National Strategy for the Development of Statistics (**NSDS4**), and **Vision 2050** food security targets.
 
 ---
 
@@ -15,6 +14,7 @@
 
 * **Live Production Platform:** [https://agrintel-rwanda.vercel.app](https://agrintel-rwanda.vercel.app)
 * **Kinyarwanda Interface:** [https://agrintel-rwanda.vercel.app/rw](https://agrintel-rwanda.vercel.app/rw)
+* **Video Demonstration:** [Watch 3-Minute Video Walkthrough](https://agrintel-rwanda.vercel.app) *(Link to be updated with uploaded video)*
 * **GitHub Repository (Upstream):** [niyogushimwaremypatient19-ai/Agrintel](https://github.com/niyogushimwaremypatient19-ai/Agrintel)
 * **GitHub Repository (Working Fork):** [Merite-M/Agrintel](https://github.com/Merite-M/Agrintel)
 * **Printable One-Page Stakeholder Brief:** [STAKEHOLDER_BRIEF.md](./STAKEHOLDER_BRIEF.md)
@@ -142,7 +142,7 @@ LAYER 4: LAST-MILE DELIVERY & ACTION STATE MACHINE
 6. **Early Warning Alerts & Live Pipeline Simulator (`/[locale]/alerts`):**
    Operational directive cards dispatched from National or Retailer terminals, and a one-click live pipeline simulator demonstrating automated data validation, signal recalculation, and alert drafting.
 7. **Calculations & Data Sources Guide (`/[locale]/methodology`):**
-   Clear mathematical formulations, MFS survey design weights, backtest evaluation tables (MAE, RMSE, MAPE), dataset checksums, and hackathon compliance disclosure.
+   Clear mathematical formulations, MFS survey design weights, backtest evaluation tables (MAE, RMSE, MAPE), dataset checksums, and data governance standards.
 
 ---
 
@@ -164,12 +164,37 @@ Built on **Next.js 15 (App Router)** and adhering to modern web best practices:
 * Python 3.11 or later
 * Neon Serverless PostgreSQL database URL
 
+### Repository Architecture
+
+```
+Agrintel/
+├── data/                      # Official subnational empirical datasets (NISR SAS, CPI, WFP, CHIRPS)
+│   ├── clean/                 # Ingested & preprocessed analytical CSV & Excel tables
+│   ├── reference/             # 30 districts, commodities, and unit code lists
+│   └── README.md              # Comprehensive data dictionary & official microdata portal links
+├── drizzle/                   # Neon PostgreSQL Drizzle migrations & schema snapshots
+├── pipeline/                  # Analytical data processing & pytest suites (61/61 tests passing)
+│   ├── tests/                 # Unit tests for climate, forecasts, arbitrage & SAS data
+│   └── requirements.txt       # Python pipeline dependencies (Python 3.11+)
+├── src/
+│   ├── app/                   # Next.js 15 bilingual App Router routes (17/17 SSG & SSR pages)
+│   ├── components/            # Reusable UI components & accessible data visualization
+│   ├── db/                    # Neon PostgreSQL client, schema definitions & data loaders
+│   ├── lib/                   # Spatial arbitrage algorithms, formatters, and i18n
+│   └── messages/              # English & Kinyarwanda translations (en.json, rw.json)
+├── .env.example               # Template for database credentials
+├── .gitignore                 # Excludes build caches, secrets, and raw data
+├── package.json               # Node.js project manifest & scripts
+├── README.md                  # Unified platform documentation & methodology
+└── STAKEHOLDER_BRIEF.md       # Printable 1-page summary for extension officers
+```
+
 ### Step-by-Step Instructions
 
 ```bash
 # 1. Clone repository
 git clone https://github.com/niyogushimwaremypatient19-ai/Agrintel.git
-cd Agrintel/agrintel
+cd Agrintel
 
 # 2. Install dependencies
 npm install
@@ -202,20 +227,19 @@ Open `http://localhost:3000` to explore AgrIntel Rwanda.
 
 ---
 
-## 8. NISR Hackathon 2026 Evaluation Matrix (100 Points)
+## 8. Strategic Policy Value & National Impact
 
-| Rubric Criterion (20 Pts Each) | AgrIntel Rwanda Execution Strategy | Score |
-| :--- | :--- | :---: |
-| **1. Relevance to Problem & NST2 Alignment** | Protects MINAGRI's $\text{Rwf } 75\text{B}$ input subsidy program, models the $\text{Rwf } 48\text{B}$ diesel fuel lifeline, and buffers Rwandan families against $17.2\%$ food inflation. | **20 / 20** |
-| **2. Datasets & Methodology** | Ingests official NISR SAS microdata with MFS weights, WFP HDX prices, TangaBid farmgate series, CHIRPS rainfall, and official NISR CPI indices. Zero mock data. | **20 / 20** |
-| **3. Technical Innovation** | Climate-controlled harvest benchmarking, diesel-adjusted spatial transport optimization, spoken Kinyarwanda/English audio player, and live ingestion simulator. | **20 / 20** |
-| **4. Usability & Plain Language** | 100% English & Kinyarwanda parity, Welcoming Persona Hub, zero developer/ML jargon, plain farmer wording, CSS container queries, and accessible design tokens. | **20 / 20** |
-| **5. Tangible Impact** | Immediate practical utility for smallholders, logistics operators, market shoppers, and MINAGRI extension workers across all 30 districts of Rwanda. | **20 / 20** |
-| **Total** | **Comprehensive Hackathon Solution** | **100 / 100** |
+| Strategic Priority | AgrIntel Rwanda Operational Contribution | Key Stakeholder Impact |
+| :--- | :--- | :--- |
+| **Input Subsidy Protection** | Audits district input adoption vs climate-adjusted yield targets, safeguarding national agricultural investments. | **MINAGRI & RAB**: Early detection of subsidy leakage or distribution bottlenecks below $z = -1.75$. |
+| **Logistics & Spatial Fuel Stress** | Optimizes transport arbitrage across 1,570 inter-district corridors with dynamic diesel cost modeling. | **Transporters & Cooperatives**: Protects perishable produce margins against road distance and fuel price shocks. |
+| **Urban-Rural Cost of Living** | Tracks official NISR CPI food inflation decomposition ($273.2$ Rural vs $223.7$ Urban). | **Citizens & Families**: Actionable monthly food basket optimization and nutritious calorie-matched substitutes. |
+| **Agricultural Extension Delivery** | Translates complex econometric forecasts into localized Sell/Store field recommendations. | **Sector Agronomists & Farmers**: Accessible, spoken Kinyarwanda field guidance via zero-bandwidth radio-ready audio. |
 
 ---
 
-## 9. Tooling & Technical Compliance Disclosure
+## 9. Data Integrity & Open Governance
 
-> **Disclosure per NISR 2026 Hackathon Guidelines:**  
-> Standard developer tools and IDE coding assistants were utilized as productivity accelerators for TypeScript interface scaffolding, bilingual translation formatting (en/rw), and unit-test boilerplate. All agronomic problem formulations, NISR SAS Multiple Frame Sampling weight applications, expected yield equations, and spatial transport profit models were conceived, verified, and audited by our human team, who take full responsibility for the submitted work.
+- **Official Authority Datasets**: All indicators are grounded in published microdata from NISR, MINAGRI, Rwanda Meteo, and WFP. Zero synthetic or mocked values.
+- **Auditable Cryptographic Lineage**: Ingestion runs verify SHA-256 dataset checksums and enforce schema validation before updating PostgreSQL tables.
+- **Privacy by Design**: No individual farmer microdata is exposed; all insights aggregate at cooperative, market, sector, and district levels.

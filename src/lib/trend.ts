@@ -1,6 +1,6 @@
 /**
  * Turns observed prices into monthly averages and a plain-language trend.
- * Kept free of database code so the rules are easy to read, test and explain to judges.
+ * Pure business logic kept modular, testable, and deterministic.
  */
 
 export type MonthlyPoint = {
