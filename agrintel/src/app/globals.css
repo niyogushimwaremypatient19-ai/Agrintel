@@ -22,14 +22,14 @@
   --color-cream: #faf6ec; /* page background */
   --color-paper: #ffffff; /* cards and panels */
   --color-ink: #1e2a21; /* body text */
-  --color-muted: #55645a; /* secondary text, meets AA on cream */
+  --color-muted: #45534a; /* secondary text, meets AA on cream (ratio > 4.5:1) */
   --color-line: #d9d3c2; /* borders and dividers */
 
   /* Risk categories used by the dashboard and alerts */
   --color-risk-low: #3f7d3a;
-  --color-risk-moderate: #d9a441;
+  --color-risk-moderate: #b87c14;
   --color-risk-high: #b5562e;
-  --color-risk-unavailable: #8a8f88;
+  --color-risk-unavailable: #6e736c;
 
   /* Typography: Fraunces for headings, Source Sans 3 for reading and labels */
   --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
@@ -42,6 +42,8 @@
     color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    scrollbar-color: var(--color-line) transparent;
+    scrollbar-width: thin;
   }
 
   body {
@@ -50,14 +52,53 @@
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-family: var(--font-display);
     color: var(--color-canopy);
-    line-height: 1.2;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   :focus-visible {
     outline: 3px solid var(--color-harvest);
     outline-offset: 2px;
+  }
+}
+
+/* Modern Web Standards: Container Queries & Skeletons */
+.container-card {
+  container-type: inline-size;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-cream) 0%,
+    rgba(217, 211, 194, 0.45) 50%,
+    var(--color-cream) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer {
+    animation: none;
+    background: var(--color-line);
+    opacity: 0.6;
   }
 }

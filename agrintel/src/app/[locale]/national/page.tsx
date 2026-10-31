@@ -133,35 +133,35 @@ export default async function NationalDashboardPage({
   const nationalDecisionCards: ActionCardItem[] = [
     {
       id: "action-audit",
-      badge: t.national.decisions?.urgentAuditBadge ?? "Immediate MINAGRI Audit",
+      badge: t.national.decisions?.urgentAuditBadge ?? "Inspect Seeds & Fertilizer",
       badgeType: "danger",
       title: `${topLeakageDistrict ? districtName(topLeakageDistrict) : topLeakage?.district_code} · ${cropName(crop)}`,
-      metric: `z = ${topLeakage?.residual_z_score.toFixed(2)}`,
-      metricLabel: `Rwf ${numFormat(topLeakage?.estimated_fiscal_exposure_rwf ?? 0)} exposure`,
-      context: t.national.decisions?.urgentAuditContext ?? "Subsidized input uptake exceeds 70%, but yield residual severely underperformed expectations. Potential seed degeneration or informal fertilizer diversion.",
-      ctaText: t.national.decisions?.auditCta ?? "Dispatch MINAGRI Audit →",
+      metric: `Rating: ${topLeakage?.residual_z_score.toFixed(1)}`,
+      metricLabel: `Rwf ${numFormat(topLeakage?.estimated_fiscal_exposure_rwf ?? 0)} farm support`,
+      context: t.national.decisions?.urgentAuditContext ?? "Farmers used plenty of seeds and fertilizer, but the harvest was much lower than expected. Inspect seed bags and fertilizer delivery.",
+      ctaText: t.national.decisions?.auditCta ?? "Send Field Inspection Alert →",
       ctaHref: `/${locale}/alerts?district=${topLeakage?.district_code}&commodity=${crop.code}&crop=${crop.code}&z=${topLeakage?.residual_z_score.toFixed(2)}&exposure=${topLeakage?.estimated_fiscal_exposure_rwf}&intent=audit`,
     },
     {
       id: "action-benchmark",
-      badge: t.national.decisions?.benchmarkBadge ?? "National Yield Frontier",
+      badge: t.national.decisions?.benchmarkBadge ?? "Top Performing District",
       badgeType: "success",
       title: `${topHighDistrict ? districtName(topHighDistrict) : topHigh?.district_code} · ${cropName(crop)}`,
-      metric: `+${topHigh?.residual_z_score.toFixed(2)} SD`,
-      metricLabel: `${numFormat(topHigh?.observed_yield_kg_per_ha ?? 0)} kg/ha frontier`,
-      context: t.national.decisions?.benchmarkContext ?? "Exemplary synergy between certified seed, inorganic fertilizer, and anti-erosion terraces. Recommended model for neighboring sector extension.",
-      ctaText: t.national.decisions?.benchmarkCta ?? "Inspect Agronomic Protocol →",
+      metric: `Rating: +${topHigh?.residual_z_score.toFixed(1)}`,
+      metricLabel: `${numFormat(topHigh?.observed_yield_kg_per_ha ?? 0)} kg/ha harvest`,
+      context: t.national.decisions?.benchmarkContext ?? "Excellent harvest thanks to quality seeds, good fertilizer, and hillside terraces. Great model for neighboring districts.",
+      ctaText: t.national.decisions?.benchmarkCta ?? "See Best Farming Practices →",
       ctaHref: `/${locale}/national?commodity=${crop.code}&district=${topHigh?.district_code}&tab=audit`,
     },
     {
       id: "action-climate",
-      badge: t.national.decisions?.climateBadge ?? "Agro-Climatic Moisture Deficit",
+      badge: t.national.decisions?.climateBadge ?? "Dry Weather & Water Shortage",
       badgeType: "warning",
       title: `${topClimateDistrict ? districtName(topClimateDistrict) : topClimate?.district_code} · ${cropName(crop)}`,
-      metric: `z = ${topClimate?.residual_z_score.toFixed(2)}`,
-      metricLabel: "Drought Constrained Zone",
-      context: t.national.decisions?.climateContext ?? "Yield depression strongly tracks negative subnational rainfall anomalies. Prioritize marshland furrow irrigation and organic mulching.",
-      ctaText: t.national.decisions?.climateCta ?? "Review Irrigation Action →",
+      metric: `Rating: ${topClimate?.residual_z_score.toFixed(1)}`,
+      metricLabel: "Low Rainfall Area",
+      context: t.national.decisions?.climateContext ?? "Harvest was low because of dry weather and lack of rain. Priority should be valley irrigation and mulching.",
+      ctaText: t.national.decisions?.climateCta ?? "Review Irrigation Advice →",
       ctaHref: `/${locale}/farmer?district=${topClimate?.district_code}&commodity=${crop.code}`,
     },
   ];
@@ -270,11 +270,11 @@ export default async function NationalDashboardPage({
                 Rwf {numFormat(auditSummary.totalFiscalExposureRwf)}
               </div>
               <p className="text-xs text-muted mt-1">
-                Quantified fiscal risk from substandard seed germinability, informal pathogen substitution, or diverted subsidized fertilizers.
+                Estimated value of farm support at risk where harvests were much lower than expected despite high fertilizer and seed delivery.
               </p>
             </div>
             <div className="text-xs text-muted max-w-sm">
-              Anchored to MINAGRI&apos;s Rwf 75 Billion public input subsidy allocation and NISR SAS 2024-2026 Multiple Frame Sampling survey weights.
+              Helps ensure Rwanda&apos;s Rwf 75 Billion national agricultural support delivers healthy crops for all districts.
             </div>
           </div>
 
@@ -472,16 +472,43 @@ export default async function NationalDashboardPage({
                       )}
                     </dl>
 
-                    {selectedAuditDistrict.classification === "LEAKAGE_OR_SEED_QUALITY_RISK" && (
-                      <div className="mt-3 pt-3 border-t border-line/60">
+                    {/* Connected Multi-Screen Operational Action Bridges */}
+                    <div className="mt-4 pt-3 border-t border-line/60 flex flex-col gap-2">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-muted block">
+                        Connected Operational Workflows
+                      </span>
+                      <Link
+                        href={`/${locale}/farmer?district=${selectedAuditDistrict.district_code}&commodity=${crop.code}`}
+                        className="inline-flex w-full items-center justify-between rounded-xl border border-line bg-cream/70 px-3.5 py-2 text-xs font-semibold text-canopy hover:bg-sprout/60 transition-colors"
+                      >
+                        <span>🌾 Open Farmer Advisory ({selectedAuditDistrict.district_code})</span>
+                        <span>→</span>
+                      </Link>
+                      <Link
+                        href={`/${locale}/retailer?commodity=${crop.code}`}
+                        className="inline-flex w-full items-center justify-between rounded-xl border border-line bg-cream/70 px-3.5 py-2 text-xs font-semibold text-soil hover:bg-harvest/25 transition-colors"
+                      >
+                        <span>🚛 Freight Stress-Test ({selectedAuditDistrict.district_code} → Kigali)</span>
+                        <span>→</span>
+                      </Link>
+                      {selectedAuditDistrict.classification === "LEAKAGE_OR_SEED_QUALITY_RISK" ? (
                         <Link
                           href={`/${locale}/alerts?district=${selectedAuditDistrict.district_code}&commodity=${crop.code}&crop=${crop.code}&z=${selectedAuditDistrict.residual_z_score.toFixed(2)}&exposure=${selectedAuditDistrict.estimated_fiscal_exposure_rwf}&intent=audit`}
-                          className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-clay px-4 py-2.5 text-xs font-bold text-cream shadow-xs hover:bg-clay/90 active:scale-95 cursor-pointer"
+                          className="inline-flex w-full items-center justify-between rounded-xl bg-clay px-3.5 py-2 text-xs font-bold text-cream shadow-xs hover:bg-clay/90 active:scale-95 cursor-pointer transition-colors"
                         >
-                          <span>{t.national.decisions?.auditCta ?? "Dispatch MINAGRI Audit →"}</span>
+                          <span>🚨 Dispatch MINAGRI Field Audit</span>
+                          <span>→</span>
                         </Link>
-                      </div>
-                    )}
+                      ) : selectedAuditDistrict.classification === "CLIMATIC_OR_WATER_STRESS" ? (
+                        <Link
+                          href={`/${locale}/alerts?district=${selectedAuditDistrict.district_code}&commodity=${crop.code}&crop=${crop.code}&intent=hold`}
+                          className="inline-flex w-full items-center justify-between rounded-xl bg-harvest px-3.5 py-2 text-xs font-bold text-canopy shadow-xs hover:bg-harvest/90 transition-colors"
+                        >
+                          <span>💧 Request Emergency Irrigation Shield</span>
+                          <span>→</span>
+                        </Link>
+                      ) : null}
+                    </div>
                   </div>
                 ) : (
                   <p className="mt-4 text-sm text-muted">Select a district to inspect its econometric decomposition.</p>

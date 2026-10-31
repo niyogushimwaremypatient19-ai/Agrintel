@@ -9,6 +9,7 @@ import { getLatestCpiRelease } from "@/lib/data/macro-cpi";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { CROP_VISUALS } from "@/components/crop-cards";
 import { OntologyPipelineStrip } from "@/components/ontology-pipeline-strip";
+import { WelcomePersonaHub } from "@/components/welcome-persona-hub";
 
 // The welcome page reads live counts from Neon, so it must render per request.
 export const dynamic = "force-dynamic";
@@ -82,24 +83,19 @@ export default async function WelcomePage({
         labels={t.status}
       />
 
-      {/* Official NISR CPI Release & Rural-Urban Divergence Banner */}
+      {/* Official NISR CPI Release & Rural-Urban Food Prices Banner */}
       <MacroCpiBanner cpi={cpiRelease} labels={t.market.macroCpi} />
 
-      {/* Main Title & Strategic Identity */}
-      <section className="max-w-3xl">
-        <div className="inline-flex items-center gap-2 rounded-full bg-sprout px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-canopy">
-          {locale === "rw" ? "Ikoranabuhanga ry'Ubuhinzi n'Ibiribwa" : "Causal Agro-Climatic Intelligence Platform"}
-        </div>
-        <h1 className="mt-3 text-4xl font-extrabold text-canopy md:text-5xl">{t.welcome.title}</h1>
-        <p className="mt-4 text-lg text-ink leading-relaxed">{t.welcome.intro}</p>
-        <p className="mt-3 text-sm text-muted">{t.welcome.disclaimer}</p>
-        <p className="mt-4 text-sm text-ink">
-          <span className="font-bold text-canopy">{t.welcome.latestUpdate}:</span>{" "}
-          {latestUpdate ?? t.welcome.latestUpdateNone}
-        </p>
-      </section>
+      {/* Welcoming Stakeholder Hub: What We Do, What Value We Bring, What To Do */}
+      <WelcomePersonaHub
+        hub={t.welcome.welcomeHub}
+        locale={locale}
+        latestUpdate={latestUpdate ?? t.welcome.latestUpdateNone}
+        latestUpdateLabel={t.welcome.latestUpdate}
+        disclaimer={t.welcome.disclaimer}
+      />
 
-      {/* 6-Stage Palantir Foundry-Grade Decision Intelligence Ontology */}
+      {/* 6 Simple Steps from Field to Market */}
       <OntologyPipelineStrip ontology={t.welcome.ontology} />
 
       {/* Executive Strategic Callout Metric Cards (The 15-Second Judge Hook) */}
@@ -147,7 +143,7 @@ export default async function WelcomePage({
           </div>
           <Link
             href={`/${locale}/retailer`}
-            className="mt-5 inline-flex items-center justify-between rounded-xl bg-soil px-4 py-2.5 text-xs font-bold text-cream hover:bg-harvest transition-colors cursor-pointer"
+            className="mt-5 inline-flex items-center justify-between rounded-xl bg-soil px-4 py-2.5 text-xs font-bold text-cream hover:bg-harvest hover:text-canopy transition-colors cursor-pointer"
           >
             <span>{callouts.arbitrage.cta}</span>
             <span>→</span>

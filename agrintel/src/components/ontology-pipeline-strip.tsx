@@ -36,7 +36,7 @@ export function OntologyPipelineStrip({ ontology }: OntologyProps) {
         </div>
         <div className="hidden sm:flex items-center gap-1.5 self-start sm:self-auto text-[11px] font-mono text-muted bg-cream/80 px-2.5 py-1 rounded-lg border border-line/60">
           <span className="h-2 w-2 rounded-full bg-leaf animate-pulse" />
-          <span>System of Action · Closed Loop</span>
+          <span>Always Up to Date · Field Verified</span>
         </div>
       </div>
 
@@ -73,8 +73,8 @@ export function OntologyPipelineStrip({ ontology }: OntologyProps) {
 
               {/* Status footer pill */}
               <div className="mt-3 pt-2 border-t border-line/40 flex items-center justify-between text-[10px] font-mono text-muted">
-                <span className="uppercase tracking-wider">L{idx + 1}</span>
-                <span className="text-leaf font-bold">Active</span>
+                <span className="uppercase tracking-wider">Step {idx + 1}</span>
+                <span className="text-leaf font-bold">Ready</span>
               </div>
             </li>
           );

@@ -112,13 +112,13 @@ export default async function FarmerAdvisoryPage({
   } else {
     if (isLivestock) {
       if (hasValidDsi && dsiVal !== null) {
-        speechSummary = `Pastoral dairy advisory for ${districtName} district. Dairy Cattle Stress Index is ${Math.round(dsiVal)} out of 100. ${
+        speechSummary = `Cattle and pasture update for ${districtName} district. Pasture and water dryness rating is ${Math.round(dsiVal)} out of 100. ${
           dsiVal > 50
-            ? "Acute pasture deficit and water stress detected. Prioritize Napier grass silage conservation, urea-treated residue feeding, and water trough shading."
-            : "Pasture and forage conditions are optimal. Maintain rotational grazing and silage reserves."
+            ? "Pastures are drying up and water is scarce. Feed stored Napier grass silage, mix urea with dry maize stalks, and shade your water troughs so water stays cool and does not evaporate."
+            : "Grass and water in the pastures are in good condition. Continue rotating your grazing areas and store extra grass for dry weeks."
         }`;
       } else {
-        speechSummary = `Pastoral dairy advisory for ${districtName} district. This is a crop-dominated agro-ecological zone; high-frequency dairy cattle telemetry monitors the 8 designated dairy milk shed basins (Nyagatare, Gicumbi, Musanze, Nyanza, Kayonza, Bugesera, Rwamagana, Gatsibo).`;
+        speechSummary = `Cattle advisory for ${districtName} district. This district focuses mainly on crop farming. Regular pasture grass and cattle water updates are monitored in Rwanda's 8 main dairy districts: Nyagatare, Gicumbi, Musanze, Nyanza, Kayonza, Bugesera, Rwamagana, and Gatsibo.`;
       }
     } else if (driver && driver.changePct >= 0.08) {
       speechSummary = `Farmer advisory for ${districtName} district, ${cropName}. Recommendation: SELL NOW. Market prices are rising, current average is ${priceFormat(driver.recentAverage)} Rwandan Francs per kilo. ${t.advisory.action.sellAdvice.replace("{percent}", percent(driver.changePct))}`;
@@ -157,7 +157,7 @@ export default async function FarmerAdvisoryPage({
       {/* Header section with Kinyarwanda-first presentation */}
       <section className="max-w-3xl">
         <div className="inline-flex items-center gap-2 rounded-full bg-sprout px-3 py-1 text-xs font-bold uppercase tracking-wider text-canopy">
-          {locale === "rw" ? "Ubufasha ku bahinzi n'aborozi" : "Farmer & Livestock Intelligence"}
+          {locale === "rw" ? "Ubufasha ku bahinzi n'aborozi" : "Farmer & Cattle Field Guide"}
         </div>
         <h1 className="mt-2 text-4xl font-extrabold text-canopy md:text-5xl">
           {locale === "rw" ? "Inama ku Bahinzi n'Ibyemezo by'Isoko" : t.advisory.title}
@@ -301,19 +301,24 @@ export default async function FarmerAdvisoryPage({
           {/* Subnational Weather Observation Card */}
           <div className="rounded-2xl border border-line bg-paper p-5 shadow-xs">
             <span className="text-xs font-semibold uppercase text-muted tracking-wider block">
-              {t.advisory.conditions.weather.title} (CHIRPS / Meteo)
+              {t.advisory.conditions.weather.title} {locale === "rw" ? "(Iteganyagihe rya Meteo)" : "(Rwanda Meteo Weather)"}
             </span>
             {climate ? (
               <div className="mt-2 flex flex-col gap-1.5 text-sm text-ink">
                 <div>
                   <span className="font-bold text-canopy text-lg">{climate.rainfall_mm} mm</span>
-                  <span className="text-xs text-muted ml-1.5">(Normal: {climate.rainfall_historical_avg_mm} mm)</span>
+                  <span className="text-xs text-muted ml-1.5">
+                    ({locale === "rw" ? "Ubusanzwe" : "Normal"}: {climate.rainfall_historical_avg_mm} mm)
+                  </span>
                 </div>
                 <div className="text-xs text-muted">
-                  Anomaly Ratio: <span className="font-mono font-semibold text-ink">{climate.rainfall_anomaly_ratio.toFixed(2)}x</span>
+                  {locale === "rw" ? "Imvura ugereranyije n'isanzwe:" : "Rain compared to normal:"}{" "}
+                  <span className="font-mono font-semibold text-ink">{climate.rainfall_anomaly_ratio.toFixed(2)}x</span>
                 </div>
                 <div className="text-xs text-muted">
-                  Max Temp: <span className="font-mono font-semibold text-ink">{climate.temp_max_c}°C</span> | Dry spell: {climate.dry_spell_days} days
+                  {locale === "rw" ? "Ubushyuhe bwo hejuru:" : "Highest Temp:"}{" "}
+                  <span className="font-mono font-semibold text-ink">{climate.temp_max_c}°C</span> |{" "}
+                  {locale === "rw" ? "Iminsi nta mvura:" : "Days without rain:"} {climate.dry_spell_days} {locale === "rw" ? "iminsi" : "days"}
                 </div>
               </div>
             ) : (
@@ -324,22 +329,29 @@ export default async function FarmerAdvisoryPage({
           {/* Soil & Irrigation Buffer Card */}
           <div className="rounded-2xl border border-line bg-paper p-5 shadow-xs">
             <span className="text-xs font-semibold uppercase text-muted tracking-wider block">
-              {t.advisory.conditions.soil.title} & Marshlands
+              {t.advisory.conditions.soil.title} &amp; {locale === "rw" ? "Ibifumbiro n'Ibikondo" : "Marshland Water"}
             </span>
             <div className="mt-2 text-sm text-ink flex flex-col gap-1.5">
               <div>
                 <span className="font-bold text-canopy">
-                  {auditRecord ? `Irrigation: ${auditRecord.irrigation_pct.toFixed(1)}%` : "Marshland Irrigation: Active"}
+                  {auditRecord
+                    ? `${locale === "rw" ? "Kuhira" : "Irrigation"}: ${auditRecord.irrigation_pct.toFixed(1)}%`
+                    : locale === "rw" ? "Kuhira mu bishanga: Birakora" : "Valley Irrigation: Active"}
                 </span>
                 <span className="text-xs text-muted ml-1.5">
-                  ({auditRecord ? `Seed adoption: ${auditRecord.improved_seed_pct.toFixed(1)}%` : "Classified network"})
+                  ({auditRecord
+                    ? `${locale === "rw" ? "Imbuto z'indobanure" : "Improved seeds"}: ${auditRecord.improved_seed_pct.toFixed(1)}%`
+                    : locale === "rw" ? "Imigezi y'igishanga" : "Marshland stream network"})
                 </span>
               </div>
               <div className="text-xs text-muted">
-                Anti-Erosion: <span className="font-mono font-semibold text-ink">92.4%</span> terraced coverage
+                {locale === "rw" ? "Kurwanya isuri:" : "Soil Protected from Erosion:"}{" "}
+                <span className="font-mono font-semibold text-ink">92.4%</span> {locale === "rw" ? "amaterasi y'imisozi" : "terraced hillside coverage"}
               </div>
               <p className="text-xs text-muted mt-0.5">
-                Terraced hillside coverage protects against topsoil run-off. Marshland networks provide dry-season water cushioning.
+                {locale === "rw"
+                  ? "Amaterasi arinda ubutaka bwiza gutwarwa n'isuri iyo imvura iguye. Ibishanga bitanga amazi yo gufasha ibihingwa mu gihe cy'izuba."
+                  : "Terraces keep fertile topsoil from washing away in heavy downpours. Valley marshlands keep crops watered even during dry weeks."}
               </p>
             </div>
           </div>

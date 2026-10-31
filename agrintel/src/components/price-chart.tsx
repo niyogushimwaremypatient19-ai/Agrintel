@@ -13,6 +13,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { tokens } from "@/lib/design-tokens";
 
 export type ChartPoint = {
   period: string;
@@ -156,24 +157,24 @@ export function PriceChart({
           <ComposedChart data={data} margin={{ top: 16, right: 16, left: 8, bottom: 8 }}>
             <defs>
               <linearGradient id="predictionFanGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#dcebc8" stopOpacity={0.9} />
-                <stop offset="100%" stopColor="#dcebc8" stopOpacity={0.3} />
+                <stop offset="0%" stopColor={tokens.chart.forecastBandFill} stopOpacity={0.9} />
+                <stop offset="100%" stopColor={tokens.chart.forecastBandFill} stopOpacity={0.3} />
               </linearGradient>
             </defs>
-            <CartesianGrid stroke="#d9d3c2" strokeDasharray="3 3" vertical={false} />
+            <CartesianGrid stroke={tokens.chart.grid} strokeDasharray="3 3" vertical={false} />
             <XAxis
               dataKey="label"
-              tick={{ fill: "#55645a", fontSize: 11, fontFamily: "inherit" }}
-              axisLine={{ stroke: "#d9d3c2" }}
+              tick={{ fill: tokens.chart.axis, fontSize: 11, fontFamily: "inherit" }}
+              axisLine={{ stroke: tokens.chart.grid }}
             />
             <YAxis
-              tick={{ fill: "#55645a", fontSize: 11, fontFamily: "inherit" }}
-              axisLine={{ stroke: "#d9d3c2" }}
+              tick={{ fill: tokens.chart.axis, fontSize: 11, fontFamily: "inherit" }}
+              axisLine={{ stroke: tokens.chart.grid }}
               label={{
                 value: unitLabel,
                 angle: -90,
                 position: "insideLeft",
-                fill: "#55645a",
+                fill: tokens.chart.axis,
                 fontSize: 11,
               }}
             />
@@ -190,7 +191,7 @@ export function PriceChart({
                 d.low !== null && d.high !== null ? [d.low, d.high] : null
               }
               name={labels.range}
-              stroke="#a8c98e"
+              stroke={tokens.chart.forecastBandStroke}
               strokeDasharray="2 2"
               fill="url(#predictionFanGradient)"
               fillOpacity={1}
@@ -201,9 +202,9 @@ export function PriceChart({
               type="monotone"
               dataKey="observed"
               name={labels.observed}
-              stroke="#1f4d2b"
+              stroke={tokens.chart.observedLine}
               strokeWidth={3}
-              dot={{ r: 3.5, fill: "#1f4d2b", stroke: "#faf6ec", strokeWidth: 1.5 }}
+              dot={{ r: 3.5, fill: tokens.chart.observedDotFill, stroke: tokens.chart.observedDotStroke, strokeWidth: 1.5 }}
               activeDot={{ r: 5 }}
               connectNulls={false}
               isAnimationActive={false}
@@ -213,10 +214,10 @@ export function PriceChart({
               type="monotone"
               dataKey="forecast"
               name={labels.forecast}
-              stroke="#b5562e"
+              stroke={tokens.chart.forecastLine}
               strokeWidth={2.5}
               strokeDasharray="5 4"
-              dot={{ r: 3.5, fill: "#b5562e", stroke: "#faf6ec", strokeWidth: 1.5 }}
+              dot={{ r: 3.5, fill: tokens.chart.forecastLine, stroke: tokens.chart.observedDotStroke, strokeWidth: 1.5 }}
               activeDot={{ r: 5 }}
               connectNulls={false}
               isAnimationActive={false}
@@ -225,13 +226,13 @@ export function PriceChart({
             {firstForecastLabel ? (
               <ReferenceLine
                 x={firstForecastLabel}
-                stroke="#5c3d23"
+                stroke={tokens.chart.referenceLine}
                 strokeWidth={1.5}
                 strokeDasharray="3 3"
                 label={{
                   value: labels.forecastStart,
                   position: "top",
-                  fill: "#5c3d23",
+                  fill: tokens.chart.referenceLine,
                   fontSize: 11,
                   fontWeight: 600,
                 }}

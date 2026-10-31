@@ -332,24 +332,52 @@ export function CorridorArbitrageTable({
             </tr>
           </thead>
           <tbody className="divide-y divide-line/60">
-            {initialCorridors.map((corridor) => {
-              const sim = simulateCustomFuelPrice(corridor, fuelPrice, truckPayload);
-              const isDispatch = sim.recommendation === "DISPATCH_SURPLUS";
-              const isModerate = sim.recommendation === "MODERATE_MARGIN";
+            {initialCorridors.length === 0 ? (
+              <tr>
+                <td colSpan={8} className="px-6 py-12 text-center text-sm text-muted">
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <span className="text-2xl" aria-hidden="true">🚛</span>
+                    <p className="font-semibold text-ink">No Spatial Trade Corridors Monitored for this Commodity</p>
+                    <p className="text-xs text-muted max-w-md">
+                      Corridor records require verified transport distances and calibrated road impedance models.
+                    </p>
+                    <Link
+                      href={`/${locale}/market?commodity=${commodityCode}`}
+                      className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-leaf hover:underline"
+                    >
+                      <span>View Market Price Forecasts →</span>
+                    </Link>
+                  </div>
+                </td>
+              </tr>
+            ) : (
+              initialCorridors.map((corridor) => {
+                const sim = simulateCustomFuelPrice(corridor, fuelPrice, truckPayload);
+                const isDispatch = sim.recommendation === "DISPATCH_SURPLUS";
+                const isModerate = sim.recommendation === "MODERATE_MARGIN";
 
-              return (
-                <tr
-                  key={`${corridor.origin_district_code}_${corridor.destination_code}`}
-                  className="hover:bg-cream/30 transition-colors"
-                >
-                  <th scope="row" className="px-4 py-3.5 font-semibold text-canopy">
-                    <span className="text-base font-bold">{corridor.origin_district_code}</span>
-                    <span className="mx-1.5 text-muted">→</span>
-                    <span className="text-ink font-bold">{corridor.destination_code}</span>
-                    <span className="block text-xs font-normal text-muted mt-0.5">
-                      {corridor.destination_name}
-                    </span>
-                  </th>
+                return (
+                  <tr
+                    key={`${corridor.origin_district_code}_${corridor.destination_code}`}
+                    className="hover:bg-cream/30 transition-colors"
+                  >
+                    <th scope="row" className="px-4 py-3.5 font-semibold text-canopy">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="text-base font-bold">{corridor.origin_district_code}</span>
+                        <span className="text-muted">→</span>
+                        <span className="text-ink font-bold">{corridor.destination_code}</span>
+                      </div>
+                      <span className="block text-xs font-normal text-muted mt-0.5">
+                        {corridor.destination_name}
+                      </span>
+                      <Link
+                        href={`/${locale}/farmer?district=${corridor.origin_district_code}&commodity=${commodityCode}`}
+                        className="mt-1 inline-flex items-center gap-1 text-[11px] font-semibold text-leaf hover:underline"
+                        title={`View agronomic yield signals for ${corridor.origin_district_code}`}
+                      >
+                        <span>🌾 Check Origin Yields</span>
+                      </Link>
+                    </th>
                   <td className="px-4 py-3.5 text-ink">
                     <div className="font-mono font-medium tabular-nums">{corridor.distance_km} km</div>
                     <span className="text-xs text-clay font-mono tabular-nums">
@@ -447,7 +475,8 @@ export function CorridorArbitrageTable({
                   </td>
                 </tr>
               );
-            })}
+            })
+          )}
           </tbody>
         </table>
       </div>

@@ -14,17 +14,32 @@ export const verifiedObservationsOnly = and(
   eq(sources.accessStatus, "verified"),
 );
 
-/** Crops offered in the selector. Retrieved directly from PostgreSQL commodities table. */
+export const FALLBACK_CROPS = [
+  { code: "TOMATO", nameEn: "Tomatoes", nameRw: "Inyanya" },
+  { code: "IRISH_POTATO", nameEn: "Irish Potatoes", nameRw: "Ibirayi" },
+  { code: "MAIZE", nameEn: "Maize", nameRw: "Ibigori" },
+  { code: "BEAN", nameEn: "Beans", nameRw: "Ibishyimbo" },
+  { code: "RICE", nameEn: "Rice", nameRw: "Umuceri" },
+  { code: "CASSAVA", nameEn: "Cassava", nameRw: "Imyumbati" },
+];
+
+/** Crops offered in the selector. Retrieved directly from PostgreSQL commodities table with graceful offline fallback. */
 export async function getCropOptions() {
-  return await db
-    .select({
-      code: commodities.code,
-      nameEn: commodities.nameEn,
-      nameRw: commodities.nameRw,
-    })
-    .from(commodities)
-    .where(eq(commodities.category, "crop"))
-    .orderBy(asc(commodities.nameEn));
+  try {
+    const rows = await db
+      .select({
+        code: commodities.code,
+        nameEn: commodities.nameEn,
+        nameRw: commodities.nameRw,
+      })
+      .from(commodities)
+      .where(eq(commodities.category, "crop"))
+      .orderBy(asc(commodities.nameEn));
+    if (rows && rows.length > 0) return rows;
+  } catch (err) {
+    console.warn("Neon DB query failed in getCropOptions, using resilient offline fallback:", err);
+  }
+  return FALLBACK_CROPS;
 }
 
 /**

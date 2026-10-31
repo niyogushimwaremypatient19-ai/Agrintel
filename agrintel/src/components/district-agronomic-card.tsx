@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { DistrictAuditRecord } from "@/lib/data/econometric-audit";
+import { formatAssessmentReasoning } from "@/lib/format-rationale";
 
 interface DistrictAgronomicCardProps {
   auditRecord: DistrictAuditRecord | null;
@@ -237,13 +238,13 @@ export function DistrictAgronomicCard({
         </summary>
 
         <div className="border-t border-line/60 p-5 pt-4 space-y-6">
-          {/* Econometric Attribution Summary Callout */}
+          {/* Assessment Summary Callout */}
           <div className="rounded-xl border border-line/70 bg-paper p-4">
             <span className="text-xs font-bold uppercase tracking-wider text-muted block">
-              Attribution Diagnostic Rationale
+              {locale === "rw" ? "Impamvu z'Isuzuma ry'Umusaruro" : "Harvest Assessment Reasoning"}
             </span>
             <p className="mt-1.5 text-xs sm:text-sm font-medium text-ink leading-relaxed">
-              {auditRecord.diagnostic_rationale}
+              {formatAssessmentReasoning(auditRecord.diagnostic_rationale, locale)}
             </p>
           </div>
 
@@ -251,29 +252,29 @@ export function DistrictAgronomicCard({
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div className="rounded-xl border border-line/60 bg-paper p-3.5">
               <span className="text-[11px] font-bold uppercase text-muted block">
-                Residual z-Score
+                Harvest Performance Rating
               </span>
               <p
                 className={`mt-1 text-xl font-black font-mono tabular-nums ${
                   isLeakage ? "text-clay" : isClimate ? "text-harvest" : isHigh ? "text-leaf" : "text-ink"
                 }`}
               >
-                {auditRecord.residual_z_score >= 0 ? `+${auditRecord.residual_z_score.toFixed(2)}` : auditRecord.residual_z_score.toFixed(2)}
+                {auditRecord.residual_z_score >= 0 ? `+${auditRecord.residual_z_score.toFixed(1)}` : auditRecord.residual_z_score.toFixed(1)}
               </p>
               <span className="text-[10px] text-muted block mt-0.5">
-                Standardized yield deviation
+                Compared to expected target
               </span>
             </div>
 
             <div className="rounded-xl border border-line/60 bg-paper p-3.5">
               <span className="text-[11px] font-bold uppercase text-muted block">
-                Precipitation Anomaly
+                Rainfall Level
               </span>
               <p className="mt-1 text-xl font-black text-canopy font-mono tabular-nums">
                 {auditRecord.rainfall_anomaly_ratio.toFixed(2)}x
               </p>
               <span className="text-[10px] text-muted block mt-0.5">
-                CHIRPS / Meteo Rwanda baseline
+                Compared to normal season rain
               </span>
             </div>
 
@@ -382,6 +383,41 @@ export function DistrictAgronomicCard({
           </p>
         </div>
       </details>
+
+      {/* Connected Multi-Screen User Journey Bridges */}
+      <div className="mt-5 pt-4 border-t border-line/60 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <span className="font-bold text-soil text-[11px] uppercase tracking-wider">
+          Cross-Platform Workflows:
+        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          <Link
+            href={`/${locale}/national?district=${auditRecord.district_code}&commodity=${auditRecord.commodity_code}`}
+            className="inline-flex items-center gap-1 rounded-lg border border-line bg-cream/70 px-2.5 py-1.5 font-semibold text-canopy hover:bg-sprout/50 transition-colors"
+          >
+            <span>🗺️ 30-District Overview</span>
+          </Link>
+          <Link
+            href={`/${locale}/retailer?commodity=${auditRecord.commodity_code}`}
+            className="inline-flex items-center gap-1 rounded-lg border border-line bg-cream/70 px-2.5 py-1.5 font-semibold text-soil hover:bg-harvest/20 transition-colors"
+          >
+            <span>🚛 Transport & Profits</span>
+          </Link>
+          <Link
+            href={`/${locale}/market?commodity=${auditRecord.commodity_code}`}
+            className="inline-flex items-center gap-1 rounded-lg border border-line bg-cream/70 px-2.5 py-1.5 font-semibold text-leaf hover:bg-sprout/40 transition-colors"
+          >
+            <span>📈 Wholesale Prices</span>
+          </Link>
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="inline-flex items-center gap-1 rounded-lg border border-line/80 bg-paper px-2.5 py-1.5 font-semibold text-muted hover:text-ink hover:border-canopy transition-colors cursor-pointer"
+            title="Print or save this advisory for offline field use"
+          >
+            <span>🖨️ Print / Offline Sheet</span>
+          </button>
+        </div>
+      </div>
     </section>
   );
 }

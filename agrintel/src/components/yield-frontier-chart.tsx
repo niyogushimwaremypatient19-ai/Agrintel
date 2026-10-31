@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import type { DistrictAuditRecord } from "@/lib/data/econometric-audit";
+import { tokens } from "@/lib/design-tokens";
+import { formatAssessmentReasoning } from "@/lib/format-rationale";
 
 interface YieldFrontierChartProps {
   auditRecords: DistrictAuditRecord[];
@@ -61,34 +63,34 @@ export function YieldFrontierChart({
     auditRecords.find((r) => r.classification === "LEAKAGE_OR_SEED_QUALITY_RISK") ??
     auditRecords[0];
 
-  // Feature Attribution weights from econometric_audit_engine.py
+  // Feature Attribution weights
   const featureWeights = [
-    { name: locale === "rw" ? "Imvura n'Ububiko bw'Amazi (CHIRPS)" : "CHIRPS Rainfall & Hydrology Lag", weight: 30, color: "bg-canopy", text: "text-canopy", beta: "Φ_clim" },
-    { name: locale === "rw" ? "Imbuto Zatoranyijwe (SAS)" : "Certified Seed Quality Adoption", weight: 28, color: "bg-leaf", text: "text-leaf", beta: "β = 0.28" },
-    { name: locale === "rw" ? "Ifumbire Mvaruganda (SAS)" : "Inorganic Blended Fertilizer", weight: 22, color: "bg-harvest", text: "text-soil", beta: "β = 0.22" },
-    { name: locale === "rw" ? "Amaterasi n'Ubutaka (SAS)" : "Terracing & Anti-Erosion Buffers", weight: 12, color: "bg-stone-500", text: "text-stone-700", beta: "β = 0.12" },
-    { name: locale === "rw" ? "Imiti n'Ibifata Ibihingwa" : "Crop Protection & Pesticides", weight: 8, color: "bg-clay", text: "text-clay", beta: "β = 0.08" },
+    { name: locale === "rw" ? "Imvura n'Amazi mu Butaka" : "Rainfall & Soil Water", weight: 30, color: "bg-canopy", text: "text-canopy", beta: "30%" },
+    { name: locale === "rw" ? "Imbuto Z'indobanure" : "Quality Certified Seeds", weight: 28, color: "bg-leaf", text: "text-leaf", beta: "28%" },
+    { name: locale === "rw" ? "Ifumbire Mvaruganda" : "Mineral Fertilizer", weight: 22, color: "bg-harvest", text: "text-soil", beta: "22%" },
+    { name: locale === "rw" ? "Amaterasi n'Ubutaka" : "Hillside Terraces & Soil Protection", weight: 12, color: "bg-stone-500", text: "text-stone-700", beta: "12%" },
+    { name: locale === "rw" ? "Imiti n'Ibifata Ibihingwa" : "Crop Protection & Pest Defense", weight: 8, color: "bg-clay", text: "text-clay", beta: "8%" },
   ];
 
   return (
     <section
-      aria-label="ML Production Frontier & Feature Attribution"
+      aria-label="Harvest Performance & Comparison"
       className="@container flex flex-col gap-6 rounded-3xl border border-line bg-paper p-5 sm:p-6 shadow-xs"
     >
-      {/* Header with Statistical Proof Credential */}
+      {/* Header with Credential */}
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between border-b border-line/60 pb-4">
         <div>
           <div className="inline-flex items-center gap-1.5 rounded-full bg-canopy/10 px-3 py-0.5 text-xs font-mono font-bold text-canopy uppercase tracking-wider">
-            <span>ML Production Frontier</span>
+            <span>Harvest Performance Checker</span>
             <span>·</span>
-            <span>econometric_audit_engine.py</span>
+            <span>Official Benchmarks</span>
           </div>
           <h2 className="mt-1.5 text-xl font-bold tracking-tight text-canopy sm:text-2xl">
-            {labels?.title ?? "Climate-Controlled Production Frontier & Outlier Isolation"}
+            {labels?.title ?? "District Harvest Performance Check"}
           </h2>
           <p className="text-xs sm:text-sm text-muted">
             {labels?.subtitle ??
-              `Evaluates observed harvest yield against expected structural yield for ${commodityName} across all 30 districts.`}
+              `Evaluates actual harvest against expected harvest for ${commodityName} across all 30 districts.`}
           </p>
         </div>
 
@@ -96,15 +98,15 @@ export function YieldFrontierChart({
         <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
           <span className="flex items-center gap-1.5 rounded-full bg-clay/15 px-2.5 py-1 text-clay font-bold">
             <span className="h-2.5 w-2.5 rounded-full bg-clay animate-pulse" />
-            z &lt; -1.75 Leakage Anomaly
+            Needs Check (Shortfall)
           </span>
           <span className="flex items-center gap-1.5 rounded-full bg-harvest/20 px-2.5 py-1 text-soil">
             <span className="h-2.5 w-2.5 rounded-full bg-harvest" />
-            Water Stress
+            Drought / Dry Spell
           </span>
           <span className="flex items-center gap-1.5 rounded-full bg-canopy/10 px-2.5 py-1 text-canopy">
             <span className="h-2.5 w-2.5 rounded-full bg-canopy" />
-            Nominal Frontier
+            On Target / Good Harvest
           </span>
         </div>
       </div>
@@ -130,7 +132,7 @@ export function YieldFrontierChart({
                       y1={yPos}
                       x2={width - padding.right}
                       y2={yPos}
-                      stroke="#d9d3c2"
+                      stroke={tokens.chart.grid}
                       strokeDasharray="3 3"
                       strokeWidth="1"
                     />
@@ -138,7 +140,7 @@ export function YieldFrontierChart({
                       x={padding.left - 8}
                       y={yPos + 4}
                       textAnchor="end"
-                      fill="#55645a"
+                      fill={tokens.chart.axis}
                       fontSize="10"
                       fontFamily="monospace"
                     >
@@ -159,7 +161,7 @@ export function YieldFrontierChart({
                       y1={padding.top}
                       x2={xPos}
                       y2={height - padding.bottom}
-                      stroke="#d9d3c2"
+                      stroke={tokens.chart.grid}
                       strokeDasharray="3 3"
                       strokeWidth="1"
                     />
@@ -167,7 +169,7 @@ export function YieldFrontierChart({
                       x={xPos}
                       y={height - padding.bottom + 16}
                       textAnchor="middle"
-                      fill="#55645a"
+                      fill={tokens.chart.axis}
                       fontSize="10"
                       fontFamily="monospace"
                     >
@@ -183,7 +185,7 @@ export function YieldFrontierChart({
                 y1={scaleY(minVal)}
                 x2={scaleX(maxVal)}
                 y2={scaleY(maxVal)}
-                stroke="#1f4d2b"
+                stroke={tokens.brand.canopy}
                 strokeWidth="2"
                 strokeDasharray="5 3"
               />
@@ -191,7 +193,7 @@ export function YieldFrontierChart({
                 x={scaleX(maxVal) - 15}
                 y={scaleY(maxVal) - 8}
                 textAnchor="end"
-                fill="#1f4d2b"
+                fill={tokens.brand.canopy}
                 fontSize="10"
                 fontWeight="bold"
                 fontFamily="sans-serif"
@@ -205,7 +207,7 @@ export function YieldFrontierChart({
                 y1={scaleY(minVal)}
                 x2={scaleX(maxVal)}
                 y2={scaleY(maxVal - range * 0.15)}
-                stroke="#b5562e"
+                stroke={tokens.risk.high}
                 strokeWidth="1.5"
                 strokeDasharray="3 3"
               />
@@ -213,7 +215,7 @@ export function YieldFrontierChart({
                 x={scaleX(maxVal) - 15}
                 y={scaleY(maxVal - range * 0.15) + 14}
                 textAnchor="end"
-                fill="#b5562e"
+                fill={tokens.risk.high}
                 fontSize="9"
                 fontWeight="bold"
                 fontFamily="monospace"
@@ -221,7 +223,7 @@ export function YieldFrontierChart({
                 {labels?.leakageZone ?? "z < -1.75 Risk Boundary"}
               </text>
 
-              {/* Scatter Points: 30 Districts */}
+              {/* Scatter Points: 30 Districts with Full Keyboard Navigation */}
               {auditRecords.map((rec) => {
                 const cx = scaleX(rec.expected_yield_kg_per_ha);
                 const cy = scaleY(rec.observed_yield_kg_per_ha);
@@ -229,16 +231,25 @@ export function YieldFrontierChart({
                 const isClimate = rec.classification === "CLIMATIC_OR_WATER_STRESS";
                 const isSelected = activeRecord?.district_code === rec.district_code;
 
-                let fill = "#1f4d2b";
-                if (isLeakage) fill = "#b5562e";
-                else if (isClimate) fill = "#d9a441";
-                else if (rec.classification === "HIGH_PERFORMING_INTENSIFICATION") fill = "#3f7d3a";
+                let fill: string = tokens.brand.canopy;
+                if (isLeakage) fill = tokens.risk.high;
+                else if (isClimate) fill = tokens.risk.moderate;
+                else if (rec.classification === "HIGH_PERFORMING_INTENSIFICATION") fill = tokens.risk.low;
 
                 return (
                   <g
                     key={rec.district_code}
-                    className="cursor-pointer transition-transform hover:scale-125"
+                    tabIndex={0}
+                    role="button"
+                    aria-label={`District ${rec.district_code}: Observed yield ${Math.round(rec.observed_yield_kg_per_ha)} kg/ha, Expected yield ${Math.round(rec.expected_yield_kg_per_ha)} kg/ha`}
+                    className="cursor-pointer transition-transform hover:scale-125 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-harvest"
                     onClick={() => onSelectDistrict?.(rec.district_code)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        onSelectDistrict?.(rec.district_code);
+                      }
+                    }}
                     onMouseEnter={() => setHoveredDistrict(rec)}
                   >
                     {isLeakage && (
@@ -246,7 +257,7 @@ export function YieldFrontierChart({
                         cx={cx}
                         cy={cy}
                         r={isSelected ? 14 : 10}
-                        fill="#b5562e"
+                        fill={tokens.risk.high}
                         fillOpacity="0.25"
                         className="animate-ping"
                       />
@@ -256,14 +267,14 @@ export function YieldFrontierChart({
                       cy={cy}
                       r={isSelected ? 7.5 : isLeakage ? 6 : 4.5}
                       fill={fill}
-                      stroke="#ffffff"
+                      stroke={tokens.neutral.paper}
                       strokeWidth={isSelected ? "2.5" : "1.5"}
                     />
                     {(isLeakage || isSelected) && (
                       <text
                         x={cx + 9}
                         y={cy + 3}
-                        fill={isLeakage ? "#b5562e" : "#1f4d2b"}
+                        fill={isLeakage ? tokens.risk.high : tokens.brand.canopy}
                         fontSize={isSelected ? "11" : "9.5"}
                         fontWeight="bold"
                         fontFamily="sans-serif"
@@ -284,7 +295,7 @@ export function YieldFrontierChart({
                 fontSize="11"
                 fontWeight="bold"
               >
-                {labels?.expectedAxis ?? "Expected Yield (kg/ha) [SAS Fertilizer + Seeds + Rain]"}
+                {labels?.expectedAxis ?? "Expected Harvest (kg/ha) [Seeds + Fertilizer + Rain]"}
               </text>
               <text
                 x={-height / 2}
@@ -295,17 +306,17 @@ export function YieldFrontierChart({
                 fontSize="11"
                 fontWeight="bold"
               >
-                {labels?.observedAxis ?? "Observed SAS Harvest Yield (kg/ha)"}
+                {labels?.observedAxis ?? "Actual Harvest (kg/ha)"}
               </text>
             </svg>
           </div>
 
           <p className="mt-2 text-xs text-muted">
-            <strong className="text-canopy font-semibold">Diagnostic Rule:</strong> Districts on the diagonal line matched structural expectations. Red points sitting far below the frontier absorbed full subsidized inputs but experienced catastrophic yield shortfalls ($z &lt; -1.75$), triggering targeted MINAGRI audit orders.
+            <strong className="text-canopy font-semibold">How to read this:</strong> Districts on the diagonal line harvested what was expected. Points sitting far below the line had plenty of seeds and fertilizer but still suffered large harvest drops, showing where local agronomists should inspect seed quality or fertilizer delivery.
           </p>
         </div>
 
-        {/* District Inspector Card & Feature Attribution */}
+        {/* District Inspector Card & Driver Breakdown */}
         <div className="flex flex-col gap-4">
           {/* Active District Focus Card */}
           <div className="rounded-2xl border border-line bg-cream/40 p-4 shadow-2xs">
@@ -328,30 +339,30 @@ export function YieldFrontierChart({
                 }`}
               >
                 {activeRecord.classification === "LEAKAGE_OR_SEED_QUALITY_RISK"
-                  ? "Audit Flagged"
+                  ? "Needs Inspection"
                   : activeRecord.classification === "CLIMATIC_OR_WATER_STRESS"
-                  ? "Climate Stress"
-                  : "Nominal Yield"}
+                  ? "Drought / Dry Spell"
+                  : "On Target"}
               </span>
             </div>
 
             <div className="mt-3 grid grid-cols-2 gap-3 text-xs">
               <div className="rounded-xl bg-paper p-2.5 border border-line/60">
-                <span className="text-muted block text-[11px]">Observed Yield</span>
+                <span className="text-muted block text-[11px]">Actual Harvest</span>
                 <span className="text-base font-black font-mono text-ink tabular-nums">
                   {activeRecord.observed_yield_kg_per_ha.toFixed(0)}
                   <span className="text-[10px] text-muted font-normal"> kg/ha</span>
                 </span>
               </div>
               <div className="rounded-xl bg-paper p-2.5 border border-line/60">
-                <span className="text-muted block text-[11px]">Expected Frontier</span>
+                <span className="text-muted block text-[11px]">Expected Target</span>
                 <span className="text-base font-black font-mono text-canopy tabular-nums">
                   {activeRecord.expected_yield_kg_per_ha.toFixed(0)}
                   <span className="text-[10px] text-muted font-normal"> kg/ha</span>
                 </span>
               </div>
               <div className="rounded-xl bg-paper p-2.5 border border-line/60">
-                <span className="text-muted block text-[11px]">Residual Gap (z-score)</span>
+                <span className="text-muted block text-[11px]">Performance Rating</span>
                 <span
                   className={`text-base font-black font-mono tabular-nums ${
                     activeRecord.residual_z_score < -1.75
@@ -362,11 +373,11 @@ export function YieldFrontierChart({
                   }`}
                 >
                   {activeRecord.residual_z_score > 0 ? "+" : ""}
-                  {activeRecord.residual_z_score.toFixed(2)} σ
+                  {activeRecord.residual_z_score.toFixed(1)}
                 </span>
               </div>
               <div className="rounded-xl bg-paper p-2.5 border border-line/60">
-                <span className="text-muted block text-[11px]">Fiscal Exposure</span>
+                <span className="text-muted block text-[11px]">Support Value</span>
                 <span className="text-base font-black font-mono text-clay tabular-nums">
                   {activeRecord.estimated_fiscal_exposure_rwf > 0
                     ? `Rwf ${(activeRecord.estimated_fiscal_exposure_rwf / 1e6).toFixed(1)}M`
@@ -376,15 +387,17 @@ export function YieldFrontierChart({
             </div>
 
             <p className="mt-3 text-[11px] leading-relaxed text-ink/80 bg-paper/80 p-2.5 rounded-lg border border-line/40">
-              <strong className="text-canopy font-semibold">Model Rationale:</strong>{" "}
-              {activeRecord.diagnostic_rationale}
+              <strong className="text-canopy font-semibold">
+                {locale === "rw" ? "Impamvu z'Isuzuma:" : "Assessment Reasoning:"}
+              </strong>{" "}
+              {formatAssessmentReasoning(activeRecord.diagnostic_rationale, locale)}
             </p>
           </div>
 
           {/* Feature Attribution / Driver Breakdown */}
           <div className="rounded-2xl border border-line bg-paper p-4 shadow-2xs">
             <h4 className="text-xs font-bold uppercase tracking-wider text-canopy mb-2.5">
-              {labels?.featureAttributionTitle ?? "Model Elasticity & Driver Attribution Weights"}
+              {labels?.featureAttributionTitle ?? "What Influences Harvest Results Most"}
             </h4>
 
             {/* Proportional Stacked Bar */}
@@ -408,7 +421,6 @@ export function YieldFrontierChart({
                     <span className="text-ink font-medium">{f.name}</span>
                   </div>
                   <div className="flex items-center gap-2 font-mono text-[11px]">
-                    <span className="text-muted">{f.beta}</span>
                     <span className="font-bold text-canopy tabular-nums">{f.weight}%</span>
                   </div>
                 </div>

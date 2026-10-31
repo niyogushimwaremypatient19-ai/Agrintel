@@ -249,7 +249,7 @@ export function SmartFoodBasket({ prices, labels, locale }: SmartBasketProps) {
           </p>
         </div>
 
-        <div className="mt-4 grid gap-4 grid-cols-1 md:grid-cols-3">
+        <div className="mt-4 grid gap-4 grid-cols-1 @[640px]:grid-cols-3">
           {SUBSTITUTION_RULES.map((sub) => {
             const isApplied = appliedSubs[sub.id];
             const fromPrice = getPrice(sub.fromCode, 500);

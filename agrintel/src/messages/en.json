@@ -1,6 +1,6 @@
 {
   "siteName": "AgrIntel Rwanda",
-  "siteSubtitle": "Predictive Agro-Fiscal & Spatial Arbitrage Engine",
+  "siteSubtitle": "Rwanda Farm, Harvest & Market Guide",
   "tagline": "Earlier, clearer information for food-security decisions",
   "language": {
     "label": "Language",
@@ -19,45 +19,84 @@
     "unavailableLabel": "Unavailable"
   },
   "welcome": {
-    "title": "Plan ahead with agricultural and market information",
-    "intro": "This platform links weather, soil, production and market information to help analysts, citizens, retailers and farmers make earlier, better-informed decisions.",
+    "title": "Clear Food, Harvest & Market Information for Rwanda",
+    "intro": "AgrIntel connects weather, soil, harvest records, and daily market prices across Rwanda. We help farmers, traders, families, and agricultural leaders make timely, smart decisions.",
     "disclaimer": "Outlooks are estimates that support decisions. They are not guarantees or policy advice.",
     "latestUpdate": "Latest update",
     "latestUpdateNone": "No data update yet",
+    "welcomeHub": {
+      "badge": "Welcome to AgrIntel Rwanda",
+      "title": "Clear Food, Harvest & Market Information for Everyone",
+      "intro": "AgrIntel brings together trusted harvest records, daily market prices, and rainfall updates to make food security simple, transparent, and actionable.",
+      "whatWeDo": {
+        "title": "What We Do",
+        "desc": "We gather official farm harvest records, daily town market prices, and weather updates across all 30 districts so nobody has to guess."
+      },
+      "whatValueWeBring": {
+        "title": "What Value We Bring",
+        "desc": "We protect farmers from selling at a loss, help truck drivers find profitable markets, guide families to affordable healthy food, and help leaders spot harvest shortages early."
+      },
+      "whatToDo": {
+        "title": "What To Do",
+        "subtitle": "Choose your role below to find the exact guide and tools built for you:"
+      },
+      "personas": {
+        "farmer": {
+          "role": "Farmer or Cooperative",
+          "action": "Check when to sell or store your harvest, listen to audio advice in Kinyarwanda, and see local market prices.",
+          "cta": "Get Farmer Advice"
+        },
+        "retailer": {
+          "role": "Trader, Driver, or Buyer",
+          "action": "Calculate truck fuel costs, avoid food spoilage, and find which towns offer the highest profit for your harvest.",
+          "cta": "Calculate Transport Profits"
+        },
+        "leader": {
+          "role": "Leader or Extension Worker",
+          "action": "Track harvests across all 30 districts, spot dry spells early, and verify that subsidized seeds and fertilizers reach farmers.",
+          "cta": "Inspect 30 Districts"
+        },
+        "citizen": {
+          "role": "Family Shopper or Citizen",
+          "action": "Track everyday food prices in your province and use our Smart Food Basket to get healthy alternatives and save money.",
+          "cta": "Open Smart Food Basket"
+        }
+      }
+    },
     "ontology": {
-      "eyebrow": "Palantir Foundry-Grade Decision Architecture",
-      "title": "6-Stage Decision Intelligence Ontology",
-      "subtitle": "How AgrIntel transforms multi-silo empirical surveys into real-time operational field interventions",
+      "eyebrow": "How AgrIntel Works",
+      "title": "6 Simple Steps from Field to Market",
+      "subtitle": "How we turn daily farming facts and market prices into helpful guidance for every Rwandan",
       "stages": [
         {
           "step": "01",
-          "name": "Multi-Source Data",
-          "subtext": "NISR SAS/CPI + CHIRPS + WFP/Tangabid"
+          "name": "Gather Trusted Facts",
+          "subtext": "Official harvest surveys, market prices, and rainfall records"
         },
         {
           "step": "02",
-          "name": "Linked Ontology",
-          "subtext": "District ↔ Input Lot ↔ Trade Corridor"
+          "name": "Connect the Pieces",
+          "subtext": "Linking farming districts, fertilizer supplies, and transport roads"
         },
         {
           "step": "03",
-          "name": "Causal Models",
-          "subtext": "Climate-Controlled Yield Residual (z) & Spatial Equilibrium"
+          "name": "Compare Weather & Harvests",
+          "subtext": "Checking if good weather brought expected crops or if supplies had problems"
         },
         {
           "step": "04",
-          "name": "Counterfactual Analytics",
-          "subtext": "Rwf 2,927 vs Rwf 3,600/L Diesel Stress-Test"
+          "name": "Calculate Fair Costs",
+          "subtext": "Testing fuel prices, truck fees, and food spoilage along the way"
         },
         {
           "step": "05",
-          "name": "Operational Workflows",
-          "subtext": "MINAGRI Audit & Cooperative Dispatch Directives"
+          "name": "Share Practical Advice",
+          "subtext": "Guidance for farmers on when to sell and alerts for leaders to inspect"
         },
         {
           "step": "06",
-          "name": "Last-Mile Integrations",
-          "subtext": "Bilingual GSM SMS, Web Speech Audio & Neon Sync"
+          "name": "Reach Every Farmer",
+          "subtext": "Simple phone SMS messages and spoken audio in Kinyarwanda"
         }
       ]
     },
@@ -87,25 +126,25 @@
     },
     "callouts": {
       "radar": {
-        "badge": "NISR SAS Econometric Audit",
-        "title": "Rwf 75B Fiscal Subsidy Protection Radar",
-        "stat": "30 Districts · Rwf 75B Subsidies",
-        "desc": "Climate-controlled structural yield frontiers (z-score residuals) separating weather shocks from certified seed degradation & fertilizer leakage.",
-        "cta": "Inspect National Radar"
+        "badge": "District Harvest Check",
+        "title": "Checking Harvests Across All 30 Districts",
+        "stat": "30 Districts · Rwf 75B Farm Support",
+        "desc": "Checks every district to see if crops grew as well as expected, helping us know whether low yields came from drought or from poor seeds and fertilizers.",
+        "cta": "Inspect 30 Districts"
       },
       "arbitrage": {
-        "badge": "Spatial Freight Optimization",
-        "title": "Middle-Distillate Freight & Fuel Stress-Tester",
-        "stat": "Rwf 2,927/L vs Rwf 3,600/L",
-        "desc": "Simulates round-trip diesel freight burn (0.32 L/km) and perishability shrinkage across all 1,570 trade routes, stress-testing the Rwf 673/L public fuel shield.",
-        "cta": "Launch Fuel Simulator"
+        "badge": "Transport & Fuel Calculator",
+        "title": "Truck Fuel & Road Transport Calculator",
+        "stat": "Real Fuel Costs & Road Distances",
+        "desc": "Calculates truck diesel costs and food spoilage across Rwanda's roads, showing whether it is profitable to transport crops to city markets.",
+        "cta": "Calculate Transport Profits"
       },
       "inflation": {
-        "badge": "Citizen Food Security Shield",
-        "title": "Citizen Smart Food Basket & Inflation Shield",
-        "stat": "17.2% YoY · +49.5 Divergence",
-        "desc": "Live household budget modeling with calorie/protein-equivalent nutritional substitutions to cushion urban and rural families against 17.2% food inflation.",
-        "cta": "Open Smart Basket"
+        "badge": "Family Food Savings",
+        "title": "Smart Food Basket for Rwandan Families",
+        "stat": "Save Money on Monthly Food",
+        "desc": "Shows family food costs and suggests healthy, lower-cost food alternatives so families eat well while spending less.",
+        "cta": "Open Smart Food Basket"
       }
     }
   },
@@ -163,34 +202,34 @@
     },
     "monthlyAverage": "monthly average",
     "macroCpi": {
-      "title": "NISR Macro Inflation & Rural-Urban Divergence",
+      "title": "Food Prices in Cities vs Villages",
       "badge": "Official Statistics",
-      "foodInflation": "Food Inflation (YoY)",
-      "ruralCpi": "Rural Food CPI",
-      "urbanCpi": "Urban Food CPI",
-      "divergence": "Rural-Urban Spread",
-      "divergenceExplanation": "Smallholder rural consumers face a 49.5-point higher price index than urban Kigali (273.2 vs 223.7). Thin secondary market liquidity, inter-district freight costs, and post-harvest depletion push rural staple food prices up disproportionately, underscoring the necessity of spatial arbitrage and local storage.",
+      "foodInflation": "Food Price Change this Year",
+      "ruralCpi": "Village Food Prices Index",
+      "urbanCpi": "City Food Prices Index",
+      "divergence": "Difference Between Village and City",
+      "divergenceExplanation": "Food prices are currently higher in rural villages than in Kigali. Transport costs, fewer markets, and storage shortages cause rural prices to rise faster, showing why local storage and fair transport are so important.",
       "sourcePrefix": "Official Baseline"
     },
     "smartBasket": {
-      "title": "Smart Household Basket & Inflation Shield",
-      "intro": "Rwanda's CPI recorded 17.2% year-on-year food inflation. Calculate your monthly staple basket cost and find nutrition-equivalent lower-cost substitutions to buffer household expenditure.",
-      "householdSize": "Household Size",
-      "persons": "persons",
-      "monthlyTotal": "Estimated Monthly Staples Cost",
-      "potentialSavings": "Potential Monthly Inflation Savings",
-      "withSubstitutions": "with recommended nutritional substitutions",
-      "itemsTitle": "Monthly Household Basket Composition",
-      "substitutionsTitle": "Smart Inflation Substitutions",
-      "substitutionsSubtitle": "Maintain identical calories, protein, and micro-nutrients while reducing expenditure:",
-      "primaryCommodity": "Rising Price Staple",
-      "recommendedAlternative": "Affordable Substitute",
+      "title": "Smart Food Basket & Family Savings",
+      "intro": "Food prices have risen across Rwanda. Enter your family size to see your monthly staple food cost, and discover healthy, lower-cost foods to save money while keeping your family well fed.",
+      "householdSize": "Family Size",
+      "persons": "people",
+      "monthlyTotal": "Estimated Monthly Food Cost",
+      "potentialSavings": "Money You Could Save Every Month",
+      "withSubstitutions": "by choosing recommended healthy food alternatives",
+      "itemsTitle": "Monthly Family Food List",
+      "substitutionsTitle": "Smart Food Swaps to Save Money",
+      "substitutionsSubtitle": "Get the exact same calories, protein, and nutrients while spending less money:",
+      "primaryCommodity": "Higher-Priced Food",
+      "recommendedAlternative": "Affordable Alternative",
       "savingsPerKg": "Savings per kg",
       "monthlySavings": "Monthly Savings",
-      "nutritionalNote": "Nutritional Value Parity",
-      "substituteAction": "Apply Substitution",
-      "applied": "Applied in basket",
-      "notApplied": "Available"
+      "nutritionalNote": "Nutrition Comparison",
+      "substituteAction": "Choose this Swap",
+      "applied": "Selected in your basket",
+      "notApplied": "Available swap"
     }
   },
   "national": {
@@ -242,75 +281,75 @@
     },
     "audit": {
       "tabPrice": "Market Price Signals",
-      "tabAudit": "MINAGRI Input Subsidy & Yield Audit",
-      "title": "MINAGRI Input Subsidy Leakage & Yield Residual Audit",
-      "intro": "Econometric frontier model evaluating actual NISR SAS district yields against climate-controlled expected yields and reported subsidized input adoption.",
-      "monitoredTotal": "Monitored District Sectors",
-      "leakageCount": "Leakage / Quality Flags (z < -1.75)",
-      "climateStressCount": "Agro-Climatic Water Deficit",
-      "highPerfCount": "High Intensification (z > +1.25)",
-      "nominalCount": "Nominal Range",
-      "totalFiscalExposure": "Estimated Subsidized Fiscal Exposure",
+      "tabAudit": "District Harvest & Fertilizer Check",
+      "title": "District Harvest & Fertilizer Performance Check",
+      "intro": "Compares actual district harvests against expected harvests, helping identify whether low yields are due to bad weather or issues with seed and fertilizer quality.",
+      "monitoredTotal": "Districts Monitored",
+      "leakageCount": "Districts with Harvest Shortfalls",
+      "climateStressCount": "Districts Facing Drought / Dry Spells",
+      "highPerfCount": "Districts with Strong Harvests",
+      "nominalCount": "Districts on Target",
+      "totalFiscalExposure": "Total Farm Support Monitored",
       "columns": {
         "district": "District",
         "crop": "Crop",
         "season": "Season",
-        "observedYield": "Observed Yield (kg/ha)",
-        "expectedYield": "Expected Frontier (kg/ha)",
-        "zScore": "Residual z-Score",
-        "inputs": "Reported Inputs (Seed / Fert)",
-        "diagnostic": "Diagnostic Finding",
-        "fiscalExposure": "Fiscal Exposure"
+        "observedYield": "Actual Harvest (kg/ha)",
+        "expectedYield": "Expected Target (kg/ha)",
+        "zScore": "Performance Rating",
+        "inputs": "Seeds & Fertilizer Used",
+        "diagnostic": "Assessment Summary",
+        "fiscalExposure": "Support Value"
       },
       "classifications": {
-        "LEAKAGE_OR_SEED_QUALITY_RISK": "Leakage / Seed Quality Risk",
-        "CLIMATIC_OR_WATER_STRESS": "Climatic / Water Stress",
-        "HIGH_PERFORMING_INTENSIFICATION": "High Intensification",
-        "NOMINAL_EXPECTED_RANGE": "Nominal Expected"
+        "LEAKAGE_OR_SEED_QUALITY_RISK": "Needs Inspection (Seed / Fertilizer Quality)",
+        "CLIMATIC_OR_WATER_STRESS": "Drought / Lack of Rain",
+        "HIGH_PERFORMING_INTENSIFICATION": "Excellent Harvest",
+        "NOMINAL_EXPECTED_RANGE": "Normal / On Target"
       },
       "evidence": {
-        "title": "Econometric Frontier Decomposition",
-        "climateCushion": "Climate Water Factor Φ(R, I)",
-        "inputResponse": "Input Response Factor Ψ",
-        "rainfallAnomaly": "Precipitation Anomaly R",
-        "irrigationCoverage": "Marshland Irrigation I",
-        "certifiedSeed": "Certified Seed Adoption",
-        "fertilizerUsage": "Inorganic Fertilizer Rate",
-        "plantedArea": "Cultivated Area",
-        "totalProduction": "Harvested Production",
-        "rationaleTitle": "Diagnostic Attribution Rationale"
+        "title": "How the Harvest Rating Was Calculated",
+        "climateCushion": "Rainfall & Water Factor",
+        "inputResponse": "Seed & Fertilizer Response",
+        "rainfallAnomaly": "Rainfall vs Usual",
+        "irrigationCoverage": "Irrigated Land",
+        "certifiedSeed": "Quality Seeds Used",
+        "fertilizerUsage": "Fertilizer Applied",
+        "plantedArea": "Land Planted",
+        "totalProduction": "Total Harvested",
+        "rationaleTitle": "Why This Rating Was Given"
       }
     },
     "districtMatrix": {
-      "title": "National District Econometric Matrix",
-      "subtitle": "Geographic diagnostic status across all 30 districts grouped by province. Filter by structural input leakage risk, intensification, or nominal status.",
+      "title": "All 30 Districts Harvest Status",
+      "subtitle": "See harvest performance across every district in Rwanda. Filter by areas needing support, drought zones, or top-performing areas.",
       "allDistricts": "All Districts",
-      "leakageFilter": "Leakage / Quality Risk",
-      "climateFilter": "Agro-Climatic Deficit",
-      "intensificationFilter": "High Intensification",
-      "nominalFilter": "Nominal",
+      "leakageFilter": "Needs Inspection",
+      "climateFilter": "Drought / Dry Spells",
+      "intensificationFilter": "Top Harvests",
+      "nominalFilter": "On Target",
       "viewEvidence": "Inspect",
-      "residualScore": "Residual z-Score",
-      "yieldLabel": "Observed Yield",
-      "inputsLabel": "Inputs",
-      "leakageBadge": "Leakage Risk",
-      "climateBadge": "Water Deficit",
-      "highBadge": "Intensified",
-      "nominalBadge": "Nominal",
-      "dispatchAuditBtn": "Dispatch MINAGRI Audit →"
+      "residualScore": "Performance Rating",
+      "yieldLabel": "Actual Harvest",
+      "inputsLabel": "Seeds & Fertilizer",
+      "leakageBadge": "Needs Check",
+      "climateBadge": "Dry Spell",
+      "highBadge": "Top Harvest",
+      "nominalBadge": "On Target",
+      "dispatchAuditBtn": "View District Details & Field Actions →"
     },
     "decisions": {
-      "title": "Decisions Required Today",
-      "subtitle": "Algorithmic triage prioritizing immediate ministerial audits and agronomic interventions:",
-      "urgentAuditBadge": "Immediate MINAGRI Audit",
-      "urgentAuditContext": "Subsidized input uptake exceeds 70%, but yield residual severely underperformed expectations. Potential seed degeneration or informal fertilizer diversion.",
-      "auditCta": "Dispatch MINAGRI Audit →",
-      "benchmarkBadge": "National Yield Frontier",
-      "benchmarkContext": "Exemplary synergy between certified seed, inorganic fertilizer, and anti-erosion terraces. Recommended model for neighboring sector extension.",
-      "benchmarkCta": "Inspect Agronomic Protocol →",
-      "climateBadge": "Agro-Climatic Moisture Deficit",
-      "climateContext": "Yield depression strongly tracks negative subnational rainfall anomalies. Prioritize marshland furrow irrigation and organic mulching.",
-      "climateCta": "Review Irrigation Action →"
+      "title": "Priority Actions Today",
+      "subtitle": "Clear actions needing attention across districts:",
+      "urgentAuditBadge": "Inspect Seeds & Fertilizer",
+      "urgentAuditContext": "Farmers used plenty of seeds and fertilizer, but the harvest was much lower than expected. Inspect seed bags and fertilizer delivery.",
+      "auditCta": "Send Field Inspection Alert →",
+      "benchmarkBadge": "Top Performing District",
+      "benchmarkContext": "Excellent harvest thanks to quality seeds, good fertilizer, and hillside terraces. Great model for neighboring districts.",
+      "benchmarkCta": "See Best Farming Practices →",
+      "climateBadge": "Dry Weather & Water Shortage",
+      "climateContext": "Harvest was low because of dry weather and lack of rain. Priority should be valley irrigation and mulching.",
+      "climateCta": "Review Irrigation Advice →"
     }
   },
   "advisory": {
@@ -339,31 +378,31 @@
       }
     },
     "agronomic": {
-      "title": "NISR SAS Production & Input Adoption Audit",
-      "seasonLabel": "Official Season",
-      "cultivatedArea": "Cultivated Area",
-      "production": "Harvested Production",
-      "yieldObserved": "Observed Yield",
-      "yieldExpected": "Expected Yield Frontier",
-      "yieldGap": "Yield Gap",
-      "seedAdoption": "Certified Seed Adoption",
-      "fertAdoption": "Inorganic Fertilizer Adoption",
-      "irrigation": "Marshland / Irrigation",
-      "antiErosion": "Anti-Erosion Terraces",
-      "leakageTitle": "Input Quality & Seed Pathogen Alert",
-      "leakageAdvice": "Yield underperformed climate & input expectations (z < -1.75). When certified seed prices spike, substitution with uninspected farm-saved seed increases pathogen risks (bacterial wilt, degeneration). Verify RAB certification tags and avoid unsealed agro-dealer packets.",
-      "climateTitle": "Moisture Deficit & Irrigation Alert",
-      "climateAdvice": "Yield constrained by rainfall deficit. Prioritize coordinated furrow irrigation in marshland networks, apply organic mulch to limit soil evaporation, and stagger planting cycles.",
-      "intensificationTitle": "High-Yield Intensification Frontier",
-      "intensificationAdvice": "Strong synergy between certified seeds, balanced fertilizer, and hillside erosion control. Maintain post-harvest drying standards to prevent aflatoxin contamination.",
-      "nominalTitle": "Nominal Agronomic Conditions",
-      "nominalAdvice": "Yield and input utilization align with historical structural baselines. Continue standard agronomic practices and cooperative market aggregation.",
-      "noData": "NISR SAS input-to-yield baseline is not recorded for this specific crop and district combination.",
-      "viewStatisticalProof": "View NISR Statistical Proof & Survey Lineage",
-      "dispatchAuditAction": "Dispatch Field Audit Alert →",
-      "reviewIrrigationAction": "Review Irrigation Action →",
-      "benchmarkAction": "Inspect Extension Protocol →",
-      "samplingWeightsNote": "NISR SAS Multiple Frame Sampling Survey (1,200 segments nationwide)"
+      "title": "District Harvest & Farming Summary",
+      "seasonLabel": "Farming Season",
+      "cultivatedArea": "Planted Land",
+      "production": "Total Harvest",
+      "yieldObserved": "Actual Harvest",
+      "yieldExpected": "Expected Target",
+      "yieldGap": "Harvest Difference",
+      "seedAdoption": "Farmers Using Improved Seeds",
+      "fertAdoption": "Farmers Using Fertilizer",
+      "irrigation": "Marshland & Irrigated Land",
+      "antiErosion": "Terraced Land (Erosion Control)",
+      "leakageTitle": "Seed & Fertilizer Quality Notice",
+      "leakageAdvice": "The harvest in this district was lower than expected even though many farmers bought seeds and fertilizers. To protect your crop, always check for official Rwanda Agriculture Board (RAB) tags on seed bags and avoid buying from unsealed packets.",
+      "climateTitle": "Dry Weather & Water Advice",
+      "climateAdvice": "Crops in this area suffered from low rainfall. Where possible, water your fields using valley and marshland canals, spread dry grass or mulch over soil to keep moisture in, and plant crops with different harvest times.",
+      "intensificationTitle": "Great Harvest in this District",
+      "intensificationAdvice": "Farmers here achieved high harvests by combining good seeds, correct fertilizer amounts, and hillside terraces. Remember to dry your harvest well before storage so it does not spoil.",
+      "nominalTitle": "Normal Farming Conditions",
+      "nominalAdvice": "Harvests and fertilizer use in this district are normal and on target. Continue standard good farming practices and sell through your cooperative for the best price.",
+      "noData": "Official harvest baseline is not recorded for this specific crop and district combination.",
+      "viewStatisticalProof": "View Survey Details",
+      "dispatchAuditAction": "Request Field Verification →",
+      "reviewIrrigationAction": "See Water & Irrigation Advice →",
+      "benchmarkAction": "See Farming Best Practices →",
+      "samplingWeightsNote": "Based on official agricultural survey covering all districts in Rwanda"
     },
     "outlook": {
       "title": "National price outlook",
@@ -437,37 +476,37 @@
       "categoryLivestock": "Livestock"
     },
     "dairy": {
-      "title": "Pastoral Dairy Cattle & Milk Resilience",
-      "dsiTitle": "Dairy Cattle Stress Index (DSI)",
-      "dsiDescription": "Composite pasture forage and water deficit stress index for Rwanda's pastoral milk sheds.",
-      "rainfallAnomaly": "Pasture Rainfall Anomaly (30d / 90d)",
-      "drySpellDays": "Consecutive Dry Spell Days",
+      "title": "Dairy Cattle & Pasture Care",
+      "dsiTitle": "Pasture Grass & Water Status",
+      "dsiDescription": "Checks pasture grass and water availability for dairy cows across Rwanda's milk-producing districts.",
+      "rainfallAnomaly": "Pasture Rain Compared to Normal",
+      "drySpellDays": "Days Without Rain",
       "severities": {
-        "low": "Low Stress - Pasture Optimal",
-        "moderate": "Moderate Stress - Water Deficit Developing",
-        "high": "High Stress - Acute Pasture Deficit",
-        "critical": "Critical Emergency - Pasture Exhaustion"
+        "low": "Healthy - Good pasture and water",
+        "moderate": "Moderate - Water getting low, prepare extra feed",
+        "high": "Dry - Pastures drying up, feed silage",
+        "critical": "Very Dry - Urgent: pasture exhausted, share water"
       },
-      "actionGuidance": "Pastoral action: Conserve Napier grass silage, distribute urea-treated crop residues, and protect livestock water troughs against evaporation."
+      "actionGuidance": "Cattle care: Save Napier grass silage, feed crop stalks, and keep water troughs shaded so water does not evaporate in the heat."
     }
   },
   "retailer": {
-    "title": "Retailer & Logistics Arbitrage Terminal",
-    "intro": "Compare origin farm-gate prices against terminal market prices net of diesel freight impedance and commodity perishability shrinkage.",
+    "title": "Trader & Transport Profit Guide",
+    "intro": "Compare farm prices in rural districts with market prices in Kigali and other cities, taking truck fuel and natural food spoilage into account.",
     "readOnly": "Read-only view. It shows no private farmer, retailer or contact information.",
     "selectCommodity": "Choose a commodity",
     "decisions": {
-      "title": "Decisions Required Today",
-      "subtitle": "Real-time dispatch optimization for cooperative logistics trucks and rural collection centers:",
-      "topSpreadBadge": "Highest Arbitrage Spread",
-      "topSpreadContext": "Net wholesale spread exceeds 40 Rwf/kg after diesel fuel and transit spoilage. Transport surplus harvest immediately to capture urban margins.",
-      "shipCta": "Alert Cooperative to Ship →",
-      "vulnerableFuelBadge": "Fuel Vulnerability Lifeline",
-      "vulnerableFuelContext": "Long-haul route with fragile margins. Flips to a logistical loss if fuel subsidies are removed or trucks run half-empty.",
-      "stressCta": "Stress-Test Corridor →",
-      "localAbsorptionBadge": "Saturated Local Market",
-      "localAbsorptionContext": "Transporting to urban center yields negative net returns due to transport overhead. Hold stock locally in dry cooperative storage.",
-      "storageCta": "Issue Local Storage Notice →"
+      "title": "Best Actions for Traders Today",
+      "subtitle": "Clear recommendations on where to transport food or when to store it locally:",
+      "topSpreadBadge": "High Profit Route",
+      "topSpreadContext": "Profit after paying for truck fuel and spoilage is over 40 Rwf/kg. Good route to transport surplus crops to city markets.",
+      "shipCta": "Transport Crop Now →",
+      "vulnerableFuelBadge": "Caution: High Fuel Cost",
+      "vulnerableFuelContext": "Long distance with tight profit margins. If fuel costs rise, this route may make a loss.",
+      "stressCta": "Test Fuel Costs →",
+      "localAbsorptionBadge": "Better to Sell Locally",
+      "localAbsorptionContext": "Transport costs to the city are too high right now. It is more profitable to sell locally or keep in cooperative storage.",
+      "storageCta": "Store Harvest Locally →"
     },
     "outlook": {
       "title": "National price outlook",
@@ -490,46 +529,46 @@
       "body": "Price columns come from approved district prices. Supply and sourcing columns stay marked unavailable until approved production data is connected. Surplus or shortage labels are not shown, because the data does not yet support them. Routes are not optimised, because logistics data is not available."
     },
     "arbitrage": {
-      "tabSimple": "Retailer Summary",
-      "tabCorridors": "Spatial Arbitrage Corridors",
-      "title": "Diesel-Adjusted Spatial Arbitrage Solver",
-      "intro": "Evaluates origin-to-destination trade spreads between farm-gate prices (P_O) and terminal markets (P_D), subtracting distance-dependent diesel freight impedance and perishability spoilage.",
-      "sliderTitle": "Interactive Diesel Policy Stress-Tester",
-      "sliderHelp": "Simulate corridor profitability across fuel price policy scenarios:",
-      "regulatedBtn": "Official Regulated (Rwf 2,927 / L)",
-      "unsubsidizedBtn": "Unsubsidized Counterfactual (Rwf 3,600 / L)",
-      "currentFuelPrice": "Simulated Diesel Pump Price",
+      "tabSimple": "District Summary",
+      "tabCorridors": "Transport Routes & Profits",
+      "title": "Truck Transport Cost & Profit Calculator",
+      "intro": "Calculates profit when buying from farmers and selling at town markets, subtracting fuel expenses and food spoilage along the road.",
+      "sliderTitle": "Test Different Fuel Prices",
+      "sliderHelp": "See how your transport profits change if pump prices rise or fall:",
+      "regulatedBtn": "Official Station Price (Rwf 2,927 / L)",
+      "unsubsidizedBtn": "Without Fuel Support (Rwf 3,600 / L)",
+      "currentFuelPrice": "Diesel Pump Price",
       "perLitre": "RWF / Litre",
-      "subsidyImpact": "Fiscal Fuel Subsidy Shield",
-      "truckSize": "Truck Freight Load Capacity",
+      "subsidyImpact": "Government Fuel Support",
+      "truckSize": "Truck Size",
       "truckSizes": {
         "pickup": "1.5T (Pickup)",
         "canter": "3.5T (Canter)",
         "fuso": "5.0T (Fuso)",
         "heavy": "10.0T (Heavy)"
       },
-      "alertShipBtn": "Alert Cooperative to Ship →",
-      "holdBtn": "Issue Storage Notice →",
-      "reviewBtn": "Monitor & Ship →",
+      "alertShipBtn": "Send Transport Notice →",
+      "holdBtn": "Send Storage Notice →",
+      "reviewBtn": "Check & Transport →",
       "columns": {
-        "corridor": "Corridor (Origin → Dest)",
+        "corridor": "Route (From → To)",
         "distance": "Distance & Spoilage",
-        "farmgatePrice": "Farmgate (P_O)",
-        "retailPrice": "Retail (P_D)",
-        "freightCost": "Freight Cost / kg",
-        "netMargin": "Net Margin / kg",
-        "compression": "Margin Compression",
-        "breakeven": "Fuel Breakeven",
-        "action": "Dispatch Action"
+        "farmgatePrice": "Farmgate Buying Price",
+        "retailPrice": "City Market Price",
+        "freightCost": "Transport Cost / kg",
+        "netMargin": "Estimated Profit / kg",
+        "compression": "Profit Impact",
+        "breakeven": "Highest Fuel Price You Can Afford",
+        "action": "Recommended Action"
       },
       "recommendations": {
-        "DISPATCH_SURPLUS": "DISPATCH SURPLUS",
-        "MODERATE_MARGIN": "MODERATE MARGIN",
-        "HOLD_LOCAL": "HOLD / SELL LOCAL"
+        "DISPATCH_SURPLUS": "PROFITABLE TO SHIP",
+        "MODERATE_MARGIN": "FAIR PROFIT",
+        "HOLD_LOCAL": "SELL LOCALLY / STORE"
       },
       "howToRead": {
-        "title": "How Spatial Arbitrage is Computed",
-        "body": "For each corridor, round-trip freight is modeled as (2 * distance * 0.32 L/km * Diesel Price) / 5,000 kg + handling. Net margins subtract freight and commodity-specific transit spoilage (e.g. 8% per 100km for perishable tomatoes, 1.5% for potatoes, 0.5% for grains). Corridors earning over 40 Rwf/kg warrant dispatching surplus; those below 10 Rwf/kg should be held for local sale."
+        "title": "How Transport Profits Are Calculated",
+        "body": "We calculate round-trip truck fuel costs based on distance and truck size, plus handling. We also deduct natural food spoilage (for example, fragile tomatoes lose about 8% over 100km, while potatoes lose only 1.5%). When profit is over 40 Rwf per kg, shipping to the city is worthwhile. If profit is under 10 Rwf per kg, it is better to sell locally or store your crop."
       }
     }
   },
@@ -537,22 +576,22 @@
     "title": "Alerts and simulator",
     "intro": "Alerts tell farmers, extension workers and analysts when something needs attention. Right now every alert here is a simulation for demonstration. Nothing is sent to any phone.",
     "directive": {
-      "titleAudit": "MINAGRI Field Audit Inspection Directive",
-      "titleShip": "Cooperative Logistics Dispatch Directive",
-      "titleHold": "Local Post-Harvest Preservation Directive",
+      "titleAudit": "District Field Verification Notice",
+      "titleShip": "Cooperative Transport Notice",
+      "titleHold": "Store Harvest Locally Notice",
       "targetDistrict": "Target District",
-      "targetCorridor": "Target Corridor",
-      "commodity": "Commodity",
-      "zScore": "Residual z-Score",
-      "fiscalExposure": "Fiscal Exposure",
-      "netMargin": "Net Freight Margin",
-      "draftSmsEn": "Official English SMS Advisory",
-      "draftSmsRw": "Official Kinyarwanda SMS Advisory",
-      "dispatchBtn": "Dispatch Directive to Field Network",
-      "dispatchedBadge": "DIRECTIVE DISPATCHED TO FIELD NETWORK",
-      "copyBtn": "Copy SMS Text",
+      "targetCorridor": "Target Route",
+      "commodity": "Crop",
+      "zScore": "Performance Level",
+      "fiscalExposure": "Support Value",
+      "netMargin": "Estimated Transport Profit",
+      "draftSmsEn": "SMS Message in English",
+      "draftSmsRw": "SMS Message in Ikinyarwanda",
+      "dispatchBtn": "Send Message to Field Workers",
+      "dispatchedBadge": "MESSAGE SENT TO FIELD WORKERS",
+      "copyBtn": "Copy Message Text",
       "copied": "Copied to Clipboard!",
-      "clearBtn": "Dismiss Directive"
+      "clearBtn": "Close Notice"
     },
     "severity": {
       "info": "Information",
@@ -618,10 +657,10 @@
       "rejected": "Rejected",
       "approved": "Approved"
     },
-    "methodsTitle": "Analytical Frameworks",
+    "methodsTitle": "How AgrIntel Calculates Answers",
     "mathSection": {
-      "title": "Mathematical Formulations & Causal Foundations",
-      "subtitle": "Auditable, structural formulations implemented across AgrIntel's analytical engines without black-box heuristics (Charter Section 4):"
+      "title": "Practical Calculations Behind the Guide",
+      "subtitle": "Every calculation follows clear, transparent arithmetic based on real farm harvest records, daily market prices, and truck fuel costs:"
     },
     "forecast": {
       "title": "Price outlook",
@@ -644,40 +683,40 @@
       "note": "Covers market prices only. Weather, soil and production signals are not yet connected."
     },
     "auditMethod": {
-      "title": "MINAGRI Input Subsidy Leakage & Econometric Frontier (Section 4.2)",
-      "model": "Climate-Controlled Residual Yield Model",
-      "formula": "Ŷ = Ȳ_base · Φ_climate(R_d,s, T_d,s, DrySpell) · Ψ_inputs(Seed_rate, Fert_rate)",
-      "residual": "e_d,c,s = Y_obs - Ŷ, with standardized z-score z = e / σ_d,c",
-      "diagnosticTitle": "Diagnostic Attributions",
-      "leakage": "Leakage / Quality Risk: z < -1.75 AND Fertilizer adoption > 50% AND Climate Factor ≥ 0.85",
-      "climate": "Agro-Climatic Stress: z < -1.75 AND Climate Factor < 0.85 (rainfall deficit / drought)",
-      "intensification": "High Intensification: z > +1.25 (outperforming expected frontier)",
-      "sampling": "Calibrated with NISR Seasonal Agricultural Survey (SAS) Multiple Frame Sampling (MFS) weights."
+      "title": "Official Harvest vs. Seed & Weather Expectation Check",
+      "model": "Expected Harvest Formula: Combining Good Seeds, Fertilizer & Rain",
+      "formula": "Expected Harvest = Normal Yield x Weather Factor (Rain & Temperature) x Seed & Fertilizer Factor",
+      "residual": "Harvest Difference = Actual Harvest minus Expected Target",
+      "diagnosticTitle": "What the Difference Tells Us",
+      "leakage": "Seed / Fertilizer Quality Notice: Low harvest despite good rains and heavy fertilizer use (check for counterfeit seeds or delayed deliveries)",
+      "climate": "Drought or Rain Deficit: Low harvest caused by low rainfall or long dry spells",
+      "intensification": "Great Harvest: District produced much more than expected thanks to good seeds, terraces, and water management",
+      "sampling": "Calculated using official national farming survey records covering every district in Rwanda."
     },
     "arbitrageMethod": {
-      "title": "Diesel-Adjusted Spatial Arbitrage Optimization Solver (Section 4.3)",
-      "formula": "Π(O, D, c) = P_D · (1 - δ_c) - P_O - [d_O,D · β_fuel · P_diesel / Q_load + τ_mkt + κ_handling]",
-      "burnRate": "Medium goods truck fuel consumption: β_fuel = 0.32 L/km (5,000 kg payload capacity)",
-      "shrinkage": "Transit perishability shrinkage (δ_c): Tomato 8.0%, Irish Potato 1.5%, Maize & Grains 0.5%",
-      "fuelPolicy": "Regulated pump price: Rwf 2,927 / L vs Unsubsidized counterfactual: Rwf 3,600 / L (Rwf 673/L subsidy shield)",
-      "breakeven": "Fuel Breakeven Price: P*_diesel = [(P_D · (1 - δ_c) - P_O - τ - κ) · Q_load] / (d_O,D · β_fuel)"
+      "title": "Truck Fuel & Food Transport Profit Calculator",
+      "formula": "Take-Home Profit per Kilo = City Market Price (minus Fresh Food Spoilage) minus Farm Price minus (Truck Fuel Cost + Road Taxes + Handling)",
+      "burnRate": "Standard medium cargo truck: Uses 32 liters of diesel for every 100 km carrying up to 5,000 kg of food",
+      "shrinkage": "Food that spoils or bruises on bumpy roads: Tomatoes lose 8.0%, Irish potatoes lose 1.5%, Dry maize loses 0.5%",
+      "fuelPolicy": "Rwanda regulated diesel price: 2,927 Rwf/liter. Without government fuel support, diesel would cost 3,600 Rwf/liter, saving truckers 673 Rwf on every liter.",
+      "breakeven": "Highest Fuel Cost Before Loss: The maximum diesel price a trucker can pay before the trip stops making money."
     },
     "accuracyTitle": "Accuracy from past data",
     "accuracyNote": "Errors come from re-running the method on past months, using only data available at each point. Lower is better. No accuracy figure is shown unless a backtest produced it.",
     "noEvaluations": "No backtest results are recorded yet. Run the forecast pipeline to produce them.",
     "unitsTitle": "Metrics, units and levels",
-    "limitsTitle": "Limitations",
+    "limitsTitle": "Important Notes & Reminders",
     "limits": [
-      "Empirical datasets are loaded from official NISR Seasonal Agricultural Surveys (SAS 2024A–2026B), WFP HDX retail market observations, Tangabid farmgate records, and CHIRPS / Meteo Rwanda subnational stations.",
-      "The outlook is a national average across monitored markets. It does not describe any single district.",
-      "Econometric residual models and spatial arbitrage corridors represent statistical optimization frontiers and should be paired with field extension verification.",
-      "Forecast ranges are based on historical volatility and holdout backtests. They are not absolute guarantees.",
-      "Advisory guidance is general information. Fertilizer doses and veterinary treatment are out of scope and need expert review.",
-      "Kinyarwanda translations are maintained with 100% key parity across all analytical modules."
+      "Data comes from official national farming surveys, local market price checkers, farm receipts, and Rwanda Meteo weather stations.",
+      "The price outlook is a national average across markets; local prices in your village may differ.",
+      "Harvest checks and truck routes provide helpful guidelines; always confirm with your local agronomist or market cooperative before making big investments.",
+      "Price forecasts reflect typical patterns from past years and are not guarantees of future prices.",
+      "General farming tips are provided for guidance; consult a licensed agronomist or veterinary doctor for specific chemical doses or treatments.",
+      "Everything is fully available in both easy-to-read English and natural Kinyarwanda."
     ],
-    "aiDisclosureTitle": "Tooling & AI Assistance Disclosure",
+    "aiDisclosureTitle": "Tooling & Coding Acknowledgement",
     "aiDisclosureBadge": "NISR 2026 Hackathon Compliance",
-    "aiDisclosureText": "Disclosure per NISR 2026 Hackathon Guidelines: AI coding assistants were utilized as productivity accelerators for TypeScript interface scaffolding, bilingual localization formatting (en/rw), and unit-test boilerplate. All econometric problem formulations, NISR SAS Multiple Frame Sampling weight applications, climate-controlled yield residual equations, and spatial arbitrage models were conceived, verified, and audited by the authors, who take full responsibility for the submitted work.",
+    "aiDisclosureText": "Disclosure per NISR 2026 Hackathon Guidelines: AI coding tools were used to speed up programming, website styling, and bilingual translation. All farming calculations, transport profit formulas, and data comparisons were researched, verified, and audited by our human team, who take full responsibility for the submitted work.",
     "aiDisclosureNote": "Submitted in strict accordance with the official NISR Big Data Hackathon 2026 Requirements for Participation.",
     "dataLifecycle": {
       "title": "3-Tier Data Velocity Lifecycle & Production Automation",

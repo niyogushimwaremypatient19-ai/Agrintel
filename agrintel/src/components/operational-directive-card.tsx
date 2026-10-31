@@ -62,22 +62,22 @@ export function OperationalDirectiveCard({
 
   if (intent === "audit") {
     title = labels.titleAudit;
-    badgeText = "MINAGRI FIELD AUDIT DIRECTIVE";
+    badgeText = "FIELD VISIT NOTICE";
     badgeColor = "bg-clay/20 text-clay border-clay/40";
-    smsEn = `[MINAGRI OFFICIAL DIRECTIVE] Immediate field audit ordered for ${district ?? "District"} on ${crop ?? "Commodity"}. SAS survey indicates severe negative yield residual (z = ${z ?? "-2.4"}) despite high subsidized fertilizer/seed uptake. Estimated fiscal exposure: Rwf ${formattedExposure}. Agronomy inspector dispatched to verify seed certification lot numbers and agro-dealer distribution logs.`;
-    smsRw = `[ITEKA RYA MINAGRI] Igenzura ryihutirwa muri ${district ?? "Akarere"} ku gihingwa cya ${crop ?? "Igihingwa"}. Isuzuma rya SAS rigaragaza umusaruro uri hasi cyane (z = ${z ?? "-2.4"}) nubwo bahawe ifumbire n'imbuto byunganirwa. Impungenge z'imikoreshereze: Rwf ${formattedExposure}. Abagenzuzi boherejwe kugenzura ibipimo by'imbuto n'inyandiko z'abacuruzi.`;
+    smsEn = `[FIELD VISIT NOTICE] Inspection requested for ${district ?? "District"} on ${crop ?? "Crop"}. Harvest was much lower than expected despite high use of subsidized seeds and fertilizers. Value monitored: Rwf ${formattedExposure}. Extension officer requested to check seed packaging and local agro-dealer logs.`;
+    smsRw = `[UBUTUMWA BWO GUSURA IMIRIMA] Isuzuma rikenewe muri ${district ?? "Akarere"} ku gihingwa cya ${crop ?? "Igihingwa"}. Isuzuma ry'umusaruro rigaragaza ko uri hasi cyane nubwo bahawe ifumbire n'imbuto byunganirwa. Agaciro gakurikiranwa: Rwf ${formattedExposure}. Abakozi b'ubuhinzi basabwe gusura imirima no kugenzura imbuto zahawe abahinzi.`;
   } else if (intent === "ship") {
     title = labels.titleShip;
-    badgeText = "COOPERATIVE TRADE DISPATCH DIRECTIVE";
+    badgeText = "COOPERATIVE TRANSPORT NOTICE";
     badgeColor = "bg-sprout text-leaf border-leaf/40";
-    smsEn = `[COOPERATIVE TRADE ALERT] Profitable arbitrage corridor open: ${origin ?? "Origin"} to ${dest ?? "Kigali"} for ${crop ?? "Commodity"}. Calculated net freight margin is +${margin ?? "40"} Rwf/kg after diesel transport and transit spoilage. Cooperative logistics trucks recommended to dispatch surplus harvest immediately to capture peak urban wholesale pricing.`;
-    smsRw = `[IMENYEKANISHA RY'UBUCURUZI] Inzira y'ubucuruzi y'inyungu irafunguye: kuva ${origin ?? "Aho bituruka"} ujya ${dest ?? "Kigali"} ku gihingwa cya ${crop ?? "Igihingwa"}. Inyungu isigaye nyuma ya lisansi n'ibyangirika ni +${margin ?? "40"} Rwf/kg. Amakoperatiba arasabwa kohereza umusaruro w'umurengera ako kanya kugira ngo abone ibiciro byiza mu mujyi.`;
+    smsEn = `[COOPERATIVE TRADE NOTICE] Profitable route open: ${origin ?? "Origin"} to ${dest ?? "Kigali"} for ${crop ?? "Crop"}. Estimated profit is +${margin ?? "40"} Rwf/kg after truck fuel and natural food spoilage. Recommended to transport surplus harvest to capture good urban prices.`;
+    smsRw = `[UBUTUMWA BWO GUTWARA UMUSARURO] Inzira y'ubucuruzi y'inyungu irafunguye: kuva ${origin ?? "Aho bituruka"} ujya ${dest ?? "Kigali"} ku gihingwa cya ${crop ?? "Igihingwa"}. Inyungu isigaye nyuma ya mazutu n'ibyangirika ni +${margin ?? "40"} Rwf/kg. Amakoperative arasabwa kohereza umusaruro w'umurengera kugira ngo abone ibiciro byiza mu mujyi.`;
   } else {
     title = labels.titleHold;
-    badgeText = "LOCAL STORAGE PRESERVATION DIRECTIVE";
+    badgeText = "LOCAL STORAGE NOTICE";
     badgeColor = "bg-harvest/20 text-soil border-harvest/40";
-    smsEn = `[STORAGE ADVISORY] Arbitrage margin compressed for ${origin ?? "District"} to ${dest ?? "Market"} on ${crop ?? "Commodity"}. Diesel freight impedance exceeds urban price premium (net margin: ${margin ?? "0"} Rwf/kg). Farmers advised to hold harvest in dry, ventilated cooperative storage rather than transporting at a logistical loss.`;
-    smsRw = `[INAMA YO GUHUNIKA] Inyungu y'ubwikorezi yaragabanutse kuva ${origin ?? "Akarere"} ujya ${dest ?? "Isoko"} ku gihingwa cya ${crop ?? "Igihingwa"}. Igiciro cya mazutu kiruta inyungu y'isoko ry'umujyi (isigaye: ${margin ?? "0"} Rwf/kg). Abahinzi baragiriwe inama yo guhunika umusaruro mu bigega by'amakoperatiba aho guhomba mu bwikorezi.`;
+    smsEn = `[STORAGE ADVISORY] Low profit margin for ${origin ?? "District"} to ${dest ?? "Market"} on ${crop ?? "Crop"}. Truck fuel costs exceed city prices (net profit: ${margin ?? "0"} Rwf/kg). Farmers advised to hold harvest in dry, ventilated cooperative storage rather than transporting at a loss.`;
+    smsRw = `[INAMA YO GUHUNIKA] Inyungu y'ubwikorezi yaragabanutse kuva ${origin ?? "Akarere"} ujya ${dest ?? "Isoko"} ku gihingwa cya ${crop ?? "Igihingwa"}. Igiciro cya mazutu kiruta inyungu y'isoko ry'umujyi (isigaye: ${margin ?? "0"} Rwf/kg). Abahinzi baragiriwe inama yo guhunika umusaruro mu bigega by'amakoperative aho guhomba mu bwikorezi.`;
   }
 
   const currentSms = activeLang === "rw" ? smsRw : smsEn;

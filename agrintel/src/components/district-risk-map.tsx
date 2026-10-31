@@ -1,8 +1,9 @@
 "use client";
-
 import { useId, useState } from "react";
 import Link from "next/link";
 import type { DistrictAuditRecord } from "@/lib/data/econometric-audit";
+import { tokens } from "@/lib/design-tokens";
+import { formatAssessmentReasoning } from "@/lib/format-rationale";
 
 export type DistrictGeographicMatrixProps = {
   districts: Array<{
@@ -130,32 +131,32 @@ export function DistrictGeographicMatrix({
   // Determine district fill color based on active metric
   const getDistrictColor = (code: string) => {
     const rec = auditByDistrict.get(code);
-    if (!rec) return "#e5e7eb";
+    if (!rec) return tokens.risk.unavailable;
 
     if (activeMetric === "residual") {
-      if (rec.residual_z_score < -1.75) return "#b5562e"; // Red: Leakage / Anomaly
-      if (rec.residual_z_score < 0) return "#d9a441"; // Harvest: Moderate Underperformance
-      if (rec.residual_z_score > 1.25) return "#1f4d2b"; // Dark Canopy: High Performing
-      return "#3f7d3a"; // Leaf: Nominal Expected
+      if (rec.residual_z_score < -1.75) return tokens.risk.high; // Red: Leakage / Anomaly
+      if (rec.residual_z_score < 0) return tokens.risk.moderate; // Harvest: Moderate Underperformance
+      if (rec.residual_z_score > 1.25) return tokens.brand.canopy; // Dark Canopy: High Performing
+      return tokens.risk.low; // Leaf: Nominal Expected
     }
 
     if (activeMetric === "climate") {
       const r = rec.rainfall_anomaly_ratio;
-      if (r < 0.75) return "#b5562e"; // Severe drought shock
-      if (r < 0.90) return "#d9a441"; // Moderate deficit
-      if (r < 1.15) return "#3f7d3a"; // Normal rainfall
-      return "#1f4d2b"; // Plentiful rain
+      if (r < 0.75) return tokens.risk.high; // Severe drought shock
+      if (r < 0.90) return tokens.risk.moderate; // Moderate deficit
+      if (r < 1.15) return tokens.risk.low; // Normal rainfall
+      return tokens.brand.canopy; // Plentiful rain
     }
 
     if (activeMetric === "seeds") {
       const s = rec.improved_seed_pct;
-      if (s < 20) return "#d9d3c2"; // Very low adoption
-      if (s < 40) return "#a8c98e"; // Moderate
-      if (s < 60) return "#3f7d3a"; // Good adoption
-      return "#1f4d2b"; // High uptake (>60%)
+      if (s < 20) return tokens.neutral.line; // Very low adoption
+      if (s < 40) return tokens.brand.sprout; // Moderate
+      if (s < 60) return tokens.risk.low; // Good adoption
+      return tokens.brand.canopy; // High uptake (>60%)
     }
 
-    return "#3f7d3a";
+    return tokens.risk.low;
   };
 
   const provinces: ProvinceGroup[] = [
@@ -236,7 +237,7 @@ export function DistrictGeographicMatrix({
                     : "border border-line bg-paper text-ink hover:border-canopy"
                 }`}
               >
-                1. ML Yield Residual (z-score)
+                1. Harvest Performance Rating
               </button>
               <button
                 type="button"
@@ -247,7 +248,7 @@ export function DistrictGeographicMatrix({
                     : "border border-line bg-paper text-ink hover:border-soil"
                 }`}
               >
-                2. CHIRPS Rainfall Anomaly (rfq)
+                2. Rainfall &amp; Water Level
               </button>
               <button
                 type="button"
@@ -258,7 +259,7 @@ export function DistrictGeographicMatrix({
                     : "border border-line bg-paper text-ink hover:border-leaf"
                 }`}
               >
-                3. SAS Certified Seed Adoption %
+                3. Quality Seed Adoption %
               </button>
             </div>
 
@@ -266,22 +267,22 @@ export function DistrictGeographicMatrix({
             <div className="flex items-center gap-2 font-mono text-[11px] tabular-nums text-muted self-end sm:self-auto">
               {activeMetric === "residual" && (
                 <>
-                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-clay" /> Anomaly (z &lt; -1.75)</span>
-                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-harvest" /> Deficit</span>
-                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-canopy" /> Nominal / High</span>
+                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-clay" /> Shortfall (Needs Check)</span>
+                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-harvest" /> Dry Spells</span>
+                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-canopy" /> Good / High Harvest</span>
                 </>
               )}
               {activeMetric === "climate" && (
                 <>
                   <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-clay" /> &lt; 75% Drought</span>
-                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-harvest" /> 75–90%</span>
-                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-leaf" /> &gt; 90% Adequate</span>
+                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-harvest" /> 75–90% Dry Spell</span>
+                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-leaf" /> &gt; 90% Normal Rain</span>
                 </>
               )}
               {activeMetric === "seeds" && (
                 <>
                   <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-stone-300" /> &lt; 20% Low</span>
-                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-leaf" /> 20–50%</span>
+                  <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-leaf" /> 20–50% Moderate</span>
                   <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded-sm bg-canopy" /> &gt; 50% High</span>
                 </>
               )}
@@ -415,30 +416,40 @@ export function DistrictGeographicMatrix({
                       }`}
                     >
                       {hoveredRecord.classification === "LEAKAGE_OR_SEED_QUALITY_RISK"
-                        ? "Audit Required"
+                        ? locale === "rw" ? "Gusuzuma Imbuto" : "Seed Quality Notice"
                         : hoveredRecord.classification === "CLIMATIC_OR_WATER_STRESS"
-                        ? "Drought Shock"
-                        : "Nominal Yield"}
+                        ? locale === "rw" ? "Izuba / Amapfa" : "Drought Impact"
+                        : locale === "rw" ? "Umusaruro Usanzwe" : "Normal Harvest"}
                     </span>
                   </div>
-                  <p className="mt-1 text-xs text-ink">{hoveredRecord.diagnostic_rationale}</p>
+                  <p className="mt-1 text-xs text-ink">
+                    {formatAssessmentReasoning(hoveredRecord.diagnostic_rationale, locale)}
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 font-mono text-xs tabular-nums self-end sm:self-auto">
                   <div className="text-right">
-                    <span className="text-[10px] text-muted block uppercase">Yield Gap</span>
+                    <span className="text-[10px] text-muted block uppercase">
+                      {locale === "rw" ? "Amanota" : "Rating"}
+                    </span>
                     <span className={`font-bold ${hoveredRecord.residual_z_score < -1.75 ? "text-clay" : "text-canopy"}`}>
-                      {hoveredRecord.residual_z_score.toFixed(2)}σ
+                      {hoveredRecord.residual_z_score > 0
+                        ? `+${hoveredRecord.residual_z_score.toFixed(1)}`
+                        : hoveredRecord.residual_z_score.toFixed(1)}
                     </span>
                   </div>
                   <div className="text-right">
-                    <span className="text-[10px] text-muted block uppercase">Rainfall</span>
+                    <span className="text-[10px] text-muted block uppercase">
+                      {locale === "rw" ? "Imvura" : "Rainfall"}
+                    </span>
                     <span className="font-bold text-ink">
                       {(hoveredRecord.rainfall_anomaly_ratio * 100).toFixed(0)}%
                     </span>
                   </div>
                   <div className="text-right">
-                    <span className="text-[10px] text-muted block uppercase">Seeds</span>
+                    <span className="text-[10px] text-muted block uppercase">
+                      {locale === "rw" ? "Imbuto" : "Seeds"}
+                    </span>
                     <span className="font-bold text-ink">
                       {hoveredRecord.improved_seed_pct.toFixed(1)}%
                     </span>
